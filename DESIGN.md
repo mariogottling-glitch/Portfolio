@@ -153,3 +153,6 @@ Nächster Schritt: den kombinierten Hero- und Arbeitsentwurf rendern, danach mit
 ## Persönliches Hero-Porträt
 
 Das vom Nutzer bereitgestellte transparente PNG ersetzt das Musterporträt im Hero: `assets/images/mario-portrait.png`. Die Originaldatei bleibt unverändert; der Ausschnitt und die Schwarzweißdarstellung erfolgen per CSS. Desktop: großes Porträt rechts ohne Rahmen, grüner Hinweis. Mobil: Porträt unter dem Einleitungstext, mit eigener responsiver Höhe. Die Projektbilder bleiben vorerst Musterbilder.
+
+## Textstil
+Kurze, direkte Texte. Hero: Websites und Bilder für deinen Auftritt. Arbeiten ohne allgemeinen Erklärungstext oder doppelte Kategorien. Über mich auf zwei kurze Sätze reduziert; Ausbildungshintergrund und KI bleiben enthalten. Kontakt: Eine Idee? Erzähl mir davon. Musterbilder bleiben als solche gekennzeichnet.
