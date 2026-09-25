@@ -83,12 +83,12 @@ Die geplante Mischrichtung konnte in diesem Durchlauf nicht erneut gerendert wer
 | Haupttext | #F1F0E9 |
 | Nebentext | #B7B7AF |
 | Trennlinien | #51514C |
-| Roter Akzent | #F1492F |
+| Frischer grüner Akzent | #B1EF72 |
 | Grüne Alternative | #AAEF64 |
 
 Eine Hauptakzentfarbe pro ausgewählter Variante. Grün und Rot nicht wahllos mischen. Kein Glow als zentrales Gestaltungsmittel, keine Glasobjekte, Seide, metallischen Bänder oder Parfüm-Inszenierungen. Ein leichtes Raster nur lokal im Hero; keine flächige technische Rasteroptik.
 
-Typografie: kräftige Grotesk für Überschriften, gut lesbare Sans-Serif für Text. Optional schmaler Display-Schnitt wie in Entwurf 3. Höchstens zwei Schriftfamilien; Handschrift nur als kleines Bilddetail, nicht als Navigation oder notwendige Information.
+Typografie nach Nutzerreferenz: DM Sans in Gewicht 900 für breite, kräftige Überschriften, 400–700 für Texte und Bedienelemente. Keine schmale Display-Schrift. Die Schrift ist eine visuelle Annäherung an die Bildreferenz. Responsive Schriftgrößen berücksichtigen die breiteren Buchstaben. Akzente, Buttons und Markierungen verwenden frisches Grün (#B1EF72).
 
 Desktop-H1 80–112 px, mobile H1 42–56 px; H2 40–60 px beziehungsweise 30–38 px. Fließtext Desktop 18 px, mobil mindestens 16 px. Metadaten mindestens 14 px. Überschriften kompakt, Textzeilenhöhe etwa 1.5–1.6. Kein erzwungener Einzeiler auf kleinen Geräten.
 
@@ -140,7 +140,7 @@ Mobil einspaltig: Aussage und Aktion zuerst, Porträt danach; bei kompakter Vari
 
 Projekttexte ohne Hover sichtbar, dezente Hover-Aufhellung und etwa 160–200 ms Übergänge. Keine Introanimation, kein Scrollzwang. Register nur als echte Filter oder klare Abschnittslinks implementieren; keine funktionslosen Dekorationstabs.
 
-Kontrast normaler Texte mindestens 4,5:1 prüfen. Orange Buttons voraussichtlich mit dunklem Text ausführen, finale Farbpaarung messen. Hintergrundwörter dürfen dekorativ kontrastarm sein, notwendige Informationen nicht. Fokus, Tastaturbedienung, Touchflächen und reduzierte Bewegung berücksichtigen.
+Kontrast normaler Texte mindestens 4,5:1 prüfen. Grüne Buttons mit dunklem Text ausführen. Hintergrundwörter dürfen dekorativ kontrastarm sein, notwendige Informationen nicht. Fokus, Tastaturbedienung, Touchflächen und reduzierte Bewegung berücksichtigen.
 
 Bilder mit festen Abmessungen und responsiven Varianten; wichtige Vorschau früh, weitere Bilder nach Bedarf laden. Später bei 375, 768 und 1440 px prüfen. Kein horizontaler Überlauf und keine abgeschnittenen Köpfe, Headlines oder Buttons.
 
