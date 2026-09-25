@@ -88,7 +88,7 @@ Die geplante Mischrichtung konnte in diesem Durchlauf nicht erneut gerendert wer
 
 Eine Hauptakzentfarbe pro ausgewählter Variante. Grün und Rot nicht wahllos mischen. Kein Glow als zentrales Gestaltungsmittel, keine Glasobjekte, Seide, metallischen Bänder oder Parfüm-Inszenierungen. Ein leichtes Raster nur lokal im Hero; keine flächige technische Rasteroptik.
 
-Typografie nach Nutzerreferenz: DM Sans in Gewicht 900 für breite, kräftige Überschriften, 400–700 für Texte und Bedienelemente. Keine schmale Display-Schrift. Die Schrift ist eine visuelle Annäherung an die Bildreferenz. Responsive Schriftgrößen berücksichtigen die breiteren Buchstaben. Akzente, Buttons und Markierungen verwenden frisches Grün (#B1EF72).
+Typografie nach Nutzerreferenz: Archivo Black für besonders massive Überschriften, lokal mit Lizenz eingebunden. Der reguläre Schnitt dieser Display-Familie ist bereits ein Black-Schnitt (CSS-Gewicht 400). DM Sans in 400–700 für Texte und Bedienelemente. Keine schmale Display-Schrift. Die Schrift ist eine visuelle Annäherung an die Bildreferenz. Responsive Schriftgrößen berücksichtigen die breiteren Buchstaben. Akzente, Buttons und Markierungen verwenden frisches Grün (#B1EF72).
 
 Desktop-H1 80–112 px, mobile H1 42–56 px; H2 40–60 px beziehungsweise 30–38 px. Fließtext Desktop 18 px, mobil mindestens 16 px. Metadaten mindestens 14 px. Überschriften kompakt, Textzeilenhöhe etwa 1.5–1.6. Kein erzwungener Einzeiler auf kleinen Geräten.
 
