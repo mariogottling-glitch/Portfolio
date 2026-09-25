@@ -1,57 +1,15 @@
 # Portfolio-Projekte
 
-Diese Datei ist die redaktionelle Übergabe für die vier echten Website-Projekte. Die Hero-Screenshots werden später direkt von den Live-Homepages erfasst. Bis dahin bleiben die Karten im Frontend als Musterbild markiert.
+Die fünf Screenshots wurden von Mario bereitgestellt. Leistungen laut seiner Bestätigung; keine erfundenen Ergebnisse oder Jahresangaben.
 
-## Fortis Anima
+| Projekt | Website | Eigene Leistung | Screenshot |
+|---|---|---|---|
+| Fortis Anima | https://www.fortis-anima.com | Logo und Website gestaltet und umgesetzt | assets/projects/fortis-anima.png |
+| Chicos Hermanos | https://www.chicos-hermanos.de | Logo und Website gestaltet und umgesetzt | assets/projects/chicos-hermanos.png |
+| Salon Samo | https://www.salon-samo.de | Logo und Website gestaltet und umgesetzt | assets/projects/salon-samo.png |
+| Mine Hotel | https://www.mine-hotel.de | Logo und Website gestaltet und umgesetzt | assets/projects/mine-hotel.png |
+| Roboterly | https://www.roboterly.com | Service-Roboter-Motiv in 3D-Rendering-Optik mit KI erstellt und nachbearbeitet | assets/projects/roboterly.png |
 
-- Live: https://www.fortis-anima.com
-- Hero-Screenshot: offen
-- Kurzbeschreibung: offen
-- Deine Rolle: offen
-- Leistungen: offen
-- Jahr: offen
-- Projektstatus: Kundenprojekt / eigenes Konzept / bitte eintragen
-- Case Study gewünscht: ja / nein
+Bei Roboterly dient die Website als Anwendungskontext des Bildes. Logo und Website sind nicht Marios Leistung. Die Portfolio-Karte nennt deshalb ausdrücklich KI-Visualisierung und Nachbearbeitung.
 
-## Chicos Hermanos
-
-- Live: https://www.chicos-hermanos.de
-- Hero-Screenshot: offen
-- Kurzbeschreibung: offen
-- Deine Rolle: offen
-- Leistungen: offen
-- Jahr: offen
-- Projektstatus: Kundenprojekt / eigenes Konzept / bitte eintragen
-- Case Study gewünscht: ja / nein
-
-## Salon Samo
-
-- Live: https://www.salon-samo.de
-- Hero-Screenshot: offen
-- Kurzbeschreibung: offen
-- Deine Rolle: offen
-- Leistungen: offen
-- Jahr: offen
-- Projektstatus: Kundenprojekt / eigenes Konzept / bitte eintragen
-- Case Study gewünscht: ja / nein
-
-## Mine Hotel
-
-- Live: https://www.mine-hotel.de
-- Hero-Screenshot: offen
-- Kurzbeschreibung: offen
-- Deine Rolle: offen
-- Leistungen: offen
-- Jahr: offen
-- Projektstatus: Kundenprojekt / eigenes Konzept / bitte eintragen
-- Case Study gewünscht: ja / nein
-
-## Benötigte Angaben pro Projekt
-
-1. Ein Satz: Was war das Ziel der Website?
-2. Deine Rolle: Konzept, Design, Bildwelt, Umsetzung oder Kombination.
-3. Zwei bis vier Leistungen, die sichtbar genannt werden dürfen.
-4. Ein Ergebnis oder eine Besonderheit, sofern belegbar.
-5. Freigabe, dass die Website öffentlich im Portfolio gezeigt werden darf.
-
-Keine vertraulichen Kundendaten, internen Kennzahlen oder nicht freigegebenen Screenshots ergänzen.
+Die Screenshots werden vollständig dargestellt, ohne Logos oder Motive abzuschneiden. Die sichtbaren Texte bleiben kurz; ausführliche Case Studies sind noch nicht vorgesehen.

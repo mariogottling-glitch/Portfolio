@@ -20,3 +20,10 @@
 }
 
 .work .section-heading-row{margin-top:28px}
+
+/* Show complete supplied website screenshots without clipping logos. */
+.project-image,.project-grid .project-image{aspect-ratio:16/10}
+.project-image img{object-fit:contain;object-position:center;transition:none}
+.project:hover img{transform:none}
+
+main section[id]{scroll-margin-top:110px}

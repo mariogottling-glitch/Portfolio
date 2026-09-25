@@ -156,3 +156,6 @@ Das vom Nutzer bereitgestellte transparente PNG ersetzt das Musterporträt im He
 
 ## Textstil
 Kurze, direkte Texte. Hero: Websites und Bilder für deinen Auftritt. Arbeiten ohne allgemeinen Erklärungstext oder doppelte Kategorien. Über mich auf zwei kurze Sätze reduziert; Ausbildungshintergrund und KI bleiben enthalten. Kontakt: Eine Idee? Erzähl mir davon. Musterbilder bleiben als solche gekennzeichnet.
+
+## Echte Projektvorschauen
+Die fünf vom Nutzer gelieferten Screenshots ersetzen die Musterbilder der Projektkarten. Fortis Anima steht groß, danach folgen zwei Zweierreihen; mobil eine Spalte. Vier Projekte sind als Logo & Website gekennzeichnet. Roboterly zeigt ausschließlich die eigene Leistung am Service-Roboter-Motiv: KI-Visualisierung und Nachbearbeitung. Screenshots vollständig und ohne Hover-Zoom darstellen.
