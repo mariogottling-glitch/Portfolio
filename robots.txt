@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Nach Festlegung der Domain ergänzen:
+# Sitemap: https://DEINE-DOMAIN.de/sitemap.xml
