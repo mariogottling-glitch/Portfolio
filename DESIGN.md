@@ -149,3 +149,7 @@ Bilder mit festen Abmessungen und responsiven Varianten; wichtige Vorschau früh
 [Helle Richtung](design/DESIGN-light-v1.md) und [glamouröse dunkle Richtung](design/DESIGN-dark-v2.md) sind verworfen und archiviert. Die ursprüngliche Recherche ist Hintergrundmaterial; die zwei vom Nutzer ausgewählten Referenzen haben gestalterischen Vorrang.
 
 Nächster Schritt: den kombinierten Hero- und Arbeitsentwurf rendern, danach mit austauschbaren Bildplätzen und den echten persönlichen Angaben weiterarbeiten.
+
+## Persönliches Hero-Porträt
+
+Das vom Nutzer bereitgestellte transparente PNG ersetzt das Musterporträt im Hero: `assets/images/mario-portrait.png`. Die Originaldatei bleibt unverändert; der Ausschnitt und die Schwarzweißdarstellung erfolgen per CSS. Desktop: großes Porträt rechts ohne Rahmen, grüner Hinweis. Mobil: Porträt unter dem Einleitungstext, mit eigener responsiver Höhe. Die Projektbilder bleiben vorerst Musterbilder.
