@@ -12,4 +12,4 @@ Die fünf Screenshots wurden von Mario bereitgestellt. Leistungen laut seiner Be
 
 Bei Roboterly dient die Website als Anwendungskontext des Bildes. Logo und Website sind nicht Marios Leistung. Die Portfolio-Karte nennt deshalb ausdrücklich KI-Visualisierung und Nachbearbeitung.
 
-Die Screenshots werden vollständig dargestellt, ohne Logos oder Motive abzuschneiden. Die sichtbaren Texte bleiben kurz; ausführliche Case Studies sind noch nicht vorgesehen.
+Alle Screenshots füllen ein einheitliches 16:10-Format ohne schwarze Balken. Der Ausschnitt wird oben verankert; seitliche Ränder können leicht beschnitten werden. Die sichtbaren Texte bleiben kurz; ausführliche Case Studies sind noch nicht vorgesehen.

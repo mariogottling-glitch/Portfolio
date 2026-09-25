@@ -21,9 +21,9 @@
 
 .work .section-heading-row{margin-top:28px}
 
-/* Show complete supplied website screenshots without clipping logos. */
+/* Consistent edge-to-edge crops for every project preview. */
 .project-image,.project-grid .project-image{aspect-ratio:16/10}
-.project-image img{object-fit:contain;object-position:center;transition:none}
+.project-image img{object-fit:cover;object-position:center top;transition:none}
 .project:hover img{transform:none}
 
 main section[id]{scroll-margin-top:110px}
