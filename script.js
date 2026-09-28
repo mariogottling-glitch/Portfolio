@@ -26,9 +26,7 @@ function filterGallery(filter) {
   filters.forEach(button => button.setAttribute('aria-pressed', String(button === filter)));
   let count = 0;
   projects.forEach(project => {
-    const visible = filter.dataset.filter === 'featured'
-      ? project.dataset.featured === 'true'
-      : project.dataset.category === filter.dataset.filter;
+    const visible = project.dataset.category === filter.dataset.filter;
     project.hidden = !visible;
     if (visible) project.dataset.layout = String(count++ % 4);
   });

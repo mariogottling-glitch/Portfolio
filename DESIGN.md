@@ -182,3 +182,6 @@ Ruhige Parallax-Hintergrundebene: 8 % der Scrollstrecke auf Desktop, 3,5 % mobil
 
 ## Vollständige Schulterkontur · 28.09.2026
 Originalportrait mit Adobe Generative Expand beidseitig um 650 px erweitert (Arbeitsfassung 1200 × 1800 → 2500 × 1800). Anschließend Adobe-Freistellung, Motivbeschnitt mit Sicherheitsrand und Webfassung 1400 × 1234. Header zeigt die gesamte Schulterbreite; mobile Höhe folgt jetzt dem breiteren Bildformat. Gesicht aus dem Ausgangsfoto beibehalten.
+
+## Vier Portfolio-Rubriken · 28.09.2026
+Web Design ist die Startansicht (vier Websites). Grafiken und Bildwelten teilen sich eine Rubrik; daneben bleiben 3D und Video. Die bisherige Auswahl-Rubrik entfällt, alle Arbeiten bleiben erhalten.
