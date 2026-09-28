@@ -182,3 +182,7 @@ main:before{content:'';position:absolute;inset:0;z-index:-2;pointer-events:none;
  .hero-portrait .scribble{font-size:16px;background:#242423e8;padding:7px 10px;transform:rotate(-6deg)}
  .hero-portrait .scribble span{font-size:36px}
 }
+
+/* Expanded shoulders: preserve the complete silhouette at every width. */
+.portrait-frame img{width:calc(100% - 20px);height:auto;max-height:100%;max-width:none;object-fit:contain;object-position:center bottom}
+@media(max-width:800px){.hero-portrait{height:auto;aspect-ratio:1400/1234;margin-top:44px}.portrait-frame{height:100%}.hero-portrait figcaption{top:-28px}}

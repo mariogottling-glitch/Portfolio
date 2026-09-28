@@ -179,3 +179,6 @@ Header: neues lachendes Schwarzweißportrait mit Mütze aus _MG_0453.jpg, aussch
 
 ## Bewegung · 28.09.2026
 Ruhige Parallax-Hintergrundebene: 8 % der Scrollstrecke auf Desktop, 3,5 % mobil. Nur bei Scroll-/Breakpoint-Ereignissen ein Update pro Animation-Frame, keine Dauerschleife. Hauptüberschriften erscheinen einmal beim Sichtbarwerden mit 720 ms weichem Ease-out und 26 px (mobil 16 px) vertikalem Weg. Keine Animation der Projekttexte oder Fotos zusätzlich zum vorhandenen Hover. Betriebssystem-Präferenz für reduzierte Bewegung deaktiviert beide Effekte, auch bei Änderung während der Sitzung. Ohne JavaScript bleiben Überschriften sichtbar.
+
+## Vollständige Schulterkontur · 28.09.2026
+Originalportrait mit Adobe Generative Expand beidseitig um 650 px erweitert (Arbeitsfassung 1200 × 1800 → 2500 × 1800). Anschließend Adobe-Freistellung, Motivbeschnitt mit Sicherheitsrand und Webfassung 1400 × 1234. Header zeigt die gesamte Schulterbreite; mobile Höhe folgt jetzt dem breiteren Bildformat. Gesicht aus dem Ausgangsfoto beibehalten.
