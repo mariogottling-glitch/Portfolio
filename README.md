@@ -15,7 +15,7 @@ Dann `http://127.0.0.1:4173/` öffnen.
 ## Inhalte pflegen
 
 - `index.html`: Einstieg, Projektkarten, Über mich, Werkzeuge und Kontakt.
-- `impressum.html`: bestätigter Name, Anschrift und E-Mail. Noch offen: weiterer direkter Kontaktweg und Klärung, ob eine USt-IdNr. oder Wirtschafts-ID vorliegt. Nicht als rechtlich vollständig geprüft behandeln. Über den Footer erreichbar; `vite.config.js` nimmt beide HTML-Seiten in den Build auf.
+- `impressum.html`: bestätigter Name, Anschrift, Telefonnummer und E-Mail. Noch offen: Klärung, ob eine USt-IdNr. oder Wirtschafts-ID vorliegt. Nicht als rechtlich vollständig geprüft behandeln. Über den Footer erreichbar; `vite.config.js` nimmt beide HTML-Seiten in den Build auf.
 - `project-details.js`: kurze Projektbeschreibungen, Leistungsabgrenzung, Live-Links und Bildserien. Weitere Karten erhalten automatisch eine einfache Bildansicht.
 - `styles.css` und `script.js`: Gestaltung, Filter, Projektansichten, Navigation und Bewegung.
 - `assets/optimized/`: responsive WebP-Fassungen der Fotos und Website-Screenshots. Originale bleiben erhalten.
