@@ -35,3 +35,7 @@ Hauptadresse https://www.mario-goettling.de/ mit dem Hosting verbinden und Socia
 ## Logo-Integration · 28.09.2026
 
 Marios eigenes, verfeinertes Logo mit matter grüner Textur ersetzt die reine Textmarke im Header. Logo plus zweizeiliger Name; mobil verkleinert. Im Footer erscheint dieselbe Kombination dezenter. Logo-Links führen zum Seitenanfang und haben eine ausgeschriebene zugängliche Bezeichnung. Transparente lokale PNG-Dateien, Browser-Icons in 32 und 256 px sowie Apple-Touch-Icon in 180 px. Quelle: `assets/brand/SOURCES.md`.
+
+## Handschriftliche Akzente · 28.09.2026
+
+Felt Tip Roman Regular über Adobe Fonts (Webprojekt `zxa0mqk`, CSS-Familie `felt-tip-roman`) für die persönliche Notiz „Der Kopf dahinter“ und den kurzen Hinweis neben der Arbeiten-Überschrift. Echte Handschrift, normaler Schnitt, Limettengrün, leichte Neigung; keine künstliche Kursivstellung. Im Hero 30 px, mobil 24 px, dazu ein gebogener SVG-Pfeil, der mobil zum Porträt zeigt. Die zweite Notiz bleibt mobil wie bisher ausgeblendet. Überschriften bleiben Archivo Black, Lesetexte und Bedienung DM Sans. Adobe-Einbindung gilt für beide Domainvarianten sowie localhost und 127.0.0.1; benötigt das aktive Adobe-Fonts-Webprojekt. Schriftquelle: https://fonts.adobe.com/fonts/felt-tip.
