@@ -30,4 +30,4 @@ Mindestens 44 px große wesentliche Bedienelemente, sichtbarer Tastaturfokus, se
 
 ## Noch offen vor öffentlichem Start
 
-Finale Domain und Social-Preview festlegen; Impressum und Datenschutz mit tatsächlichen Angaben ergänzen. Echte Filmdateien können später die klar gekennzeichneten Video-Standbilder ersetzen. Zusätzliche Projektanwendungen nur mit vorhandenem oder freigegebenem Material ergänzen.
+Hauptadresse https://www.mario-goettling.de/ mit dem Hosting verbinden und Social-Preview festlegen; Impressum und Datenschutz mit tatsächlichen Angaben ergänzen. Echte Filmdateien können später die klar gekennzeichneten Video-Standbilder ersetzen. Zusätzliche Projektanwendungen nur mit vorhandenem oder freigegebenem Material ergänzen.

@@ -1,6 +1,6 @@
 # SEO- und SEA-Grundlage
 
-Stand: 28. September 2026. Name und Kontaktadresse sind bestätigt (Mario Göttling, mariogottling@googlemail.com); die finale Domain fehlt noch. Deshalb sind keine Domain- oder Analytics-Platzhalter als echte Produktionsdaten ausgegeben.
+Stand: 28. September 2026. Name und Kontaktadresse sind bestätigt (Mario Göttling, mariogottling@googlemail.com); die Hauptadresse ist https://www.mario-goettling.de/. Die Registrierung ist laut Nutzerscreenshot noch in Bearbeitung. Hosting und DNS sind noch nicht verbunden; die eingetragenen URLs bestätigen keine Live-Verfügbarkeit.
 
 ## Bereits umgesetzt
 
@@ -10,7 +10,8 @@ Stand: 28. September 2026. Name und Kontaktadresse sind bestätigt (Mario Göttl
 - Open-Graph- und Twitter-Card-Grundlage mit einem vorläufigen Musterbild.
 - JSON-LD vom Typ `Person` mit bestätigtem Tätigkeitsfeld und ohne erfundene Kunden, Orte oder Kennzahlen.
 - Semantische Bereiche mit einer klaren H1, H2-Abschnitten, Navigation, Projektlinks und Kontaktbereich.
-- `robots.txt` erlaubt die Indexierung. Die Sitemap-Zeile wird nach Festlegung der finalen Domain ergänzt.
+- Canonical-Link, Open-Graph-URL, absolute Social-Bildadressen und Person-URL verwenden die bestätigte Hauptadresse.
+- `robots.txt` verweist auf `https://www.mario-goettling.de/sitemap.xml`. Die Sitemap enthält die Startseite; Abschnittsanker und Projektdialoge sind keine separaten Seiten.
 - Projektkarten öffnen interne Dialoge. Kundenseiten sind darin verlinkt; Website-Karten behalten direkte Links als Fallback. Die Dialoge haben noch keine eigenständigen indexierbaren URLs.
 
 ## Keyword-Fokus
@@ -32,7 +33,7 @@ Die Region erst ergänzen, wenn sie feststeht. Keine Keyword-Kette in sichtbaren
 
 Noch keine Kampagne aktivieren. Vor dem Start festlegen:
 
-1. finale Domain und Zielregion;
+1. Domain aufschalten und Zielregion festlegen;
 2. primäres Angebot, zum Beispiel Website-Design oder KI-Bildwelten;
 3. Kontaktziel: E-Mail, Formular oder Kennenlerngespräch;
 4. monatliches Budget und gewünschte Anfragekosten;
@@ -48,9 +49,9 @@ Die Website liest solche Parameter derzeit nicht dauerhaft aus und sendet keine 
 
 ## Vor Veröffentlichung
 
-- Finale Domain und gewünschte Social-Profile ergänzen. E-Mail ist bereits eingesetzt.
+- Domain mit dem Hosting verbinden, HTTPS aktivieren und die Variante ohne www dauerhaft auf https://www.mario-goettling.de/ weiterleiten. Gewünschte Social-Profile ergänzen. E-Mail bleibt mariogottling@googlemail.com.
 - Social-Preview-Musterbild durch eine finale Vorschau ersetzen. Sichtbare Projekte und persönliche Fotos sind bereits echte bereitgestellte Arbeiten.
-- Canonical-Link, `sitemap.xml` und Search-Console-Eintrag mit der echten Domain ergänzen.
+- Nach Aufschaltung Canonical-Link, Sitemap und robots.txt öffentlich prüfen; Domain in der Search Console verifizieren und Sitemap einreichen. Noch nicht erledigt.
 - Jede Live-Projektseite mit individuellem Title, Description, Open-Graph-Bild und sinnvollen Alt-Texten ausstatten.
 - Impressum und Datenschutz veröffentlichen.
 - Ladezeiten, Bildgrößen, Kontrast, Mobile Layout und 404-Seite prüfen.

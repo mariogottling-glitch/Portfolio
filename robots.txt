@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Nach Festlegung der Domain ergänzen:
-# Sitemap: https://DEINE-DOMAIN.de/sitemap.xml
+Sitemap: https://www.mario-goettling.de/sitemap.xml

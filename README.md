@@ -22,7 +22,7 @@ Dann `http://127.0.0.1:4173/` öffnen.
 
 Vier Rubriken: Web Design, Grafiken & Bildwelten, 3D und Video. In größeren Rubriken erscheinen zunächst sechs Projekte. Zusammengehörige Motive sind in einer Projektansicht gebündelt. Videoeinträge zeigen bislang Standbilder.
 
-Kundenanfragen: mariogottling@googlemail.com. Vor der öffentlichen Veröffentlichung finale Domain, Social-Preview, Impressum und Datenschutz vervollständigen (siehe `SEO.md`).
+Kundenanfragen: mariogottling@googlemail.com. Hauptadresse: https://www.mario-goettling.de/. Vor der öffentlichen Veröffentlichung Domain und Hosting verbinden sowie Social-Preview, Impressum und Datenschutz vervollständigen (siehe `SEO.md`).
 
 ## GitHub-Synchronisierung
 

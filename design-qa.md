@@ -25,6 +25,6 @@ Responsive WebP-Varianten in 640 und 1400 px; Über-mich-Foto 640/960 px. Beispi
 
 Kein vollständiger Screenreader-, WCAG-, Cross-Browser- oder Lighthouse-Test. Reduced-Motion-Fallback im Code berücksichtigt; Betriebssystem-Umschaltung nicht interaktiv getestet. Touch-Wischen der Bildserie implementiert, aber nicht auf einem physischen Smartphone getestet. Kein Vite-Build: Projektabhängigkeiten sind lokal nicht installiert; die statische Website wurde direkt geprüft.
 
-Vor öffentlichem Start: finale Domain, Social-Preview, Impressum und Datenschutz ergänzen. Videos liegen derzeit nur als Standbilder vor. Projektansichten sind Dialoge ohne eigenständige indexierbare URLs.
+Vor öffentlichem Start: die bestätigte Domain www.mario-goettling.de mit Hosting verbinden sowie Social-Preview, Impressum und Datenschutz ergänzen. Videos liegen derzeit nur als Standbilder vor. Projektansichten sind Dialoge ohne eigenständige indexierbare URLs.
 
 Lokale Nachweise: `tmp/refinement/hero-desktop.png`, `tmp/refinement/mobile-work.png`. Temporäre Prüfdateien werden nicht veröffentlicht.
