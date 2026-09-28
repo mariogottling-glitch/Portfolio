@@ -29,3 +29,6 @@ Desktop und 390px Mobilansicht visuell geprüft. Dekoration nicht fokussierbar u
 
 ## 28.09.2026 – Adobe Studio-Atmosphäre
 Adobe-Hintergrund und Papier-Collage in Desktop und 390px Mobilansicht visuell geprüft. Keine horizontale Überbreite. Untere Abschnitte inklusive Zeichnung und Kontakt geprüft. Dekorationen nicht interaktiv; neue Collage lädt verzögert. Neue ausgelieferte Bilddateien zusammen ca. 1,1 MB. JavaScript-Syntax und diff-Prüfung erfolgreich; Vite-Abhängigkeiten weiterhin nicht installiert.
+
+## Persönliche Fotos – 28.09.2026
+Neues Headerportrait und Über-mich-Foto im Desktop-Browser geprüft, Header zusätzlich bei 390px Breite. Portrait ohne Hochskalierung, Gesicht vollständig sichtbar; vorhandene grüne Kontur übernommen. Kleine Portrait-Beschriftung mobil als abgesetzte Notiz gesetzt. JavaScript-Syntax und diff-Prüfung erfolgreich.

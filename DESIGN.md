@@ -173,3 +173,6 @@ Neue Bildgenerierung ausschließlich über Adobe-Plugin (Nutzerpräferenz). Matt
 
 ## Digitale Collage · 28.09.2026
 Die Papier-/Bleistift-Collage wurde durch digitale Design-Ebenen mit Cursor und grünem Bildmotiv ersetzt. Nutzer arbeitet inzwischen rein digital; künftige Dekoration soll digitale Gestaltung und KI statt analoger Arbeitsmaterialien vermitteln. Grafik ausschließlich mit Adobe Firefly generiert, über Adobe freigestellt und auf 720 × 720 verkleinert.
+
+## Persönliche Fotos · 28.09.2026
+Header: neues lachendes Schwarzweißportrait mit Mütze aus _MG_0453.jpg, ausschließlich über Adobe freigestellt und für die Website auf 1200 × 1800 verkleinert. Gesicht und Kleidung unverändert; grüne Kontur per CSS. Über mich: zweites Nutzerfoto mit langen Haaren, originaler Bildlook und Querformat. Ersetzt die gezeichnete Studie an dieser Stelle. Digitale Rahmung statt Papier-/Tape-Dekoration.
