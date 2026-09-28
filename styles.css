@@ -27,6 +27,12 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
 @media(max-width:360px){.hero-actions{align-items:start;flex-direction:column;gap:2px}.portfolio-filters button{font-size:11px}.hero h1{font-size:56px}.project-meta h3{font-size:21px}.dialog-toolbar>span{max-width:120px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.heading-awaiting{opacity:1}}
 
+/* A personal signature contrasts with the bold introduction. */
+.about-name-line{display:flex;align-items:baseline;gap:.18em;margin-top:.06em;padding-bottom:.32em;color:var(--paper)}
+.about-signature{position:relative;display:inline-block;font-family:var(--handwriting);font-size:1.75em;font-weight:400;font-style:normal;line-height:1;letter-spacing:-.035em;text-transform:none;white-space:nowrap;transform:rotate(-11deg);transform-origin:45% 65%;color:var(--accent)}
+.about-signature:after{content:'';position:absolute;left:5%;right:-3%;bottom:-.08em;height:.07em;border-bottom:2px solid currentColor;border-radius:50%;transform:rotate(-3deg)}
+@media(max-width:800px){.about h2{font-size:clamp(36px,11.3vw,44px)}}
+
 /* The supplied textured mark is shared by navigation, footer and browser icons. */
 .brand{display:inline-flex;align-items:center;gap:12px;flex-shrink:0}
 .brand-logo{width:52px;height:52px;object-fit:contain;flex-shrink:0}

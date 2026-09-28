@@ -40,4 +40,6 @@ Marios eigenes, verfeinertes Logo mit matter grüner Textur ersetzt die reine Te
 
 ## Handschriftliche Akzente · 28.09.2026
 
+In „Hi, ich bin Mario.“ steht der Name als persönliche Signatur: Felt Tip Roman, Limettengrün, 1,75-fache Schriftgröße und um 11 Grad gedreht. Eine kurze geschwungene Unterstreichung betont die Signatur; „Hi, ich bin“ bleibt in Archivo Black. Größen und Abstände passen sich mobil an.
+
 Felt Tip Roman Regular über Adobe Fonts (Webprojekt `zxa0mqk`, CSS-Familie `felt-tip-roman`) für die persönliche Notiz „Der Kopf dahinter“ und den kurzen Hinweis neben der Arbeiten-Überschrift. Echte Handschrift, normaler Schnitt, Limettengrün, leichte Neigung; keine künstliche Kursivstellung. Im Hero 30 px, mobil 24 px, dazu ein gebogener SVG-Pfeil, der mobil zum Porträt zeigt. Die zweite Notiz bleibt mobil wie bisher ausgeblendet. Überschriften bleiben Archivo Black, Lesetexte und Bedienung DM Sans. Adobe-Einbindung gilt für beide Domainvarianten sowie localhost und 127.0.0.1; benötigt das aktive Adobe-Fonts-Webprojekt. Schriftquelle: https://fonts.adobe.com/fonts/felt-tip.
