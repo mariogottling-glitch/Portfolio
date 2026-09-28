@@ -57,3 +57,9 @@ Die freigegebene Referenz bestimmt die neue Hierarchie: sehr große, graugrüne 
 ## Freigestelltes About-Porträt · 28. September 2026
 
 Das Originalfoto mit langen Haaren wurde mit Adobe generativ um Kopf und Schultern erweitert und anschließend freigestellt. Die transparente Webfassung (960 × 1040 px) ersetzt den gedrehten Bilderrahmen. Dieselbe limettengrüne CSS-Kontur wie im Hero verbindet beide Porträts gestalterisch. Original und vollständige KI-Erweiterung bleiben erhalten.
+
+## Visueller Feinschliff · 29. September 2026
+
+Chicos und Fortis erhalten vollbreite Projektkompositionen aus Website und Original-Markenmaterial. Chicos: warme Fläche mit Website links, Logo und Completo-Motiv rechts. Fortis: gespiegelter Aufbau, Baumlogo auf Grün und eine zurückhaltende Farbpalette. Auf Mobil bleibt der Screenshot oben, darunter folgen die Markenbausteine in zwei Spalten. Beide Projektansichten enthalten nun zusätzliche Motive zum Durchblättern. Materialherkunft: assets/projects/details/SOURCES.md.
+
+Das About-Porträt wird per CSS neutral schwarzweiß mit abgestimmten Tonwerten angezeigt; grüne Kontur und Originaldatei bleiben erhalten. Hintergrundstruktur insgesamt dezenter, Arbeitsproben auf ruhigerer Fläche. Hero-Schrift leicht heller; mobiler Ausschnitt nach rechts und unten versetzt, sodass WEB. BILD. lesbar bleibt. Neun Programm-Icons stehen in identischen 76-px-Flächen (mobil 68 px), optische Logo-Größen angeglichen. Bestehende reduzierte Bewegung und Tastaturfokus bleiben erhalten.

@@ -9,6 +9,11 @@ export const projectDetails = {
       ['Die Gestaltung', 'Eine markante Wortmarke, illustrierte Zutaten und warme Farben bringen den Streetfood-Charakter auf den Bildschirm.']
     ],
     caption: 'Logo und Website im Zusammenspiel · Startseite von Chicos Hermanos',
+    images: [
+      ['/assets/optimized/chicos-hermanos-1400.webp', 'Der digitale Auftritt · Chicos Hermanos'],
+      ['/assets/projects/details/chicos-mark.png', 'Das von mir gestaltete Logo · Chicos Hermanos'],
+      ['/assets/projects/details/chicos-completo.webp', 'Die Bildsprache der Website · Completo-Motiv']
+    ],
     live: 'https://www.chicos-hermanos.de'
   },
   'fortis-anima': {
@@ -20,6 +25,10 @@ export const projectDetails = {
       ['Die Gestaltung', 'Das Baumsymbol, gedeckte Grüntöne und großzügige Typografie verbinden eine natürliche Bildsprache mit klarer Orientierung.']
     ],
     caption: 'Das Baummotiv als verbindendes Element von Logo und Website',
+    images: [
+      ['/assets/optimized/fortis-anima-1400.webp', 'Der digitale Auftritt · Fortis Anima'],
+      ['/assets/projects/details/fortis-logo.png', 'Das von mir gestaltete Logo · Fortis Anima Consulting']
+    ],
     live: 'https://www.fortis-anima.com'
   },
   'salon-samo': {

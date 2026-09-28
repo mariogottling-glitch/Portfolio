@@ -83,3 +83,13 @@ final result: passed
 Adobe-Erweiterung und Freistellung visuell geprüft. Kopf und Schultern vollständig, Gesicht aus dem Original erhalten. Desktop und mobile Ansicht geprüft: transparente Silhouette, gleiche grüne Kontur wie im Hero, kein horizontaler Überlauf, Bild erfolgreich geladen (960 × 1040 px). Mobile Reihenfolge: Überschrift, Porträt, Text. Screenshots: tmp/refinement/about-cutout-desktop.jpg und about-cutout-mobile.jpg. Originalfoto unverändert erhalten.
 
 Vite-Produktionsbuild erfolgreich; das neue transparente Porträt ist im Build enthalten.
+
+## Visueller Feinschliff · 29. September 2026
+
+- Chicos und Fortis auf Desktop (1440 px angefragt), Tablet (1024 px) und Mobil (390 px) betrachtet. Originalgrafiken geladen, keine horizontalen Überläufe in den gemessenen Tablet-/Mobilansichten.
+- Projektfilter Grafiken & Bildwelten zeigt sechs von zwanzig Arbeiten; Rückkehr zu Web Design zeigt vier Projekte. Neue Webkompositionen beeinflussen die übrigen Rubriken nicht.
+- Chicos-Dialog: drei Motive, Logo und Completo über Bildnavigation aufgerufen; Tastatur- und Mausbedienung geprüft. Fortis-Dialog: zwei Motive, Logo erfolgreich geladen. Mobile Dialogbreite ohne Überlauf.
+- Porträt in Schwarzweiß mit grüner Kontur sichtbar; neun identische Icon-Flächen bestätigt. Originaldateien unverändert.
+- Vite-Produktionsbuild erfolgreich, neue Detailbilder werden auch unter den stabilen URLs für die Projektansichten kopiert. Diff ohne Whitespacefehler.
+- Screenshots unter tmp/polish-2026-09-29/: projects-desktop.jpg, fortis-desktop.jpg, projects-mobile.jpg, projects-tablet.jpg, hero-mobile.jpg, about-desktop.jpg. Der Anbieter kann Screenshotmaße durch Scrollbar/Skalierung leicht vom angefragten Viewport abweichend zurückgeben.
+- Grenzen: keine vollständige Barrierefreiheitszertifizierung und kein STRATO-Deployment. Bestehende Reduced-Motion-Regeln bleiben aktiv; neue Vergrößerung ausschließlich bei Desktop-Zeiger und ohne reduzierte Bewegung.

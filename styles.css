@@ -79,7 +79,7 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
 .about-signature{position:relative;display:inline-block;font-family:var(--handwriting);font-size:1.75em;font-weight:400;font-style:normal;line-height:1;letter-spacing:-.035em;text-transform:none;white-space:nowrap;transform:rotate(-11deg);transform-origin:45% 65%;color:var(--accent)}
 .about-signature:after{content:'';position:absolute;left:5%;right:-3%;bottom:-.08em;height:.07em;border-bottom:2px solid currentColor;border-radius:50%;transform:rotate(-3deg)}
 .about-photo-cutout{border:0;border-bottom:2px solid var(--line);box-shadow:none;transform:none;align-self:end;padding:0 5px;overflow:hidden}
-.about-photo-cutout img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;filter:drop-shadow(4px 0 0 var(--accent)) drop-shadow(-4px 0 0 var(--accent)) drop-shadow(0 -4px 0 var(--accent))}
+.about-photo-cutout img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;filter:grayscale(1) contrast(1.12) brightness(.89) drop-shadow(4px 0 0 var(--accent)) drop-shadow(-4px 0 0 var(--accent)) drop-shadow(0 -4px 0 var(--accent))}
 @media(max-width:800px){.about h2{font-size:clamp(36px,11.3vw,44px)}}
 
 /* The supplied textured mark is shared by navigation, footer and browser icons. */
@@ -122,3 +122,77 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
  .hero-actions{align-items:start}.hero .button{min-height:48px}
 }
 @media(max-width:360px){.hero-copy{padding:22px}.hero .scribble{font-size:21px}.hero-portrait{margin-top:32px}.hero-copy h2{font-size:30px}}
+
+/* Project presentations use the clients' original marks and website imagery. */
+main:before{opacity:.07}
+.work{position:relative;isolation:isolate;padding-bottom:24px}
+.work:before{content:'';position:absolute;inset:130px -24px -24px;z-index:-1;background:var(--bg);opacity:.88;pointer-events:none}
+.hero-drafting{background-size:40px 40px;opacity:.95}
+.hero h1 span{color:#85877d}
+.hero-portrait figcaption{right:3%;top:8%}
+.portfolio-gallery .project-feature{grid-column:1/-1;margin-top:0}
+.feature-composition{display:grid;grid-template-columns:1.85fr 1fr;background:#eee5ce;color:#302d24;overflow:hidden}
+.feature-screen{display:flex;flex-direction:column;justify-content:center;gap:24px;padding:36px}
+.feature-caption{display:block;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;line-height:1.5}
+.feature-screen .project-image{aspect-ratio:auto;box-shadow:0 16px 32px #25231c20}
+.feature-screen .project-image img{height:auto;aspect-ratio:auto;object-fit:contain}
+.feature-identity{display:grid;grid-template-rows:1fr 1fr;min-width:0}
+.feature-mark{display:flex;flex-direction:column;justify-content:space-between;align-items:center;gap:20px;padding:30px 32px}
+.feature-mark .feature-caption{align-self:start}
+.feature-mark img{width:100%;max-width:280px;height:auto;max-height:160px;object-fit:contain;margin:auto}
+.feature-chicos .feature-mark{background:#d84b30;color:#fff5df}
+.feature-detail{display:flex;flex-direction:column;justify-content:center;gap:12px;background:#efd177;padding:20px 32px;overflow:hidden}
+.feature-detail img{width:100%;height:auto;max-height:175px;object-fit:contain;transform:rotate(-7deg)}
+.feature-detail .feature-caption{margin-top:auto}
+.feature-fortis .feature-composition{grid-template-columns:1fr 1.85fr;background:#dce0d3;color:#2f463c}
+.feature-fortis .feature-screen{grid-column:2;grid-row:1}
+.feature-fortis .feature-identity{grid-column:1;grid-row:1;grid-template-rows:1fr auto;background:#304b40;color:#f7f4eb}
+.feature-fortis .feature-mark{padding-bottom:24px}
+.feature-fortis .feature-mark img{max-width:200px;max-height:210px}
+.feature-palette{padding:0 32px 30px}
+.palette-colors{display:flex;height:18px;margin-top:18px}
+.palette-colors i{flex:1;background:#20372f}.palette-colors i:nth-child(2){background:#6e785c}.palette-colors i:nth-child(3){background:#c7af7c}.palette-colors i:nth-child(4){background:#f4f1e9}
+.project-feature .project-meta{padding:22px 0 26px}
+.project-feature .project-meta h3{font-size:clamp(26px,3vw,40px)}
+.portfolio-gallery .website[data-category="web"]:not(.project-feature){grid-column:span 6;margin-top:12px}
+.about{padding-top:84px}
+.skills{margin-bottom:68px}
+.tool-list li{gap:12px;text-align:center}
+.tool-icon{width:76px;height:76px;display:grid;place-items:center;background:#1d1f1b;border:1px solid #45483f;border-radius:16px}
+.tool-list .tool-icon img{width:48px;height:48px;border-radius:9px}
+.tool-list .tool-icon .tool-light{padding:5px}
+.tool-list .tool-icon img[src$='premiere-pro.svg']{width:52px;height:52px}
+@media(min-width:801px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .feature-mark img{transition:transform .55s cubic-bezier(.22,.61,.36,1)}
+ .project-feature:hover .feature-mark img{transform:scale(1.035)}
+}
+@media(min-width:801px) and (max-width:1100px){
+ .feature-screen{padding:24px;gap:20px}.feature-mark{padding:24px}.feature-detail{padding:18px 24px}.feature-mark img{max-height:120px}.feature-detail img{max-height:130px}.feature-fortis .feature-mark img{max-height:170px}
+}
+@media(max-width:800px){
+ .hero-portrait{right:-5%;width:72%;margin-top:62px;margin-bottom:-15px}
+ .hero-portrait figcaption{left:-35%;right:auto;top:48%}
+ .hero .scribble{font-size:21px}
+ .hero .scribble-arrow{width:36px;height:32px;margin-left:32px}
+ .work:before{inset:100px -20px -20px}
+ .portfolio-gallery .project-feature{margin-bottom:40px}
+ .feature-composition,.feature-fortis .feature-composition{display:flex;flex-direction:column}
+ .feature-screen{padding:20px 16px 24px;gap:16px}
+ .feature-identity,.feature-fortis .feature-identity{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .feature-mark{padding:16px;gap:14px;min-height:144px}
+ .feature-mark img{max-height:82px;max-width:175px}
+ .feature-detail{padding:16px;gap:10px}
+ .feature-detail img{max-height:95px}
+ .feature-caption{font-size:8px;letter-spacing:.1em}
+ .feature-fortis .feature-mark img{height:100px;width:auto;max-width:100%}
+ .feature-fortis .feature-mark{min-height:168px}
+ .feature-palette{padding:20px 16px;display:flex;flex-direction:column;justify-content:end}
+ .palette-colors{height:20px;margin-top:16px}
+ .project-feature .project-meta{padding:16px 0 20px}
+ .project-feature .project-meta h3{font-size:26px}
+ .portfolio-gallery .website[data-category="web"]:not(.project-feature){margin-top:0}
+ .about{padding-top:48px}.skills{margin-bottom:48px}
+ .tool-icon{width:68px;height:68px;border-radius:14px}
+ .tool-list{gap:24px 10px}
+}
+@media(max-width:360px){.hero-portrait{margin-top:58px}.hero .scribble{font-size:19px}.project-feature .project-meta h3{font-size:23px}}
