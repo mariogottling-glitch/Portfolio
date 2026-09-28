@@ -159,3 +159,7 @@ Kurze, direkte Texte. Hero: Websites und Bilder für deinen Auftritt. Arbeiten o
 
 ## Echte Projektvorschauen
 Die fünf vom Nutzer gelieferten Screenshots ersetzen die Musterbilder der Projektkarten. Fortis Anima steht groß, danach folgen zwei Zweierreihen; mobil eine Spalte. Vier Projekte sind als Logo & Website gekennzeichnet. Roboterly zeigt ausschließlich die eigene Leistung am Service-Roboter-Motiv: KI-Visualisierung und Nachbearbeitung. Screenshots im einheitlichen 16:10-Format flächenfüllend zuschneiden (object-fit: cover, oben zentriert), ohne Balken und ohne Hover-Zoom.
+
+## Register und grafische Komposition (28.09.2026)
+
+Referenz: die vom Nutzer beigefügten Register und Programm-Icons sowie bestehende Behance-Aufnahmen. Register Auswahl / Web Design / Grafiken / 3D / Bildwelten / Video filtern echte Arbeiten. Acht kuratierte Arbeiten als Einstieg; asymmetrische Spalten und vertikale Versätze am Desktop, eine Spalte mobil. Website-Vorschauen bleiben im einheitlichen 16:10-Ausschnitt ohne Balken. Grafikarbeiten erhalten ihr Originalformat und eine per Tastatur bedienbare Großansicht. Echte Zeichnung ersetzt das letzte Musterbild im Über-mich-Bereich. Lokale Tool-Icons mit ausgeschriebenen Namen. Quelle und redaktionelle Bildtitel sind dokumentiert.

@@ -27,3 +27,66 @@
 .project:hover img{transform:none}
 
 main section[id]{scroll-margin-top:110px}
+
+/* Portfolio registers and editorial composition, September 2026. */
+.work{padding-top:64px}
+.work .section-heading-row{margin:36px 0 50px}
+.work .section-heading-row h2{font-size:clamp(44px,7vw,108px);max-width:1100px;line-height:.95}
+.portfolio-filters{display:flex;gap:6px;border-bottom:1px solid var(--line);overflow-x:auto;padding:4px 0 0;scrollbar-width:thin}
+.portfolio-filters button{flex:0 0 auto;font:700 15px 'DM Sans',sans-serif;color:var(--muted);background:#363633;border:0;border-radius:14px 14px 0 0;padding:18px 26px;cursor:pointer;transition:background .18s,color .18s}
+.portfolio-filters button[aria-pressed=true]{background:var(--paper);color:var(--panel)}
+.portfolio-filters button:hover{background:var(--accent);color:var(--panel)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.gallery-status{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;margin:18px 0 38px}
+.portfolio-gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:70px 36px;align-items:start}
+.portfolio-gallery .project{grid-column:span 6;min-width:0}
+.portfolio-gallery .project[hidden]{display:none}
+.portfolio-gallery .project[data-layout="0"]{grid-column:span 7}
+.portfolio-gallery .project[data-layout="1"]{grid-column:span 5;margin-top:100px}
+.portfolio-gallery .project[data-layout="2"]{grid-column:2 / span 5}
+.portfolio-gallery .project[data-layout="3"]{grid-column:7 / span 6;margin-top:70px}
+.portfolio-gallery .project-image{aspect-ratio:16/10;background:#191919}
+.portfolio-gallery .artwork .project-image{aspect-ratio:auto;background:transparent}
+.portfolio-gallery .artwork img{height:auto;max-height:620px;object-fit:contain;object-position:left center}
+.portfolio-gallery .project-meta{padding:18px 0 20px;gap:12px;align-items:start}
+.portfolio-gallery .project-meta h3{font-size:clamp(19px,2vw,30px);letter-spacing:-.025em}
+.portfolio-gallery .project-meta>span{font-size:11px;letter-spacing:.03em}
+.portfolio-gallery .project-meta p{font-size:13px}
+.skills{margin-top:130px;padding:48px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.skills-heading{display:flex;align-items:start;justify-content:space-between;margin-bottom:42px;gap:24px}
+.skills h2{font-size:clamp(32px,4vw,60px)}
+.tool-list{list-style:none;padding:0;margin:0;display:flex;gap:36px;flex-wrap:wrap;justify-content:space-between}
+.tool-list li{display:flex;flex-direction:column;align-items:center;gap:12px;font-size:13px;color:var(--muted)}
+.tool-list img{width:80px;height:80px;object-fit:contain;border-radius:16px}
+.more-tools{font-size:13px;color:var(--muted);margin:32px 0 0}
+.note-image{transform:rotate(4deg);background:transparent}
+.note-image img{object-position:center;filter:none}
+.art-dialog{border:0;background:#191919;color:var(--paper);padding:56px 24px 24px;max-width:94vw;max-height:94dvh;width:1100px}
+.art-dialog::backdrop{background:rgb(0 0 0 / .85)}
+.art-dialog .dialog-image{width:100%;height:72dvh;object-fit:contain}
+.art-dialog h2{font-size:23px;margin-top:18px}
+.dialog-description{font-size:14px;color:var(--muted);margin-bottom:0}
+.dialog-close{position:absolute;right:18px;top:12px;background:var(--paper);color:var(--panel);border:0;padding:10px 16px;font:600 14px 'DM Sans',sans-serif;cursor:pointer}
+.dialog-open{overflow:hidden}
+@media(max-width:800px){
+ .work{padding-top:36px}
+ .work .section-heading-row{margin:26px 0 32px}
+ .work .section-heading-row h2{font-size:clamp(32px,8.5vw,66px)}
+ .portfolio-filters button{padding:16px 18px;font-size:14px}
+ .portfolio-gallery{display:block}
+ .portfolio-gallery .project{margin:0 0 40px!important}
+ .portfolio-gallery .artwork img{max-height:520px;width:100%;object-position:center}
+ .portfolio-gallery .project-meta{display:flex}
+ .portfolio-gallery .project-meta>span{margin-top:0}
+ .skills{margin-top:60px}
+ .skills-heading{display:block}
+ .tool-list{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 12px}
+ .tool-list img{width:62px;height:62px;border-radius:12px}
+ .about-grid{overflow:hidden}
+ .art-dialog{padding:58px 12px 18px}
+ .art-dialog .dialog-image{height:65dvh}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.portfolio-filters{scrollbar-width:none}
+.portfolio-filters::-webkit-scrollbar{display:none}
