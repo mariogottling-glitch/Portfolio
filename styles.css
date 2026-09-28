@@ -137,6 +137,10 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 /* Adobe Firefly studio atmosphere: continuous drafting paper with quiet section changes. */
 main{position:relative;isolation:isolate;overflow:clip}
 main:before{content:'';position:absolute;inset:0;z-index:-2;pointer-events:none;background:url('/assets/atmosphere/drafting-paper-web.png') center top / max(1440px,100%) auto repeat-y;opacity:.45}
+@media(prefers-reduced-motion:no-preference){
+ main.has-scroll-motion:before{position:fixed;background-position:center var(--scene-y,0px)}
+ .heading-awaiting{opacity:0}
+}
 .work{position:relative;isolation:isolate}
 .work .section-heading-row{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:32px;align-items:center;position:relative}
 .work .section-heading-row h2{font-size:clamp(44px,6.5vw,94px);position:relative;z-index:1}

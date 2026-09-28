@@ -58,3 +58,67 @@ dialog?.addEventListener('close', () => {
   document.body.classList.remove('dialog-open');
   lastArtwork?.focus({ preventScroll: true });
 });
+
+// One restrained entrance per heading; all content stays visible without JS.
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const compactScreen = window.matchMedia('(max-width: 800px)');
+const scene = document.querySelector('main');
+const headings = [...document.querySelectorAll('main h1, main h2')];
+const revealedHeadings = new WeakSet();
+const headingAnimations = new Set();
+let headingObserver;
+let parallaxFrame = 0;
+
+function updateParallax() {
+  parallaxFrame = 0;
+  if (reducedMotion.matches) return;
+  const speed = compactScreen.matches ? 0.035 : 0.08;
+  scene.style.setProperty('--scene-y', `${(-window.scrollY * speed).toFixed(1)}px`);
+}
+
+function scheduleParallax() {
+  if (!reducedMotion.matches && !parallaxFrame) {
+    parallaxFrame = requestAnimationFrame(updateParallax);
+  }
+}
+
+function configureMotion() {
+  headingObserver?.disconnect();
+  cancelAnimationFrame(parallaxFrame);
+  parallaxFrame = 0;
+  headingAnimations.forEach(animation => animation.cancel());
+  headingAnimations.clear();
+  headings.forEach(heading => heading.classList.remove('heading-awaiting'));
+  scene.classList.toggle('has-scroll-motion', !reducedMotion.matches);
+  if (reducedMotion.matches) {
+    scene.style.removeProperty('--scene-y');
+    return;
+  }
+  updateParallax();
+  if (!('IntersectionObserver' in window) || !Element.prototype.animate) return;
+  headingObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const heading = entry.target;
+      headingObserver.unobserve(heading);
+      heading.classList.remove('heading-awaiting');
+      revealedHeadings.add(heading);
+      const animation = heading.animate([
+        { opacity: 0, transform: `translateY(${compactScreen.matches ? 16 : 26}px)` },
+        { opacity: 1, transform: 'translateY(0)' }
+      ], { duration: 720, easing: 'cubic-bezier(.16,1,.3,1)' });
+      headingAnimations.add(animation);
+      animation.finished.then(() => headingAnimations.delete(animation), () => headingAnimations.delete(animation));
+    });
+  }, { threshold: 0.12 });
+  headings.forEach(heading => {
+    if (revealedHeadings.has(heading)) return;
+    heading.classList.add('heading-awaiting');
+    headingObserver.observe(heading);
+  });
+}
+
+window.addEventListener('scroll', scheduleParallax, { passive: true });
+compactScreen.addEventListener('change', scheduleParallax);
+reducedMotion.addEventListener('change', configureMotion);
+configureMotion();

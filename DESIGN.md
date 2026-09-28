@@ -176,3 +176,6 @@ Die Papier-/Bleistift-Collage wurde durch digitale Design-Ebenen mit Cursor und 
 
 ## Persönliche Fotos · 28.09.2026
 Header: neues lachendes Schwarzweißportrait mit Mütze aus _MG_0453.jpg, ausschließlich über Adobe freigestellt und für die Website auf 1200 × 1800 verkleinert. Gesicht und Kleidung unverändert; grüne Kontur per CSS. Über mich: zweites Nutzerfoto mit langen Haaren, originaler Bildlook und Querformat. Ersetzt die gezeichnete Studie an dieser Stelle. Digitale Rahmung statt Papier-/Tape-Dekoration.
+
+## Bewegung · 28.09.2026
+Ruhige Parallax-Hintergrundebene: 8 % der Scrollstrecke auf Desktop, 3,5 % mobil. Nur bei Scroll-/Breakpoint-Ereignissen ein Update pro Animation-Frame, keine Dauerschleife. Hauptüberschriften erscheinen einmal beim Sichtbarwerden mit 720 ms weichem Ease-out und 26 px (mobil 16 px) vertikalem Weg. Keine Animation der Projekttexte oder Fotos zusätzlich zum vorhandenen Hover. Betriebssystem-Präferenz für reduzierte Bewegung deaktiviert beide Effekte, auch bei Änderung während der Sitzung. Ohne JavaScript bleiben Überschriften sichtbar.

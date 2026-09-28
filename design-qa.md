@@ -32,3 +32,6 @@ Adobe-Hintergrund und Papier-Collage in Desktop und 390px Mobilansicht visuell g
 
 ## Persönliche Fotos – 28.09.2026
 Neues Headerportrait und Über-mich-Foto im Desktop-Browser geprüft, Header zusätzlich bei 390px Breite. Portrait ohne Hochskalierung, Gesicht vollständig sichtbar; vorhandene grüne Kontur übernommen. Kleine Portrait-Beschriftung mobil als abgesetzte Notiz gesetzt. JavaScript-Syntax und diff-Prüfung erfolgreich.
+
+## Scroll-Bewegung – 28.09.2026
+Desktop im Browser: Hintergrundversatz verändert sich mit Scrollposition (-72px bei 900px; -329,4px bei 4117px). Tools-Überschrift vor Sichtbarkeit ausstehend, nach Scroll sichtbar mit opacity 1. Mobil 390px: Faktor 0,035 bestätigt, Kontaktüberschrift wird sichtbar, keine horizontale Überbreite. Reduced-motion-Fallback im Code geprüft (inklusive Abbruch laufender Animationen), Betriebssystem-Umschaltung nicht interaktiv getestet. Syntax- und Diff-Prüfung erfolgreich.
