@@ -93,3 +93,7 @@ Vite-Produktionsbuild erfolgreich; das neue transparente Porträt ist im Build e
 - Vite-Produktionsbuild erfolgreich, neue Detailbilder werden auch unter den stabilen URLs für die Projektansichten kopiert. Diff ohne Whitespacefehler.
 - Screenshots unter tmp/polish-2026-09-29/: projects-desktop.jpg, fortis-desktop.jpg, projects-mobile.jpg, projects-tablet.jpg, hero-mobile.jpg, about-desktop.jpg. Der Anbieter kann Screenshotmaße durch Scrollbar/Skalierung leicht vom angefragten Viewport abweichend zurückgeben.
 - Grenzen: keine vollständige Barrierefreiheitszertifizierung und kein STRATO-Deployment. Bestehende Reduced-Motion-Regeln bleiben aktiv; neue Vergrößerung ausschließlich bei Desktop-Zeiger und ohne reduzierte Bewegung.
+
+## Offene Showcases · 29. September 2026
+
+Desktop und 390-px-Mobilansicht visuell geprüft. Beide Projektkompositionen haben transparenten Hintergrund, keine umfassenden Flächen oder Schatten. Mobil 335 px Inhaltsbreite ohne horizontalen Überlauf; Logos, Motiv und Farbpalette sind vollständig sichtbar. Screenshots: tmp/open-showcases/fortis-desktop.jpg, chicos-desktop.jpg und mobile.jpg. Reine CSS-Änderung; vorhandene Dialoge und Filter unverändert.
