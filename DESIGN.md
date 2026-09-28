@@ -167,3 +167,6 @@ Referenz: die vom Nutzer beigefügten Register und Programm-Icons sowie bestehen
 ## Hero – 28.09.2026
 Dunkles Konstruktionsraster mit Kreislinien und einer diagonalen Achse; grüne Kontur entlang des transparenten Portraits. Ein freigestelltes Grafiktablet mit Stift ergänzt den Collage-Einstieg. Mobil stehen Text und Portrait untereinander, das Tablet bleibt unten rechts. Bestehende Typografie und Grün bleiben erhalten.
 Softwareübersicht: Premiere Pro, Cinema 4D und ZBrush als sichtbare Icons ergänzt.
+
+## Durchgehende Studio-Atmosphäre · 28.09.2026
+Neue Bildgenerierung ausschließlich über Adobe-Plugin (Nutzerpräferenz). Matte Raster-/Zeichnungstextur über die gesamte Seitenbreite, niedriger Kontrast hinter den Projekten. Kleine Papier-/Stift-Collage beim Portfolio-Einstieg. Dunklere Tool-Fläche mit grünen Passermarken; eigene Zeichnung mit Papierkante und Tape; dezente Hintergrundtypografie im Über-mich-Bereich. Kontaktfläche behält Grün und erhält ein feines Raster. Dekorationen ohne Screenreader-Inhalt oder Interaktionen. Mobil reduzierte Collage und Hintergrundstärke. Quellen und Adobe-Verarbeitung in assets/atmosphere/SOURCES.md.

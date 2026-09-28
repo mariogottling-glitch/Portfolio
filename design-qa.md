@@ -26,3 +26,6 @@ Re-open the local preview in the browser, compare at 1440 px and 390 px, correct
 
 ## 28.09.2026 – Hero
 Desktop und 390px Mobilansicht visuell geprüft. Dekoration nicht fokussierbar und für Screenreader ausgeblendet. SVG/WebP/TTF-MIME-Typen im lokalen Preview ergänzt. JavaScript-Syntax und git diff --check erfolgreich. Vite-Build nicht ausgeführt: npm und node_modules fehlen in dieser Umgebung; statische Website über server.mjs geprüft.
+
+## 28.09.2026 – Adobe Studio-Atmosphäre
+Adobe-Hintergrund und Papier-Collage in Desktop und 390px Mobilansicht visuell geprüft. Keine horizontale Überbreite. Untere Abschnitte inklusive Zeichnung und Kontakt geprüft. Dekorationen nicht interaktiv; neue Collage lädt verzögert. Neue ausgelieferte Bilddateien zusammen ca. 1,1 MB. JavaScript-Syntax und diff-Prüfung erfolgreich; Vite-Abhängigkeiten weiterhin nicht installiert.
