@@ -24,8 +24,6 @@ Hero: durch Adobe erweitertes und freigestelltes Mützenportrait. Über mich: zw
 
 ## Bewegung und Bedienung
 
-Im freien Raum des Hero steht eine limettengrüne Bézierkurve mit Ankerpunkten, feinen Griff-Linien und kleinem Cursor. Das direkt eingebettete SVG verweist auf digitale Gestaltung, bleibt dekorativ und fängt keine Klicks ab. Mobil sitzt es kleiner neben dem unteren Porträtbereich, hinter dem Foto. Keine zusätzliche Daueranimation.
-
 Waagerechte Abschnittstrenner sind 2 px stark: unter dem Header und Hero, über „Über mich“ und den Werkzeugen sowie unter den Portfolio-Rubriken. Der dezente Grauton bleibt erhalten; kleinere Linien an Projektkarten und Bedienelementen bleiben 1 px.
 
 Desktop-Hover ausschließlich auf Portfolio-Bildern: sanfter Zoom auf 1,035. Zurückhaltende Hintergrund-Parallaxe (8 % Desktop, 3,5 % mobil) und einmaliges Einblenden der Hauptüberschriften. Reduced Motion deaktiviert Bewegung. Ohne JavaScript bleibt der Inhalt sichtbar; direkte Bild- und Website-Links bleiben als Fallback erhalten.
