@@ -26,6 +26,13 @@
 .project-image img{object-fit:cover;object-position:center top;transition:none}
 .project:hover img{transform:none}
 
+/* Subtle portfolio preview zoom for desktop mouse users only. */
+@media (min-width:801px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .portfolio-gallery .project-image{overflow:hidden}
+ .portfolio-gallery .project-image img{transition:transform .55s cubic-bezier(.22,.61,.36,1);transform:scale(1);transform-origin:center}
+ .portfolio-gallery .project-image:hover img{transform:scale(1.035)}
+}
+
 main section[id]{scroll-margin-top:110px}
 
 /* Portfolio registers and editorial composition, September 2026. */
