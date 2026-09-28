@@ -1,6 +1,6 @@
 # SEO- und SEA-Grundlage
 
-Stand: 25. September 2026. Die Domain, der finale Name und die Kontaktadresse fehlen noch. Deshalb sind keine Domain- oder Analytics-Platzhalter als echte Produktionsdaten ausgegeben.
+Stand: 28. September 2026. Name und Kontaktadresse sind bestätigt (Mario Göttling, mariogottling@googlemail.com); die finale Domain fehlt noch. Deshalb sind keine Domain- oder Analytics-Platzhalter als echte Produktionsdaten ausgegeben.
 
 ## Bereits umgesetzt
 
@@ -11,7 +11,7 @@ Stand: 25. September 2026. Die Domain, der finale Name und die Kontaktadresse fe
 - JSON-LD vom Typ `Person` mit bestätigtem Tätigkeitsfeld und ohne erfundene Kunden, Orte oder Kennzahlen.
 - Semantische Bereiche mit einer klaren H1, H2-Abschnitten, Navigation, Projektlinks und Kontaktbereich.
 - `robots.txt` erlaubt die Indexierung. Die Sitemap-Zeile wird nach Festlegung der finalen Domain ergänzt.
-- Jede Projektkachel verlinkt auf die jeweilige Live-Website und ist als eigenständiger Inhalt verständlich.
+- Projektkarten öffnen interne Dialoge. Kundenseiten sind darin verlinkt; Website-Karten behalten direkte Links als Fallback. Die Dialoge haben noch keine eigenständigen indexierbaren URLs.
 
 ## Keyword-Fokus
 
@@ -48,8 +48,8 @@ Die Website liest solche Parameter derzeit nicht dauerhaft aus und sendet keine 
 
 ## Vor Veröffentlichung
 
-- Domain, E-Mail und Social-Profile ergänzen.
-- Musterbilder durch freigegebene Hero-Screenshots und eigene Arbeiten ersetzen.
+- Finale Domain und gewünschte Social-Profile ergänzen. E-Mail ist bereits eingesetzt.
+- Social-Preview-Musterbild durch eine finale Vorschau ersetzen. Sichtbare Projekte und persönliche Fotos sind bereits echte bereitgestellte Arbeiten.
 - Canonical-Link, `sitemap.xml` und Search-Console-Eintrag mit der echten Domain ergänzen.
 - Jede Live-Projektseite mit individuellem Title, Description, Open-Graph-Bild und sinnvollen Alt-Texten ausstatten.
 - Impressum und Datenschutz veröffentlichen.

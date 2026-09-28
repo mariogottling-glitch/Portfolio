@@ -1,60 +1,140 @@
+import { projectDetails } from './project-details.js';
 const menuButton = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 const header = document.querySelector('[data-header]');
-
-menuButton?.addEventListener('click', () => {
-  const open = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', String(!open));
-  mobileMenu.classList.toggle('open', !open);
-  mobileMenu.setAttribute('aria-hidden', String(open));
-  menuButton.textContent = open ? 'Menü' : 'Schließen';
+function setMenu(open) {
+  mobileMenu.hidden = !open;
+  menuButton.setAttribute('aria-expanded', String(open));
+  menuButton.textContent = open ? 'Schließen' : 'Menü';
+}
+menuButton.addEventListener('click', () => setMenu(mobileMenu.hidden));
+mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !mobileMenu.hidden) { setMenu(false); menuButton.focus(); }
 });
-
-mobileMenu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-  menuButton.setAttribute('aria-expanded', 'false');
-  mobileMenu.classList.remove('open');
-  mobileMenu.setAttribute('aria-hidden', 'true');
-  menuButton.textContent = 'Menü';
-}));
-
-window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 12), { passive: true });
+window.matchMedia('(min-width: 801px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
+const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 12);
+window.addEventListener('scroll', updateHeader, { passive: true });
+updateHeader();
 
 const filters = [...document.querySelectorAll('[data-filter]')];
-const projects = [...document.querySelectorAll('[data-category]')];
+const projects = [...document.querySelectorAll('[data-project]')];
 const galleryStatus = document.querySelector('.gallery-status');
-function filterGallery(filter) {
-  filters.forEach(button => button.setAttribute('aria-pressed', String(button === filter)));
-  let count = 0;
+const showMore = document.querySelector('#show-more');
+let activeFilter = filters[0];
+let visibleLimit = 6;
+function renderGallery() {
+  const matching = projects.filter(project => project.dataset.category === activeFilter.dataset.filter);
+  filters.forEach(button => button.setAttribute('aria-pressed', String(button === activeFilter)));
   projects.forEach(project => {
-    const visible = project.dataset.category === filter.dataset.filter;
-    project.hidden = !visible;
-    if (visible) project.dataset.layout = String(count++ % 4);
+    const index = matching.indexOf(project);
+    project.hidden = index < 0 || index >= visibleLimit;
+    if (!project.hidden) project.dataset.layout = String(index % 4);
   });
-  galleryStatus.textContent = `${filter.textContent} / ${String(count).padStart(2, '0')} Arbeiten`;
+  const shown = Math.min(visibleLimit, matching.length);
+  galleryStatus.textContent = `${String(shown).padStart(2, '0')} ${shown === matching.length ? 'Projekte' : `von ${matching.length} Projekten`} / ${activeFilter.textContent}`;
+  showMore.hidden = shown >= matching.length;
+  showMore.textContent = `Weitere Projekte ansehen (${matching.length - shown}) +`;
 }
-filters.forEach(button => button.addEventListener('click', () => filterGallery(button)));
-if (filters.length) filterGallery(filters[0]);
+filters.forEach(button => button.addEventListener('click', () => { activeFilter = button; visibleLimit = 6; renderGallery(); }));
+showMore.addEventListener('click', () => {
+  const firstNew = projects.filter(project => project.dataset.category === activeFilter.dataset.filter)[visibleLimit];
+  visibleLimit += 6;
+  renderGallery();
+  firstNew?.focus({ preventScroll: true });
+});
+renderGallery();
 
-const dialog = document.querySelector('.art-dialog');
-let lastArtwork;
-document.querySelectorAll('[data-lightbox]').forEach(link => {
+const dialog = document.querySelector('.project-dialog');
+const dialogImage = dialog.querySelector('.dialog-image');
+const thumbnails = dialog.querySelector('.case-thumbnails');
+const imageNavigation = dialog.querySelector('.image-navigation');
+const imageError = dialog.querySelector('.image-error');
+let lastProject;
+let projectImages = [];
+let imageIndex = 0;
+function showImage(index) {
+  imageIndex = (index + projectImages.length) % projectImages.length;
+  const [source, caption] = projectImages[imageIndex];
+  imageError.hidden = true;
+  dialogImage.alt = caption;
+  // Relative URLs preserve local preview proxy routing.
+  dialogImage.src = source;
+  dialog.querySelector('#image-fallback').setAttribute('href', source);
+  dialog.querySelector('#project-caption').textContent = caption;
+  dialog.querySelector('#image-position').textContent = `${imageIndex + 1} / ${projectImages.length}`;
+  thumbnails.querySelectorAll('button').forEach((button, i) => button.setAttribute('aria-pressed', String(i === imageIndex)));
+}
+dialogImage.addEventListener('error', () => { imageError.hidden = false; });
+dialogImage.addEventListener('load', () => { imageError.hidden = true; });
+function openProject(link) {
+  lastProject = link;
+  const detail = projectDetails[link.dataset.project] || {};
+  const title = link.querySelector('h3').textContent;
+  const description = link.querySelector('.project-meta p').textContent;
+  const preview = link.querySelector('img');
+  const category = filters.find(filter => filter.dataset.filter === link.dataset.category).textContent;
+  dialog.querySelector('#project-title').textContent = title;
+  dialog.querySelector('#project-category').textContent = detail.category || category;
+  dialog.querySelector('#project-lead').textContent = detail.lead || description;
+  const facts = dialog.querySelector('#project-facts');
+  facts.replaceChildren();
+  (detail.facts || []).forEach(([label, copy]) => {
+    const section = document.createElement('section');
+    const heading = document.createElement('h3');
+    heading.textContent = label;
+    const paragraph = document.createElement('p');
+    paragraph.textContent = copy;
+    section.append(heading, paragraph);
+    facts.append(section);
+  });
+  facts.hidden = !detail.facts?.length;
+  const live = dialog.querySelector('#project-live');
+  live.hidden = !detail.live;
+  if (detail.live) live.setAttribute('href', detail.live); else live.removeAttribute('href');
+  dialog.querySelector('#project-inquiry').href = `mailto:mariogottling@googlemail.com?subject=${encodeURIComponent(`Projektanfrage – inspiriert von ${title}`)}`;
+  projectImages = detail.images || [[preview.getAttribute('src'), detail.caption || preview.alt]];
+  thumbnails.replaceChildren();
+  imageNavigation.hidden = thumbnails.hidden = projectImages.length < 2;
+  if (projectImages.length > 1) projectImages.forEach(([src, alt], i) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.setAttribute('aria-label', alt);
+    const image = document.createElement('img'); image.src = src; image.alt = '';
+    button.append(image); button.addEventListener('click', () => showImage(i)); thumbnails.append(button);
+  });
+  showImage(0);
+  dialog.showModal(); dialog.scrollTop = 0;
+  document.body.classList.add('dialog-open');
+}
+projects.forEach(link => {
+  link.setAttribute('aria-haspopup', 'dialog');
   link.addEventListener('click', event => {
-    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-    event.preventDefault();
-    lastArtwork = link;
-    dialog.querySelector('img').src = link.href;
-    dialog.querySelector('img').alt = link.querySelector('img').alt;
-    dialog.querySelector('h2').textContent = link.querySelector('h3').textContent;
-    dialog.querySelector('.dialog-description').textContent = link.querySelector('.project-meta p').textContent;
-    dialog.showModal();
-    document.body.classList.add('dialog-open');
+  if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault(); openProject(link);
   });
 });
-dialog?.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-dialog?.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
-dialog?.addEventListener('close', () => {
-  document.body.classList.remove('dialog-open');
-  lastArtwork?.focus({ preventScroll: true });
+dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
+dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+dialog.addEventListener('keydown', event => {
+  if (projectImages.length < 2 || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+  event.preventDefault(); showImage(imageIndex + (event.key === 'ArrowRight' ? 1 : -1));
+});
+dialog.querySelector('#previous-image').addEventListener('click', () => showImage(imageIndex - 1));
+dialog.querySelector('#next-image').addEventListener('click', () => showImage(imageIndex + 1));
+dialog.addEventListener('close', () => { document.body.classList.remove('dialog-open'); lastProject?.focus({ preventScroll: true }); });
+let touchStart;
+dialogImage.addEventListener('touchstart', event => { touchStart = event.changedTouches[0]; }, { passive: true });
+dialogImage.addEventListener('touchend', event => {
+  if (!touchStart || projectImages.length < 2) return;
+  const end = event.changedTouches[0]; const dx = end.clientX - touchStart.clientX; const dy = end.clientY - touchStart.clientY;
+  if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.5) showImage(imageIndex + (dx < 0 ? 1 : -1));
+  touchStart = null;
+}, { passive: true });
+document.querySelector('#copy-email').addEventListener('click', async () => {
+  const status = document.querySelector('.copy-status');
+  try { await navigator.clipboard.writeText('mariogottling@googlemail.com'); status.textContent = 'E-Mail-Adresse kopiert.'; }
+  catch { status.textContent = 'Bitte die E-Mail-Adresse markieren und kopieren.'; }
 });
 
 // One restrained entrance per heading; all content stays visible without JS.

@@ -23,11 +23,11 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#arbeiten">Direkt zu den Arbeiten</a>
     <header class="site-header" data-header>
       <a class="wordmark" href="#top" aria-label="Zum Seitenanfang">MARIO GÖTTLING</a>
       <nav class="desktop-nav" aria-label="Hauptnavigation">
         <a href="#arbeiten">Arbeiten</a>
-        <a href="#tools">Tools</a>
         <a href="#ueber-mich">Über mich</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
@@ -35,12 +35,11 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menü</button>
     </header>
 
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile Navigation" hidden>
       <a href="#arbeiten">Arbeiten</a>
-      <a href="#tools">Tools</a>
       <a href="#ueber-mich">Über mich</a>
       <a href="#kontakt">Kontakt</a>
-    </div>
+    </nav>
 
     <main id="top">
       <section class="hero section-shell" aria-labelledby="hero-title">
@@ -48,165 +47,173 @@
         <div class="hero-copy">
           <p class="eyebrow">Mario Göttling · Freelance Designer</p>
           <h1 id="hero-title">GRAFIK.<br />WEB.<br /><span>BILD.</span></h1>
-          <p class="hero-intro">Websites und Bilder für deinen Auftritt.</p>
-          <a class="button button-accent" href="#arbeiten">Arbeiten ansehen <span aria-hidden="true">→</span></a>
+          <p class="hero-intro">Ich gestalte Logos, Websites und digitale Bildwelten. Von der Idee bis zum fertigen Auftritt.</p>
+          <div class="hero-actions"><a class="button button-accent" href="#arbeiten">Arbeiten entdecken <span aria-hidden="true">↓</span></a><a class="quiet-link" href="#kontakt">Eine Idee? Lass uns reden ↗</a></div>
         </div>
         <figure class="hero-portrait">
           <div class="portrait-frame">
-            <img src="/assets/images/mario-hero-expanded.png" alt="Mario Göttling, lachend mit Mütze" width="1400" height="1234" fetchpriority="high" />
+            <img src="/assets/optimized/mario-hero-expanded-1400.webp" srcset="/assets/optimized/mario-hero-expanded-640.webp 640w, /assets/optimized/mario-hero-expanded-1400.webp 1400w" sizes="(max-width: 800px) calc(100vw - 40px), 55vw" alt="Mario Göttling, lachend mit Mütze" width="1400" height="1234" fetchpriority="high" />
           </div>
           <figcaption><span class="scribble">Der Kopf<br />dahinter <span aria-hidden="true">↙</span></span></figcaption>
         </figure>
-        <span class="hero-edition" aria-hidden="true">EST. IDEEN / MADE BY MARIO</span>
+        <span class="hero-edition" aria-hidden="true">KONZEPT. GESTALTUNG. UMSETZUNG.</span>
       </section>
 
       <section class="work section-shell" id="arbeiten" aria-labelledby="work-title">
         <div class="section-rule"><span>Portfolio</span><span>01 / 03</span></div>
         <div class="section-heading-row">
-          <h2 id="work-title">Gute Ideen.<br /><span>In Form gebracht.</span></h2>
-          <div class="studio-collage" aria-hidden="true"><img src="/assets/atmosphere/digital-studio.png" alt="" width="720" height="720" loading="lazy" /></div>
+          <h2 id="work-title">Arbeiten mit<br /><span>Handschrift.</span></h2>
+          <p class="work-intro">Vom ersten Zeichen<br />bis zum ganzen Auftritt.</p>
         </div>
 
 <div class="portfolio-filters" role="group" aria-label="Arbeiten nach Bereich filtern">
 <button type="button" data-filter="web" aria-pressed="true" aria-controls="project-gallery">Web Design</button><button type="button" data-filter="graphics" aria-pressed="false" aria-controls="project-gallery">Grafiken &amp; Bildwelten</button><button type="button" data-filter="3d" aria-pressed="false" aria-controls="project-gallery">3D</button><button type="button" data-filter="video" aria-pressed="false" aria-controls="project-gallery">Video</button></div>
-<p class="gallery-status" aria-live="polite"></p>
-<div class="portfolio-gallery" id="project-gallery"><a class="project website" data-category="web" href="https://www.chicos-hermanos.de" target="_blank" rel="noreferrer">
-            <div class="project-image"><img src="/assets/projects/chicos-hermanos.png" alt="Chicos Hermanos: Streetfood-Website mit Logo und illustrierten Completos" loading="lazy" decoding="async" /></div>
-            <div class="project-meta"><div><h3>Chicos Hermanos</h3><p>Logo &amp; Website</p></div><span>Website ansehen ↗</span></div>
+<div class="gallery-heading"><p class="gallery-status" aria-live="polite"></p><span>Einblicke in meine Arbeit ↙</span></div>
+<div class="portfolio-gallery" id="project-gallery"><a data-project="chicos-hermanos" class="project website" data-category="web" href="https://www.chicos-hermanos.de">
+            <div class="project-image"><img src="/assets/optimized/chicos-hermanos-1400.webp" srcset="/assets/optimized/chicos-hermanos-640.webp 640w, /assets/optimized/chicos-hermanos-1400.webp 1400w" sizes="(max-width: 800px) calc(100vw - 40px), 55vw" alt="Chicos Hermanos: Streetfood-Website mit Logo und illustrierten Completos" loading="lazy" decoding="async" width="1400" height="858" /></div>
+            <div class="project-meta"><div><h3>Chicos Hermanos</h3><p>Logo &amp; Website</p></div><span aria-hidden="true" class="project-open">↗</span></div>
           </a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/beast-buddy-kampagne.webp" aria-label="Beast Buddy – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/beast-buddy-kampagne.webp" alt="Beast Buddy – Kampagnenmotive · Diplomprojekt" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Beast Buddy</h3><p>Kampagnenmotive · Diplomprojekt</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/abstrakt.webp" aria-label="Form &amp; Farbe – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/abstrakt.webp" alt="Form &amp; Farbe – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Form &amp; Farbe</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project website" data-category="web" href="https://www.fortis-anima.com" target="_blank" rel="noreferrer">
-          <div class="project-image"><img src="/assets/projects/fortis-anima.png" alt="Fortis Anima: Website mit grünem Hero und Baumlogo" loading="lazy" decoding="async" /></div>
-          <div class="project-meta"><div><h3>Fortis Anima</h3><p>Logo &amp; Website</p></div><span>Website ansehen ↗</span></div>
+<a data-project="beast-buddy-kampagne" class="project artwork" data-category="graphics" href="/assets/artworks/beast-buddy-kampagne.webp" aria-label="Beast Buddy – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/beast-buddy-kampagne.webp" alt="Beast Buddy – Kampagnenmotive · Diplomprojekt" loading="lazy" decoding="async" width="1000" height="473" /></div>
+      <div class="project-meta"><div><h3>Beast Buddy</h3><p>Kampagnenmotive · Diplomprojekt</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="abstrakt" class="project artwork" data-category="graphics" href="/assets/artworks/abstrakt.webp" aria-label="Form &amp; Farbe – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/abstrakt.webp" alt="Form &amp; Farbe – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="776" height="809" /></div>
+      <div class="project-meta"><div><h3>Form &amp; Farbe</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="fortis-anima" class="project website" data-category="web" href="https://www.fortis-anima.com">
+          <div class="project-image"><img src="/assets/optimized/fortis-anima-1400.webp" srcset="/assets/optimized/fortis-anima-640.webp 640w, /assets/optimized/fortis-anima-1400.webp 1400w" sizes="(max-width: 800px) calc(100vw - 40px), 55vw" alt="Fortis Anima: Website mit grünem Hero und Baumlogo" loading="lazy" decoding="async" width="1400" height="794" /></div>
+          <div class="project-meta"><div><h3>Fortis Anima</h3><p>Logo &amp; Website</p></div><span aria-hidden="true" class="project-open">↗</span></div>
         </a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/spiesser-kampagne.webp" aria-label="Spießer 2.0 – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/spiesser-kampagne.webp" alt="Spießer 2.0 – Plakatgestaltung" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Spießer 2.0</h3><p>Plakatgestaltung</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="3d" data-lightbox href="/assets/artworks/astronaut.webp" aria-label="Astronaut – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/astronaut.webp" alt="Astronaut – 3D-Design" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Astronaut</h3><p>3D-Design</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project website" data-category="graphics" href="https://www.roboterly.com" target="_blank" rel="noreferrer">
-            <div class="project-image"><img src="/assets/projects/roboterly.png" alt="Roboterly-Website mit Marios KI-Visualisierung der Service-Roboter auf Podesten" loading="lazy" decoding="async" /></div>
-            <div class="project-meta"><div><h3>Roboterly</h3><p>Service-Roboter: KI-Visualisierung &amp; Nachbearbeitung</p></div><span>Im Einsatz ↗</span></div>
+<a data-project="spiesser-kampagne" class="project artwork" data-category="graphics" href="/assets/artworks/spiesser-kampagne.webp" aria-label="Spießer 2.0 – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/spiesser-kampagne.webp" alt="Spießer 2.0 – Plakatgestaltung" loading="lazy" decoding="async" width="595" height="842" /></div>
+      <div class="project-meta"><div><h3>Spießer 2.0</h3><p>Plakatserie · 3 Motive</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="astronaut" class="project artwork" data-category="3d" href="/assets/artworks/astronaut.webp" aria-label="Astronaut – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/astronaut.webp" alt="Astronaut – 3D-Design" loading="lazy" decoding="async" width="1520" height="1080" /></div>
+      <div class="project-meta"><div><h3>Astronaut</h3><p>3D-Design</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="roboterly" class="project website" data-category="graphics" href="https://www.roboterly.com">
+            <div class="project-image"><img src="/assets/optimized/roboterly-1400.webp" srcset="/assets/optimized/roboterly-640.webp 640w, /assets/optimized/roboterly-1400.webp 1400w" sizes="(max-width: 800px) calc(100vw - 40px), 55vw" alt="Roboterly-Website mit Marios KI-Visualisierung der Service-Roboter auf Podesten" loading="lazy" decoding="async" width="1400" height="865" /></div>
+            <div class="project-meta"><div><h3>Roboterly</h3><p>Service-Roboter: KI-Visualisierung &amp; Nachbearbeitung</p></div><span aria-hidden="true" class="project-open">↗</span></div>
           </a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/tv-layouts.webp" aria-label="TV-Konzepte – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/tv-layouts.webp" alt="TV-Konzepte – Layout &amp; Präsentation" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>TV-Konzepte</h3><p>Layout &amp; Präsentation</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project website" data-category="web" href="https://www.salon-samo.de" target="_blank" rel="noreferrer">
-            <div class="project-image"><img src="/assets/projects/salon-samo.png" alt="Salon Samo: Friseur-Website mit goldenem Logo" loading="lazy" decoding="async" /></div>
-            <div class="project-meta"><div><h3>Salon Samo</h3><p>Logo &amp; Website</p></div><span>Website ansehen ↗</span></div>
+<a data-project="tv-layouts" class="project artwork" data-category="graphics" href="/assets/artworks/tv-layouts.webp" aria-label="TV-Konzepte – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/tv-layouts.webp" alt="TV-Konzepte – Layout &amp; Präsentation" loading="lazy" decoding="async" width="1000" height="670" /></div>
+      <div class="project-meta"><div><h3>TV-Konzepte</h3><p>Layout &amp; Präsentation</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="salon-samo" class="project website" data-category="web" href="https://www.salon-samo.de">
+            <div class="project-image"><img src="/assets/optimized/salon-samo-1400.webp" srcset="/assets/optimized/salon-samo-640.webp 640w, /assets/optimized/salon-samo-1400.webp 1400w" sizes="(max-width: 800px) calc(100vw - 40px), 55vw" alt="Salon Samo: Friseur-Website mit goldenem Logo" loading="lazy" decoding="async" width="1400" height="809" /></div>
+            <div class="project-meta"><div><h3>Salon Samo</h3><p>Logo &amp; Website</p></div><span aria-hidden="true" class="project-open">↗</span></div>
           </a>
-<a class="project website" data-category="web" href="https://www.mine-hotel.de" target="_blank" rel="noreferrer">
-            <div class="project-image"><img src="/assets/projects/mine-hotel.png" alt="Mine Hotel: farbenfrohe Website mit illustriertem Hotellogo" loading="lazy" decoding="async" /></div>
-            <div class="project-meta"><div><h3>Mine Hotel</h3><p>Logo &amp; Website</p></div><span>Website ansehen ↗</span></div>
+<a data-project="mine-hotel" class="project website" data-category="web" href="https://www.mine-hotel.de">
+            <div class="project-image"><img src="/assets/optimized/mine-hotel-1400.webp" srcset="/assets/optimized/mine-hotel-640.webp 640w, /assets/optimized/mine-hotel-1400.webp 1400w" sizes="(max-width: 800px) calc(100vw - 40px), 55vw" alt="Mine Hotel: farbenfrohe Website mit illustriertem Hotellogo" loading="lazy" decoding="async" width="1400" height="863" /></div>
+            <div class="project-meta"><div><h3>Mine Hotel</h3><p>Logo &amp; Website</p></div><span aria-hidden="true" class="project-open">↗</span></div>
           </a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/spiesser-haare.webp" aria-label="Spießer 2.0 / Haare – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/spiesser-haare.webp" alt="Spießer 2.0 / Haare – Plakatgestaltung" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Spießer 2.0 / Haare</h3><p>Plakatgestaltung</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/spiesser-socken.webp" aria-label="Spießer 2.0 / Socken – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/spiesser-socken.webp" alt="Spießer 2.0 / Socken – Plakatgestaltung" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Spießer 2.0 / Socken</h3><p>Plakatgestaltung</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/pepper-kampagne.webp" aria-label="Pepper – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/pepper-kampagne.webp" alt="Pepper – Marketinggestaltung" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Pepper</h3><p>Marketinggestaltung</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/service-gastronomie.webp" aria-label="Service im Einsatz – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/service-gastronomie.webp" alt="Service im Einsatz – Marketingmotiv" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Service im Einsatz</h3><p>Marketingmotiv</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/avatar-beratung.webp" aria-label="Digitale Beratung – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/avatar-beratung.webp" alt="Digitale Beratung – Marketingmotiv" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Digitale Beratung</h3><p>Marketingmotiv</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/service-roboter.webp" aria-label="Service-Roboter – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/service-roboter.webp" alt="Service-Roboter – Marketingmotiv" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Service-Roboter</h3><p>Marketingmotiv</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/zeichnung-figur.webp" aria-label="Figurenstudie – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/zeichnung-figur.webp" alt="Figurenstudie – Zeichnung" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Figurenstudie</h3><p>Zeichnung</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/zeichnung-portrait.webp" aria-label="Porträtstudie – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/zeichnung-portrait.webp" alt="Porträtstudie – Zeichnung" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Porträtstudie</h3><p>Zeichnung</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/zeichnung-deadpool.webp" aria-label="Deadpool – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/zeichnung-deadpool.webp" alt="Deadpool – Zeichnung · Fanart" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Deadpool</h3><p>Zeichnung · Fanart</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="3d" data-lightbox href="/assets/artworks/character-portrait.webp" aria-label="Character Study – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/character-portrait.webp" alt="Character Study – 3D-Design" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Character Study</h3><p>3D-Design</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="3d" data-lightbox href="/assets/artworks/character-profil.webp" aria-label="Character / Profil – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/character-profil.webp" alt="Character / Profil – 3D-Design" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Character / Profil</h3><p>3D-Design</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="3d" data-lightbox href="/assets/artworks/creature.webp" aria-label="Creature Study – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/creature.webp" alt="Creature Study – 3D-Design" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Creature Study</h3><p>3D-Design</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="3d" data-lightbox href="/assets/artworks/gorilla.webp" aria-label="Gorilla – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/gorilla.webp" alt="Gorilla – 3D-Design" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Gorilla</h3><p>3D-Design</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="3d" data-lightbox href="/assets/artworks/creature-hell.webp" aria-label="Creature / Organisch – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/creature-hell.webp" alt="Creature / Organisch – 3D-Design" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Creature / Organisch</h3><p>3D-Design</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/fantasy-portrait.webp" aria-label="Fantasy Portrait – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/fantasy-portrait.webp" alt="Fantasy Portrait – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Fantasy Portrait</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/filmset.webp" aria-label="Am Set – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/filmset.webp" alt="Am Set – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Am Set</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/unterwasser.webp" aria-label="Unter Wasser – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/unterwasser.webp" alt="Unter Wasser – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Unter Wasser</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/dschungel.webp" aria-label="Eine andere Welt – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/dschungel.webp" alt="Eine andere Welt – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Eine andere Welt</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/dystopie.webp" aria-label="Dystopie – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/dystopie.webp" alt="Dystopie – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Dystopie</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/feuer.webp" aria-label="Feuer &amp; Licht – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/feuer.webp" alt="Feuer &amp; Licht – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Feuer &amp; Licht</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/reportage.webp" aria-label="Reportage – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/reportage.webp" alt="Reportage – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Reportage</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="graphics" data-lightbox href="/assets/artworks/alien.webp" aria-label="Alien – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/alien.webp" alt="Alien – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Alien</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="video" data-lightbox href="/assets/artworks/gacho-film.webp" aria-label="Gachó Clothing – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/gacho-film.webp" alt="Gachó Clothing – Imagefilm · Standbild" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Gachó Clothing</h3><p>Imagefilm · Standbild</p></div><span aria-hidden="true">Ansehen ↗</span></div></a>
-<a class="project artwork" data-category="video" data-lightbox href="/assets/artworks/beast-buddy-film.webp" aria-label="Beast Buddy – vergrößern">
-      <div class="project-image"><img src="/assets/artworks/beast-buddy-film.webp" alt="Beast Buddy – Fiktives VR-Spiel · Diplomprojekt · Standbild" loading="lazy" decoding="async" /></div>
-      <div class="project-meta"><div><h3>Beast Buddy</h3><p>Fiktives VR-Spiel · Diplomprojekt · Standbild</p></div><span aria-hidden="true">Ansehen ↗</span></div></a></div>
+
+
+<a data-project="pepper-kampagne" class="project artwork" data-category="graphics" href="/assets/artworks/pepper-kampagne.webp" aria-label="Pepper – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/pepper-kampagne.webp" alt="Pepper – Marketinggestaltung" loading="lazy" decoding="async" width="1000" height="527" /></div>
+      <div class="project-meta"><div><h3>Pepper</h3><p>Marketinggestaltung</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="service-gastronomie" class="project artwork" data-category="graphics" href="/assets/artworks/service-gastronomie.webp" aria-label="Service im Einsatz – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/service-gastronomie.webp" alt="Service im Einsatz – Marketingmotiv" loading="lazy" decoding="async" width="1600" height="1067" /></div>
+      <div class="project-meta"><div><h3>Service im Einsatz</h3><p>Marketingmotiv</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="avatar-beratung" class="project artwork" data-category="graphics" href="/assets/artworks/avatar-beratung.webp" aria-label="Digitale Beratung – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/avatar-beratung.webp" alt="Digitale Beratung – Marketingmotiv" loading="lazy" decoding="async" width="1600" height="1067" /></div>
+      <div class="project-meta"><div><h3>Digitale Beratung</h3><p>Marketingmotiv</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="service-roboter" class="project artwork" data-category="graphics" href="/assets/artworks/service-roboter.webp" aria-label="Service-Roboter – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/service-roboter.webp" alt="Service-Roboter – Marketingmotiv" loading="lazy" decoding="async" width="1600" height="1067" /></div>
+      <div class="project-meta"><div><h3>Service-Roboter</h3><p>Marketingmotiv</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="zeichnung-figur" class="project artwork" data-category="graphics" href="/assets/artworks/zeichnung-figur.webp" aria-label="Figurenstudie – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/zeichnung-figur.webp" alt="Figurenstudie – Zeichnung" loading="lazy" decoding="async" width="1533" height="1600" /></div>
+      <div class="project-meta"><div><h3>Figurenstudie</h3><p>Zeichnung</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="zeichnung-portrait" class="project artwork" data-category="graphics" href="/assets/artworks/zeichnung-portrait.webp" aria-label="Porträtstudie – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/zeichnung-portrait.webp" alt="Porträtstudie – Zeichnung" loading="lazy" decoding="async" width="1433" height="1600" /></div>
+      <div class="project-meta"><div><h3>Porträtstudie</h3><p>Zeichnung</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="zeichnung-deadpool" class="project artwork" data-category="graphics" href="/assets/artworks/zeichnung-deadpool.webp" aria-label="Deadpool – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/zeichnung-deadpool.webp" alt="Deadpool – Zeichnung · Fanart" loading="lazy" decoding="async" width="1170" height="1264" /></div>
+      <div class="project-meta"><div><h3>Deadpool</h3><p>Zeichnung · Fanart</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="character-portrait" class="project artwork" data-category="3d" href="/assets/artworks/character-portrait.webp" aria-label="Character Study – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/character-portrait.webp" alt="Character Study – 3D-Design" loading="lazy" decoding="async" width="1595" height="1196" /></div>
+      <div class="project-meta"><div><h3>Character Study</h3><p>3D-Design · 2 Ansichten</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+
+<a data-project="creature" class="project artwork" data-category="3d" href="/assets/artworks/creature.webp" aria-label="Creature Study – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/creature.webp" alt="Creature Study – 3D-Design" loading="lazy" decoding="async" width="923" height="1027" /></div>
+      <div class="project-meta"><div><h3>Creature Study</h3><p>3D-Design</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="gorilla" class="project artwork" data-category="3d" href="/assets/artworks/gorilla.webp" aria-label="Gorilla – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/gorilla.webp" alt="Gorilla – 3D-Design" loading="lazy" decoding="async" width="1600" height="1267" /></div>
+      <div class="project-meta"><div><h3>Gorilla</h3><p>3D-Design</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="creature-hell" class="project artwork" data-category="3d" href="/assets/artworks/creature-hell.webp" aria-label="Creature / Organisch – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/creature-hell.webp" alt="Creature / Organisch – 3D-Design" loading="lazy" decoding="async" width="1223" height="517" /></div>
+      <div class="project-meta"><div><h3>Creature / Organisch</h3><p>3D-Design</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="fantasy-portrait" class="project artwork" data-category="graphics" href="/assets/artworks/fantasy-portrait.webp" aria-label="Fantasy Portrait – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/fantasy-portrait.webp" alt="Fantasy Portrait – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="903" height="735" /></div>
+      <div class="project-meta"><div><h3>Fantasy Portrait</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="filmset" class="project artwork" data-category="graphics" href="/assets/artworks/filmset.webp" aria-label="Am Set – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/filmset.webp" alt="Am Set – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="1024" height="831" /></div>
+      <div class="project-meta"><div><h3>Am Set</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="unterwasser" class="project artwork" data-category="graphics" href="/assets/artworks/unterwasser.webp" aria-label="Unter Wasser – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/unterwasser.webp" alt="Unter Wasser – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="1067" height="845" /></div>
+      <div class="project-meta"><div><h3>Unter Wasser</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="dschungel" class="project artwork" data-category="graphics" href="/assets/artworks/dschungel.webp" aria-label="Eine andere Welt – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/dschungel.webp" alt="Eine andere Welt – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="1282" height="1367" /></div>
+      <div class="project-meta"><div><h3>Eine andere Welt</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="dystopie" class="project artwork" data-category="graphics" href="/assets/artworks/dystopie.webp" aria-label="Dystopie – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/dystopie.webp" alt="Dystopie – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="1143" height="731" /></div>
+      <div class="project-meta"><div><h3>Dystopie</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="feuer" class="project artwork" data-category="graphics" href="/assets/artworks/feuer.webp" aria-label="Feuer &amp; Licht – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/feuer.webp" alt="Feuer &amp; Licht – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="698" height="781" /></div>
+      <div class="project-meta"><div><h3>Feuer &amp; Licht</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="reportage" class="project artwork" data-category="graphics" href="/assets/artworks/reportage.webp" aria-label="Reportage – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/reportage.webp" alt="Reportage – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="887" height="925" /></div>
+      <div class="project-meta"><div><h3>Reportage</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="alien" class="project artwork" data-category="graphics" href="/assets/artworks/alien.webp" aria-label="Alien – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/alien.webp" alt="Alien – KI-Bildwelt · Midjourney" loading="lazy" decoding="async" width="974" height="938" /></div>
+      <div class="project-meta"><div><h3>Alien</h3><p>KI-Bildwelt · Midjourney</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="gacho-film" class="project artwork" data-category="video" href="/assets/artworks/gacho-film.webp" aria-label="Gachó Clothing – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/gacho-film.webp" alt="Gachó Clothing – Imagefilm · Standbild" loading="lazy" decoding="async" width="1600" height="785" /></div>
+      <div class="project-meta"><div><h3>Gachó Clothing</h3><p>Imagefilm · Standbild</p></div><span aria-hidden="true" class="project-open">↗</span></div></a>
+<a data-project="beast-buddy-film" class="project artwork" data-category="video" href="/assets/artworks/beast-buddy-film.webp" aria-label="Beast Buddy – Projekt ansehen">
+      <div class="project-image"><img src="/assets/artworks/beast-buddy-film.webp" alt="Beast Buddy – Fiktives VR-Spiel · Diplomprojekt · Standbild" loading="lazy" decoding="async" width="1600" height="796" /></div>
+      <div class="project-meta"><div><h3>Beast Buddy</h3><p>Fiktives VR-Spiel · Diplomprojekt · Standbild</p></div><span aria-hidden="true" class="project-open">↗</span></div></a></div>
+        <div class="gallery-more"><button class="button button-outline" type="button" id="show-more" hidden>Mehr Arbeiten ansehen +</button></div>
       </section>
 
-<section class="skills section-shell" id="tools" aria-labelledby="skills-title"><div class="skills-heading"><p class="eyebrow">Meine Werkzeuge</p><h2 id="skills-title">Ideen im Kopf.<br />Tools zur Hand.</h2></div><ul class="tool-list"><li><img src="/assets/tools/photoshop.png" alt="" width="80" height="80" loading="lazy" /><span>Photoshop</span></li><li><img src="/assets/tools/illustrator.png" alt="" width="80" height="80" loading="lazy" /><span>Illustrator</span></li><li><img src="/assets/tools/indesign.png" alt="" width="80" height="80" loading="lazy" /><span>InDesign</span></li><li><img src="/assets/tools/after-effects.png" alt="" width="80" height="80" loading="lazy" /><span>After Effects</span></li><li><img src="/assets/tools/chatgpt.png" alt="" width="80" height="80" loading="lazy" /><span>ChatGPT</span></li><li><img src="/assets/tools/midjourney.png" alt="" width="80" height="80" loading="lazy" /><span>Midjourney</span></li><li><img src="/assets/tools/premiere-pro.svg" alt="" width="80" height="80" loading="lazy" /><span>Premiere Pro</span></li><li><img class="tool-light" src="/assets/tools/cinema-4d.svg" alt="" width="80" height="80" loading="lazy" /><span>Cinema 4D</span></li><li><img class="tool-light" src="/assets/tools/zbrush.svg" alt="" width="80" height="80" loading="lazy" /><a href="https://commons.wikimedia.org/wiki/File:ZBrush_icon_new.svg" target="_blank" rel="noreferrer" title="Icon: Hajj 3 · CC BY-SA 4.0 · unverändert">ZBrush</a></li></ul></section>
+
       <section class="about section-shell" id="ueber-mich" aria-labelledby="about-title">
         <span class="about-watermark" aria-hidden="true">HAND<br />SCHRIFT.</span>
         <div class="section-rule"><span>Über mich</span><span>02 / 03</span></div>
         <div class="about-grid">
           <h2 id="about-title">Hi, ich<br />bin Mario<span class="accent-dot">.</span></h2>
-          <div class="about-copy"><p>Kommunikationsdesigner mit Wurzeln im 3D-Design und Erfahrung in Web und Marketing.</p><p>Heute gestalte ich Websites, Grafiken und Bildwelten – auch mit KI.</p></div>
-          <div class="about-photo"><img src="/assets/images/mario-about.jpg" alt="Mario Göttling mit langen Haaren, im Seitenblick" width="960" height="640" loading="lazy" decoding="async" /></div>
+          <div class="about-copy"><p class="about-lead">Ein Kopf. Viele Möglichkeiten.</p><p>Ich bin Kommunikationsdesigner mit Wurzeln im 3D-Design und Erfahrung in Web und Marketing.</p><p>Ich begleite deinen Auftritt von der ersten Idee bis zur Umsetzung. KI gehört zu meinen Werkzeugen – die gestalterischen Entscheidungen treffe ich.</p><a class="quiet-link" href="#kontakt">Lass uns dein Projekt besprechen ↗</a></div>
+          <div class="about-photo"><img src="/assets/optimized/mario-about-960.webp" srcset="/assets/optimized/mario-about-640.webp 640w, /assets/optimized/mario-about-960.webp 960w" sizes="(max-width: 800px) calc(100vw - 40px), 55vw" alt="Mario Göttling mit langen Haaren, im Seitenblick" width="960" height="640" loading="lazy" decoding="async" /></div>
         </div>
       </section>
 
+      <section class="skills section-shell" id="tools" aria-labelledby="skills-title"><div class="skills-heading"><h2 id="skills-title">Meine Werkzeuge.</h2><p>Digital gedacht. Mit Sorgfalt gestaltet.</p></div><ul class="tool-list"><li><img src="/assets/tools/photoshop.png" alt="" width="80" height="80" loading="lazy" /><span>Photoshop</span></li><li><img src="/assets/tools/illustrator.png" alt="" width="80" height="80" loading="lazy" /><span>Illustrator</span></li><li><img src="/assets/tools/indesign.png" alt="" width="80" height="80" loading="lazy" /><span>InDesign</span></li><li><img src="/assets/tools/after-effects.png" alt="" width="80" height="80" loading="lazy" /><span>After Effects</span></li><li><img src="/assets/tools/chatgpt.png" alt="" width="80" height="80" loading="lazy" /><span>ChatGPT</span></li><li><img src="/assets/tools/midjourney.png" alt="" width="80" height="80" loading="lazy" /><span>Midjourney</span></li><li><img src="/assets/tools/premiere-pro.svg" alt="" width="80" height="80" loading="lazy" /><span>Premiere Pro</span></li><li><img class="tool-light" src="/assets/tools/cinema-4d.svg" alt="" width="80" height="80" loading="lazy" /><span>Cinema 4D</span></li><li><img class="tool-light" src="/assets/tools/zbrush.svg" alt="" width="80" height="80" loading="lazy" /><a href="https://commons.wikimedia.org/wiki/File:ZBrush_icon_new.svg" target="_blank" rel="noreferrer" title="Icon: Hajj 3 · CC BY-SA 4.0 · unverändert">ZBrush</a></li></ul></section>
+
       <section class="contact section-shell" id="kontakt" aria-labelledby="contact-title">
-        <div class="contact-inner"><div><p class="eyebrow">03 / 03 · Kontakt</p><h2 id="contact-title">Eine Idee<span>?</span></h2></div><div class="contact-copy"><p>Erzähl mir davon.</p><a class="button button-light" href="mailto:hallo@example.com">Schreib mir <span aria-hidden="true">→</span></a></div></div>
+        <div class="contact-inner"><div><p class="eyebrow">03 / 03 · Dein nächster Auftritt</p><h2 id="contact-title">Fängt mit<br />einer Idee an<span>.</span></h2></div><div class="contact-copy"><p>Eine Website, ein neues Logo oder eine Bildwelt? Erzähl mir, was du vorhast.</p><a class="button button-dark" href="mailto:mariogottling@googlemail.com?subject=Projektanfrage">Projekt anfragen <span aria-hidden="true">↗</span></a><div class="email-row"><a href="mailto:mariogottling@googlemail.com">mariogottling@googlemail.com</a><button type="button" id="copy-email" aria-label="E-Mail-Adresse kopieren">Kopieren</button></div><p class="copy-status" role="status"></p></div></div>
       </section>
     </main>
 
-    <footer class="site-footer section-shell"><span>MARIO GÖTTLING</span><span>© 2026</span></footer>
+    <footer class="site-footer section-shell"><span>MARIO GÖTTLING</span><a href="#top">Zurück nach oben ↑</a><span>© 2026</span></footer>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Mario Göttling",
         "jobTitle": "Freelance Grafikdesigner",
+        "email": "mariogottling@googlemail.com",
         "description": "Kommunikationsdesigner und Freelance Grafikdesigner für Webdesign, Grafikdesign, 3D-Design und KI-Bildwelten.",
         "knowsAbout": ["Webdesign", "Grafikdesign", "3D-Design", "KI-Bildwelten", "Bildbearbeitung"]
       }
     </script>
-<dialog class="art-dialog" aria-labelledby="art-title"><button type="button" class="dialog-close" aria-label="Bildansicht schließen">Schließen ×</button><img class="dialog-image" alt="" /><h2 id="art-title"></h2><p class="dialog-description"></p></dialog>
+<dialog class="project-dialog" aria-labelledby="project-title">
+      <div class="dialog-toolbar"><span>MARIO GÖTTLING / PROJEKTE</span><button type="button" class="dialog-close" aria-label="Projektansicht schließen">Schließen ×</button></div>
+      <div class="dialog-body">
+        <header class="case-header"><p class="eyebrow" id="project-category"></p><h2 id="project-title"></h2><p class="case-lead" id="project-lead"></p></header>
+        <figure class="case-figure"><img class="dialog-image" alt="" /><figcaption id="project-caption"></figcaption><p class="image-error" role="status" hidden>Das Bild konnte nicht geladen werden. <a id="image-fallback">Bild einzeln öffnen ↗</a></p></figure>
+        <div class="image-navigation" hidden><button type="button" id="previous-image" aria-label="Vorheriges Motiv">←</button><span id="image-position" aria-live="polite"></span><button type="button" id="next-image" aria-label="Nächstes Motiv">→</button></div>
+        <div class="case-thumbnails" aria-label="Motive dieses Projekts"></div>
+        <div class="case-facts" id="project-facts"></div>
+        <footer class="case-footer"><a class="button button-outline" id="project-live" target="_blank" rel="noreferrer" hidden>Website besuchen ↗</a><a class="button button-accent" id="project-inquiry" href="mailto:mariogottling@googlemail.com">Ähnliches Projekt? Schreib mir ↗</a></footer>
+      </div>
+    </dialog>
     <script type="module" src="/script.js"></script>
   </body>
 </html>

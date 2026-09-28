@@ -1,37 +1,30 @@
-# Design QA
+# Qualitätsprüfung · 28. September 2026
 
-final result: blocked
+## Geprüfter Stand
 
-## Scope
+Lokale statische Website über `server.mjs`, im Codex-Browser auf Desktop (1440 px und normale Fenstergröße) sowie bei 390 und 320 px Breite geprüft.
 
-Initial responsive homepage implementation for the combined personal-hero and work-first portfolio direction.
+- Hero, kompakte Projektübersicht, Über mich, neun Tool-Icons und Kontakt visuell kontrolliert.
+- Alle vier mobilen Rubriken sichtbar; bei 390 und 320 px kein horizontaler Seitenüberlauf. Projektansicht bei 320 px ebenfalls ohne Überbreite.
+- Mobile Navigation öffnet und schließt nach Linkauswahl; verborgene Navigation ist nicht mehr im sichtbaren Accessibility-Baum.
+- Filter: Web Design 4, Grafiken & Bildwelten 20, 3D 5, Video 2 Projekte. Mehr anzeigen erweitert die Grafikrubrik von 6 auf 12 Einträge und setzt den Fokus auf die erste neue Karte.
+- Chicos-Projektansicht per Tastatur geöffnet; Escape schließt und gibt Fokus an die Projektkarte zurück. Bild geladen (1400 px Originalbreite).
+- Spießer-Serie: drei Motive, Wechsel mit Pfeiltaste auf das zweite Motiv und zugehörige Zählung geprüft.
+- Beast-Buddy-Motiv gezielt nachgeprüft: vollständig geladen, natürliche Breite 1000 px. Der zuvor im Audit beobachtete lokale Bildfehler tritt in der laufenden Vorschau nicht auf. Öffentliche Domain noch nicht getestet.
+- Projektansichten stellen das Bild vor die Erläuterung; mobil bei 320 px visuell nachgeprüft.
+- Kontaktlinks enthalten die bestätigte Adresse. Kopierfunktion meldet erfolgreiches Kopieren; keine E-Mail versendet.
+- Keine erfassten Browser-Konsolenfehler in der geprüften Sitzung.
+- 46 lokal referenzierte Assets einschließlich zusätzlicher Serienmotive vorhanden. Bildabmessungen für alle 31 Projektkarten eingetragen, um Platz vor dem Laden zu reservieren.
+- JavaScript-Syntaxprüfung und Git-Diff-Prüfung erfolgreich.
 
-## Checks completed
+## Bildoptimierung
 
-- Local static server starts on `http://127.0.0.1:4173`.
-- Homepage responds with HTTP 200.
-- German document language, title, description, navigation anchors, hero, work gallery, about section and contact CTA are present.
-- Mobile menu has an accessible expanded state and closes after navigation.
-- Responsive CSS includes a one-column mobile layout, wrapped category labels and a stacked hero.
-- Sample images are clearly labeled as `Musterprojekt` or `Musterporträt`.
+Responsive WebP-Varianten in 640 und 1400 px; Über-mich-Foto 640/960 px. Beispielwerte auf Dateiebene: Hero ca. 964 → 147 KB, Chicos ca. 2046 → 302 KB, Hintergrund ca. 858 → 7 KB. Die kleineren mobilen Fassungen sind zusätzlich verfügbar. Das sind Dateigrößen, keine gemessenen Ladezeiten.
 
-## Blocked checks
+## Grenzen und offene Punkte
 
-- Browser screenshot and visual comparison at desktop and mobile widths could not run because the browser approval layer is currently blocked by the session usage limit.
-- GitHub repository inspection and synchronization could not run because external GitHub access is currently unavailable; the workspace is not yet a Git checkout.
+Kein vollständiger Screenreader-, WCAG-, Cross-Browser- oder Lighthouse-Test. Reduced-Motion-Fallback im Code berücksichtigt; Betriebssystem-Umschaltung nicht interaktiv getestet. Touch-Wischen der Bildserie implementiert, aber nicht auf einem physischen Smartphone getestet. Kein Vite-Build: Projektabhängigkeiten sind lokal nicht installiert; die statische Website wurde direkt geprüft.
 
-## Follow-up
+Vor öffentlichem Start: finale Domain, Social-Preview, Impressum und Datenschutz ergänzen. Videos liegen derzeit nur als Standbilder vor. Projektansichten sind Dialoge ohne eigenständige indexierbare URLs.
 
-Re-open the local preview in the browser, compare at 1440 px and 390 px, correct any visual issues, then connect the project to the supplied GitHub repository.
-
-## 28.09.2026 – Hero
-Desktop und 390px Mobilansicht visuell geprüft. Dekoration nicht fokussierbar und für Screenreader ausgeblendet. SVG/WebP/TTF-MIME-Typen im lokalen Preview ergänzt. JavaScript-Syntax und git diff --check erfolgreich. Vite-Build nicht ausgeführt: npm und node_modules fehlen in dieser Umgebung; statische Website über server.mjs geprüft.
-
-## 28.09.2026 – Adobe Studio-Atmosphäre
-Adobe-Hintergrund und Papier-Collage in Desktop und 390px Mobilansicht visuell geprüft. Keine horizontale Überbreite. Untere Abschnitte inklusive Zeichnung und Kontakt geprüft. Dekorationen nicht interaktiv; neue Collage lädt verzögert. Neue ausgelieferte Bilddateien zusammen ca. 1,1 MB. JavaScript-Syntax und diff-Prüfung erfolgreich; Vite-Abhängigkeiten weiterhin nicht installiert.
-
-## Persönliche Fotos – 28.09.2026
-Neues Headerportrait und Über-mich-Foto im Desktop-Browser geprüft, Header zusätzlich bei 390px Breite. Portrait ohne Hochskalierung, Gesicht vollständig sichtbar; vorhandene grüne Kontur übernommen. Kleine Portrait-Beschriftung mobil als abgesetzte Notiz gesetzt. JavaScript-Syntax und diff-Prüfung erfolgreich.
-
-## Scroll-Bewegung – 28.09.2026
-Desktop im Browser: Hintergrundversatz verändert sich mit Scrollposition (-72px bei 900px; -329,4px bei 4117px). Tools-Überschrift vor Sichtbarkeit ausstehend, nach Scroll sichtbar mit opacity 1. Mobil 390px: Faktor 0,035 bestätigt, Kontaktüberschrift wird sichtbar, keine horizontale Überbreite. Reduced-motion-Fallback im Code geprüft (inklusive Abbruch laufender Animationen), Betriebssystem-Umschaltung nicht interaktiv getestet. Syntax- und Diff-Prüfung erfolgreich.
+Lokale Nachweise: `tmp/refinement/hero-desktop.png`, `tmp/refinement/mobile-work.png`. Temporäre Prüfdateien werden nicht veröffentlicht.

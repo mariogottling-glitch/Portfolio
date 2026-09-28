@@ -1,8 +1,6 @@
 # Portfolio Homepage
 
-Lokaler Entwurf für das persönliche Freelancer-Portfolio.
-
-Die aktuelle Richtung kombiniert einen großen persönlichen Hero mit einer arbeitsorientierten Projektübersicht. Die Projektkacheln verlinken bereits auf die vier Live-Websites; ihre Musterbilder werden nach der Screenshot-Erfassung ersetzt.
+Persönliches Freelancer-Portfolio von Mario Göttling. Dunkle Gestaltung mit Limettengrün, kräftiger Typografie, persönlichen Fotos und einer asymmetrischen Projektübersicht.
 
 ## Lokal ansehen
 
@@ -14,9 +12,17 @@ node server.mjs
 
 Dann `http://127.0.0.1:4173/` öffnen.
 
-## Inhalte ergänzen
+## Inhalte pflegen
 
-Die redaktionellen Angaben stehen in [PROJECTS.md](PROJECTS.md). Die visuelle Richtung und responsive Regeln stehen in [DESIGN.md](DESIGN.md).
+- `index.html`: Einstieg, Projektkarten, Über mich, Werkzeuge und Kontakt.
+- `project-details.js`: kurze Projektbeschreibungen, Leistungsabgrenzung, Live-Links und Bildserien. Weitere Karten erhalten automatisch eine einfache Bildansicht.
+- `styles.css` und `script.js`: Gestaltung, Filter, Projektansichten, Navigation und Bewegung.
+- `assets/optimized/`: responsive WebP-Fassungen der Fotos und Website-Screenshots. Originale bleiben erhalten.
+- `PROJECTS.md`: bestätigte Leistungen und Inhalte; `DESIGN.md`: aktuelle Gestaltung; `design-qa.md`: Prüfstand.
+
+Vier Rubriken: Web Design, Grafiken & Bildwelten, 3D und Video. In größeren Rubriken erscheinen zunächst sechs Projekte. Zusammengehörige Motive sind in einer Projektansicht gebündelt. Videoeinträge zeigen bislang Standbilder.
+
+Kundenanfragen: mariogottling@googlemail.com. Vor der öffentlichen Veröffentlichung finale Domain, Social-Preview, Impressum und Datenschutz vervollständigen (siehe `SEO.md`).
 
 ## GitHub-Synchronisierung
 
@@ -24,4 +30,4 @@ Repository: https://github.com/mariogottling-glitch/Portfolio
 
 Abgeschlossene und geprüfte Änderungen werden auf `main` committed und gepusht. Vor weiteren Änderungen den Remote-Stand mit `git pull --ff-only` abrufen. Bei Konflikten die Änderungen zusammenführen; keinen Force-Push verwenden.
 
-Temporäre Dateien, die lokale Lebenslauf-Vorschau, Zugangsdaten, Build-Ausgaben und installierte Pakete bleiben durch `.gitignore` lokal. Die Synchronisierung erfolgt bei der Bearbeitung des Projekts; es läuft kein Hintergrunddienst.
+Temporäre Dateien, lokale PDF-Vorschauen, Zugangsdaten, Build-Ausgaben und installierte Pakete bleiben durch `.gitignore` lokal. Die Synchronisierung erfolgt bei der Bearbeitung des Projekts; es läuft kein Hintergrunddienst.
