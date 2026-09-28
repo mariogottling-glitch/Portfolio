@@ -43,3 +43,8 @@ Marios eigenes, verfeinertes Logo mit matter grüner Textur ersetzt die reine Te
 In „Hi, ich bin Mario.“ steht der Name als persönliche Signatur: Felt Tip Roman, Limettengrün, 1,75-fache Schriftgröße und um 11 Grad gedreht. Eine kurze geschwungene Unterstreichung betont die Signatur; „Hi, ich bin“ bleibt in Archivo Black. Größen und Abstände passen sich mobil an.
 
 Felt Tip Roman Regular über Adobe Fonts (Webprojekt `zxa0mqk`, CSS-Familie `felt-tip-roman`) für die persönliche Notiz „Der Kopf dahinter“ und den kurzen Hinweis neben der Arbeiten-Überschrift. Echte Handschrift, normaler Schnitt, Limettengrün, leichte Neigung; keine künstliche Kursivstellung. Im Hero 30 px, mobil 24 px, dazu ein gebogener SVG-Pfeil, der mobil zum Porträt zeigt. Die zweite Notiz bleibt mobil wie bisher ausgeblendet. Überschriften bleiben Archivo Black, Lesetexte und Bedienung DM Sans. Adobe-Einbindung gilt für beide Domainvarianten sowie localhost und 127.0.0.1; benötigt das aktive Adobe-Fonts-Webprojekt. Schriftquelle: https://fonts.adobe.com/fonts/felt-tip.
+
+
+## Kundeninformationen · 28. September 2026
+
+Nach den Werkzeugen folgt ein kompakter Abschnitt „Deine Idee. Unser Projekt.“ mit drei Leistungen, vier nummerierten Schritten und zwei nativen aufklappbaren Antworten. Desktop: drei Leistungsspalten und vier Prozessspalten; mobil: Leistungen untereinander, Ablauf zweispaltig (unter 361 px einspaltig). Die grüne Handschrift bleibt als persönlicher Akzent. Keine erfundenen Preise, Termine oder Kundenstimmen. DM Sans wird lokal geladen; die Adobe-Handschrift bleibt extern. Das Social-Bild nutzt Marios vorhandenes Logo und Porträt.

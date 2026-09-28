@@ -1,4 +1,5 @@
 @font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/archivo-black.ttf') format('truetype')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;font-display:swap;src:url('/assets/fonts/dm-sans.ttf') format('truetype')}
 :root{--bg:#242423;--panel:#191b18;--paper:#f1f0e9;--muted:#b7b7af;--line:#55554f;--accent:#b1ef72;--max:1360px;--handwriting:'felt-tip-roman','Segoe Print','Bradley Hand',cursive}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--paper);font:18px/1.55 'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}img{display:block;max-width:100%}[hidden]{display:none!important}figure{margin:0}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 .section-shell,.site-header{width:min(calc(100% - 112px),var(--max));margin-inline:auto}.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin:0 0 24px;color:var(--muted)}h1,h2,h3{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;letter-spacing:-.045em;margin:0}h1 span,h2 span{color:var(--accent)}.skip-link{position:fixed;top:12px;left:20px;z-index:100;background:var(--accent);color:var(--panel);padding:12px 20px;transform:translateY(-180%)}.skip-link:focus{transform:none}
@@ -26,6 +27,41 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
 }
 @media(max-width:360px){.hero-actions{align-items:start;flex-direction:column;gap:2px}.portfolio-filters button{font-size:11px}.hero h1{font-size:56px}.project-meta h3{font-size:21px}.dialog-toolbar>span{max-width:120px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.heading-awaiting{opacity:1}}
+
+/* Short, scannable project information before the inquiry. */
+.collaboration{padding-bottom:80px}
+.collaboration-heading{display:flex;justify-content:space-between;align-items:end;gap:32px;margin:32px 0 40px}
+.collaboration-heading h2{font-size:clamp(36px,4.8vw,66px)}
+.collaboration-heading>p{font-family:var(--handwriting);font-size:28px;line-height:1.15;color:var(--accent);transform:rotate(-5deg);margin:0 24px 12px}
+.service-list{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-bottom:38px;border-bottom:1px solid var(--line)}
+.service-list h3{font-size:23px;letter-spacing:-.025em}
+.service-list p,.process-list p{font-size:15px;color:var(--muted);margin:14px 0 0;max-width:34ch}
+.process-title{font-family:inherit;font-size:14px;font-weight:700;text-transform:none;letter-spacing:0;margin:32px 0 24px}
+.process-list{list-style:none;padding:0;margin:0 0 36px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.process-list li>span{font-family:'Archivo Black',sans-serif;font-size:32px;line-height:1;color:var(--accent)}
+.process-list h4{font-size:18px;margin:14px 0 0;line-height:1.3}
+.process-list p{margin-top:8px;font-size:14px}
+.project-questions{border-top:1px solid var(--line)}
+.project-questions details{border-bottom:1px solid var(--line)}
+.project-questions summary{position:relative;cursor:pointer;padding:20px 44px 20px 0;font-size:16px;font-weight:600;list-style:none}
+.project-questions summary::-webkit-details-marker{display:none}
+.project-questions summary:after{content:'+';position:absolute;right:4px;top:16px;font-size:24px;font-weight:400;color:var(--accent)}
+.project-questions details[open] summary:after{content:'−'}
+.project-questions summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.project-questions p{font-size:15px;color:var(--muted);max-width:75ch;margin:0 0 24px}
+.hero-actions .quiet-link{font-size:14px;min-height:44px;display:inline-flex;align-items:center}
+.site-footer a{min-height:44px;display:inline-flex;align-items:center}
+.legal-details p+p{margin-top:14px}
+.legal-draft{max-width:780px;border-left:3px solid var(--accent);padding:12px 20px;background:var(--panel);font-size:15px;margin-top:32px}
+@media(max-width:800px){
+ .collaboration{padding-bottom:48px}.collaboration .section-rule>span:last-child{display:none}
+ .collaboration-heading{align-items:start;flex-direction:column;gap:24px;margin:28px 0 32px}
+ .collaboration-heading>p{font-size:25px;margin:0 0 6px 4px}
+ .service-list{grid-template-columns:1fr;gap:24px;padding-bottom:28px}.service-list h3{font-size:22px}.service-list p{margin-top:8px;max-width:42ch}
+ .process-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}.process-list h4{font-size:16px}
+ .project-questions summary{font-size:15px}.hero-actions .quiet-link{font-size:13px}
+}
+@media(max-width:360px){.process-list{grid-template-columns:1fr}.process-list li{display:grid;grid-template-columns:42px 1fr;column-gap:14px}.process-list li>span{grid-row:1/3}.process-list h4{margin:0}.process-list p{grid-column:2}}
 
 /* Compact provider information, readable without scripts or external fonts. */
 .legal-back{font-size:14px;min-height:44px;display:inline-flex;align-items:center;gap:12px}

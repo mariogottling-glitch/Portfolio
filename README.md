@@ -15,7 +15,8 @@ Dann `http://127.0.0.1:4173/` öffnen.
 ## Inhalte pflegen
 
 - `index.html`: Einstieg, Projektkarten, Über mich, Werkzeuge und Kontakt.
-- `impressum.html`: bestätigter Name, Anschrift, Telefonnummer und E-Mail. Noch offen: Klärung, ob eine USt-IdNr. oder Wirtschafts-ID vorliegt. Nicht als rechtlich vollständig geprüft behandeln. Über den Footer erreichbar; `vite.config.js` nimmt beide HTML-Seiten in den Build auf.
+- `impressum.html`: bestätigter Name, Anschrift, Telefonnummer und E-Mail. Noch offen: Klärung, ob eine USt-IdNr. oder Wirtschafts-ID vorliegt. Nicht als rechtlich vollständig geprüft behandeln. Über den Footer erreichbar; `vite.config.js` nimmt alle drei HTML-Seiten in den Build auf.
+- `datenschutz.html`: verlinkter Entwurf mit STRATO, E-Mail und Adobe Fonts. Vor Veröffentlichung vervollständigen; offene Punkte stehen in `LAUNCH.md`.
 - `project-details.js`: kurze Projektbeschreibungen, Leistungsabgrenzung, Live-Links und Bildserien. Weitere Karten erhalten automatisch eine einfache Bildansicht.
 - `styles.css` und `script.js`: Gestaltung, Filter, Projektansichten, Navigation und Bewegung.
 - `assets/optimized/`: responsive WebP-Fassungen der Fotos und Website-Screenshots. Originale bleiben erhalten.
@@ -23,7 +24,7 @@ Dann `http://127.0.0.1:4173/` öffnen.
 
 Vier Rubriken: Web Design, Grafiken & Bildwelten, 3D und Video. In größeren Rubriken erscheinen zunächst sechs Projekte. Zusammengehörige Motive sind in einer Projektansicht gebündelt. Videoeinträge zeigen bislang Standbilder.
 
-Kundenanfragen: mariogottling@googlemail.com. Hauptadresse: https://www.mario-goettling.de/. Vor der öffentlichen Veröffentlichung Domain und Hosting verbinden sowie Social-Preview, Impressum und Datenschutz vervollständigen (siehe `SEO.md`).
+Kundenanfragen: mariogottling@googlemail.com. Hauptadresse: https://www.mario-goettling.de/. Vor der öffentlichen Veröffentlichung Domain und Hosting verbinden sowie Impressum und Datenschutz abschließen (siehe `LAUNCH.md`). Das aktuelle Social-Bild ist bereits eingebunden.
 
 ## GitHub-Synchronisierung
 

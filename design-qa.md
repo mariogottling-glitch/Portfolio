@@ -32,3 +32,16 @@ Lokale Nachweise: `tmp/refinement/hero-desktop.png`, `tmp/refinement/mobile-work
 ## Logo und Favicon · 28.09.2026
 
 Header auf Desktop und bei 390 px visuell geprüft; Footer zusätzlich auf schmalem Display. Logo-Dateien laden vollständig, Transparenz an Außenfläche und innerer Aussparung anhand des Alpha-Kanals geprüft. Header-Logo mobil 40 px, Footer 32 px. Browser-Icon-Links mit Größenangaben 32/256/180 vorhanden; Assets lokal ausgeliefert. Keine neue Bildgenerierung, nur Adobe-Zuschnitt und Größenanpassung des freigegebenen Logos.
+
+
+## Kundeninformationen · 28.09.2026
+
+- Neue Leistungen und vier Schritte in der Desktop-Vorschau geprüft; bei 390 × 844 px ohne horizontalen Überlauf. Datenschutzseite bei gleicher Breite ebenfalls ohne Überlauf.
+- Beide nativen FAQ-Elemente geöffnet; zweites explizit per Enter, offener Zustand im DOM bestätigt.
+- Mailto-Vorlage und sichtbare E-Mail geprüft, keine Nachricht verschickt.
+- DM Sans lokal geladen; keine Google-Fonts-Links mehr. Adobe-Handschrift bewusst erhalten. Rechtsseiten ohne externe Schrift-Anfragen.
+- Social-Vorschau als JPEG, 1200 × 630, mit aktuellem Logo und persönlichem Porträt visuell geprüft.
+- Vite-Build erfolgreich. 219 lokale Verweise in Quell-/Buildseiten und Projektserien geprüft: keine fehlenden Dateien oder Anker, keine doppelten IDs. robots.txt, Sitemap und Social-Bild vorhanden. `git diff --check` erfolgreich.
+- Fix beim Build: Bildpfade aus Projektdaten, Fallbacklinks und absolute Social-Metadaten explizit übernehmen.
+- Datenschutz bleibt klar markierter Entwurf; STRATO bestätigt, Protokollfristen, Adobe-/Gmail-Grundlagen und eventuelle Steuer-IDs noch offen. Keine Bereitstellung auf dem Server und keine rechtliche Vollständigkeitsprüfung.
+- Screenshots lokal: `tmp/refinement/customer-improvements-final.png`, `tmp/refinement/customer-improvements-mobile.png`.
