@@ -9,3 +9,5 @@ Visual references inspected in the browser:
 - Mohamed Rady, Senior Art Director: https://www.behance.net/gallery/226085281/Senior-Art-Director-12-Years-on-a-Single-Page — oversized background typography, lime annotations and layered portrait composition.
 
 User preference: use only the Adobe plugin for future image generation in this project.
+
+- digital-studio.png: ersetzt paper-studio.png in der Website. Digitale Canvas-Ebenen, grünes abstraktes Motiv und Cursor. Adobe Firefly quality, Generation 8e94a6c0-6525-4b02-ab9a-d4370a671f81; Adobe Freistellung fddfa052-4c13-4b77-bf8a-fe7895eae84c; Adobe Resize 3d209e51-b86e-483b-85bc-ef6117857b17, 720 × 720 PNG. Papiermotiv bleibt nur als frühere Datei erhalten und wird nicht mehr angezeigt.

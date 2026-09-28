@@ -134,7 +134,7 @@ main:before{content:'';position:absolute;inset:0;z-index:-2;pointer-events:none;
 .work .section-heading-row{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:32px;align-items:center;position:relative}
 .work .section-heading-row h2{font-size:clamp(44px,6.5vw,94px);position:relative;z-index:1}
 .studio-collage{position:relative;width:260px;height:280px;overflow:hidden;transform:rotate(6deg);pointer-events:none}
-.studio-collage img{position:absolute;width:465px;max-width:none;height:auto;left:0;bottom:0;object-fit:contain;filter:drop-shadow(0 10px 10px #0004)}
+.studio-collage img{position:absolute;width:100%;height:100%;inset:0;object-fit:contain;filter:drop-shadow(0 10px 10px #0004)}
 .studio-collage span{position:absolute;right:5px;top:10px;color:var(--accent);font-size:17px;font-style:italic;transform:rotate(-12deg)}
 .portfolio-gallery{position:relative}
 .project-meta{background:linear-gradient(90deg,#242423ed,#24242370);border-bottom-color:#81817666}
@@ -148,13 +148,12 @@ main:before{content:'';position:absolute;inset:0;z-index:-2;pointer-events:none;
 .about .note-image:before{content:'';position:absolute;z-index:1;top:-13px;left:28%;width:40%;height:28px;background:#b1ef72dc;transform:rotate(-6deg)}
 .contact{position:relative;isolation:isolate;overflow:hidden;background-color:var(--accent);background-image:linear-gradient(#17250a12 1px,transparent 1px),linear-gradient(90deg,#17250a12 1px,transparent 1px);background-size:32px 32px}
 .contact:after{content:'↗';position:absolute;font:340px/.8 'DM Sans',sans-serif;right:25%;top:-30px;opacity:.08;z-index:-1;pointer-events:none}
-@media(max-width:1000px){.work .section-heading-row{grid-template-columns:minmax(0,1fr) 200px}.studio-collage{width:200px;height:240px}.studio-collage img{width:370px}.tool-list{gap:26px 10px}}
+@media(max-width:1000px){.work .section-heading-row{grid-template-columns:minmax(0,1fr) 200px}.studio-collage{width:200px;height:240px}.tool-list{gap:26px 10px}}
 @media(max-width:800px){
  main:before{background-size:850px auto;opacity:.4}
  .work .section-heading-row{grid-template-columns:1fr;gap:0;margin-bottom:26px}
  .work .section-heading-row h2{font-size:clamp(32px,8.5vw,66px)}
  .studio-collage{justify-self:end;width:160px;height:145px;margin-top:8px;margin-bottom:-5px;transform:rotate(5deg)}
- .studio-collage img{width:285px}
  .studio-collage span{font-size:13px;top:4px;right:0}
  .skills{padding:32px 18px}
  .about-watermark{font-size:24vw;bottom:40px}

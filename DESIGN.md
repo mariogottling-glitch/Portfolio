@@ -170,3 +170,6 @@ Softwareübersicht: Premiere Pro, Cinema 4D und ZBrush als sichtbare Icons ergä
 
 ## Durchgehende Studio-Atmosphäre · 28.09.2026
 Neue Bildgenerierung ausschließlich über Adobe-Plugin (Nutzerpräferenz). Matte Raster-/Zeichnungstextur über die gesamte Seitenbreite, niedriger Kontrast hinter den Projekten. Kleine Papier-/Stift-Collage beim Portfolio-Einstieg. Dunklere Tool-Fläche mit grünen Passermarken; eigene Zeichnung mit Papierkante und Tape; dezente Hintergrundtypografie im Über-mich-Bereich. Kontaktfläche behält Grün und erhält ein feines Raster. Dekorationen ohne Screenreader-Inhalt oder Interaktionen. Mobil reduzierte Collage und Hintergrundstärke. Quellen und Adobe-Verarbeitung in assets/atmosphere/SOURCES.md.
+
+## Digitale Collage · 28.09.2026
+Die Papier-/Bleistift-Collage wurde durch digitale Design-Ebenen mit Cursor und grünem Bildmotiv ersetzt. Nutzer arbeitet inzwischen rein digital; künftige Dekoration soll digitale Gestaltung und KI statt analoger Arbeitsmaterialien vermitteln. Grafik ausschließlich mit Adobe Firefly generiert, über Adobe freigestellt und auf 720 × 720 verkleinert.
