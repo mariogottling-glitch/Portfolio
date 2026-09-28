@@ -26,3 +26,17 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
 }
 @media(max-width:360px){.hero-actions{align-items:start;flex-direction:column;gap:2px}.portfolio-filters button{font-size:11px}.hero h1{font-size:56px}.project-meta h3{font-size:21px}.dialog-toolbar>span{max-width:120px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.heading-awaiting{opacity:1}}
+
+/* The supplied textured mark is shared by navigation, footer and browser icons. */
+.brand{display:inline-flex;align-items:center;gap:12px;flex-shrink:0}
+.brand-logo{width:52px;height:52px;object-fit:contain;flex-shrink:0}
+.brand-name{display:flex;flex-direction:column;gap:3px;line-height:1.1}
+.site-footer{align-items:center}
+.footer-brand{gap:10px;color:var(--paper);font-weight:700;letter-spacing:.035em}
+.footer-brand .brand-logo{width:36px;height:36px}
+@media(max-width:800px){
+ .site-header{gap:14px}
+ .wordmark.brand{gap:9px;font-size:12px}
+ .wordmark .brand-logo{width:40px;height:40px}
+ .footer-brand .brand-logo{width:32px;height:32px}
+}

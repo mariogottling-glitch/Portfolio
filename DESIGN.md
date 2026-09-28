@@ -31,3 +31,7 @@ Mindestens 44 px große wesentliche Bedienelemente, sichtbarer Tastaturfokus, se
 ## Noch offen vor öffentlichem Start
 
 Hauptadresse https://www.mario-goettling.de/ mit dem Hosting verbinden und Social-Preview festlegen; Impressum und Datenschutz mit tatsächlichen Angaben ergänzen. Echte Filmdateien können später die klar gekennzeichneten Video-Standbilder ersetzen. Zusätzliche Projektanwendungen nur mit vorhandenem oder freigegebenem Material ergänzen.
+
+## Logo-Integration · 28.09.2026
+
+Marios eigenes, verfeinertes Logo mit matter grüner Textur ersetzt die reine Textmarke im Header. Logo plus zweizeiliger Name; mobil verkleinert. Im Footer erscheint dieselbe Kombination dezenter. Logo-Links führen zum Seitenanfang und haben eine ausgeschriebene zugängliche Bezeichnung. Transparente lokale PNG-Dateien, Browser-Icons in 32 und 256 px sowie Apple-Touch-Icon in 180 px. Quelle: `assets/brand/SOURCES.md`.

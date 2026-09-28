@@ -28,3 +28,7 @@ Kein vollständiger Screenreader-, WCAG-, Cross-Browser- oder Lighthouse-Test. R
 Vor öffentlichem Start: die bestätigte Domain www.mario-goettling.de mit Hosting verbinden sowie Social-Preview, Impressum und Datenschutz ergänzen. Videos liegen derzeit nur als Standbilder vor. Projektansichten sind Dialoge ohne eigenständige indexierbare URLs.
 
 Lokale Nachweise: `tmp/refinement/hero-desktop.png`, `tmp/refinement/mobile-work.png`. Temporäre Prüfdateien werden nicht veröffentlicht.
+
+## Logo und Favicon · 28.09.2026
+
+Header auf Desktop und bei 390 px visuell geprüft; Footer zusätzlich auf schmalem Display. Logo-Dateien laden vollständig, Transparenz an Außenfläche und innerer Aussparung anhand des Alpha-Kanals geprüft. Header-Logo mobil 40 px, Footer 32 px. Browser-Icon-Links mit Größenangaben 32/256/180 vorhanden; Assets lokal ausgeliefert. Keine neue Bildgenerierung, nur Adobe-Zuschnitt und Größenanpassung des freigegebenen Logos.
