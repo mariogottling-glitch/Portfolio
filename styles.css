@@ -78,6 +78,8 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
 .about-name-line{display:flex;align-items:baseline;gap:.18em;margin-top:.06em;padding-bottom:.32em;color:var(--paper)}
 .about-signature{position:relative;display:inline-block;font-family:var(--handwriting);font-size:1.75em;font-weight:400;font-style:normal;line-height:1;letter-spacing:-.035em;text-transform:none;white-space:nowrap;transform:rotate(-11deg);transform-origin:45% 65%;color:var(--accent)}
 .about-signature:after{content:'';position:absolute;left:5%;right:-3%;bottom:-.08em;height:.07em;border-bottom:2px solid currentColor;border-radius:50%;transform:rotate(-3deg)}
+.about-photo-cutout{border:0;border-bottom:2px solid var(--line);box-shadow:none;transform:none;align-self:end;padding:0 5px;overflow:hidden}
+.about-photo-cutout img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;filter:drop-shadow(4px 0 0 var(--accent)) drop-shadow(-4px 0 0 var(--accent)) drop-shadow(0 -4px 0 var(--accent))}
 @media(max-width:800px){.about h2{font-size:clamp(36px,11.3vw,44px)}}
 
 /* The supplied textured mark is shared by navigation, footer and browser icons. */

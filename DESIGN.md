@@ -53,3 +53,7 @@ Nach den Werkzeugen folgt ein kompakter Abschnitt „Deine Idee. Unser Projekt.�
 ## Hero-Komposition · 28. September 2026
 
 Die freigegebene Referenz bestimmt die neue Hierarchie: sehr große, graugrüne Hintergrund-Headline in zwei Zeilen (GRAFIK. / WEB. BILD.), darüber Marios echtes freigestelltes Porträt mit grüner Kontur. Der rechte Teil von BILD überlappt bewusst mit dem Porträt. Die Einleitung „Gute Ideen. Klar gestaltet.“ steht links in einer eigenen dunklen Fläche mit kurzer Beschreibung und einem grünen Arbeiten-Button. Mobile: Headline und Porträt über dem vollbreiten Textkasten, leichte Überlagerung; Tablet mit eigenem Schrift-/Bildmaß. Bestehende Handschrift bleibt. Kein neues Bild erzeugt.
+
+## Freigestelltes About-Porträt · 28. September 2026
+
+Das Originalfoto mit langen Haaren wurde mit Adobe generativ um Kopf und Schultern erweitert und anschließend freigestellt. Die transparente Webfassung (960 × 1040 px) ersetzt den gedrehten Bilderrahmen. Dieselbe limettengrüne CSS-Kontur wie im Hero verbindet beide Porträts gestalterisch. Original und vollständige KI-Erweiterung bleiben erhalten.

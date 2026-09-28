@@ -77,3 +77,9 @@ Implementation checklist: Referenz umgesetzt, Desktop/Tablet/Mobil kontrolliert,
 
 final result: passed
 `nCapture-Maße: Desktop 1425 × 990 px, Tablet 1009 × 887 px, Mobil 375 × 812 px. Browser-Captures weichen durch Scrollbar/Provider-Skalierung vom angefragten CSS-Viewport ab. Originaldateien unverändert verglichen; keine künstliche Verzerrung auf die Maße des Referenz-Ausschnitts.
+
+## About-Porträt · 28. September 2026
+
+Adobe-Erweiterung und Freistellung visuell geprüft. Kopf und Schultern vollständig, Gesicht aus dem Original erhalten. Desktop und mobile Ansicht geprüft: transparente Silhouette, gleiche grüne Kontur wie im Hero, kein horizontaler Überlauf, Bild erfolgreich geladen (960 × 1040 px). Mobile Reihenfolge: Überschrift, Porträt, Text. Screenshots: tmp/refinement/about-cutout-desktop.jpg und about-cutout-mobile.jpg. Originalfoto unverändert erhalten.
+
+Vite-Produktionsbuild erfolgreich; das neue transparente Porträt ist im Build enthalten.
