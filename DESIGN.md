@@ -163,3 +163,7 @@ Die fünf vom Nutzer gelieferten Screenshots ersetzen die Musterbilder der Proje
 ## Register und grafische Komposition (28.09.2026)
 
 Referenz: die vom Nutzer beigefügten Register und Programm-Icons sowie bestehende Behance-Aufnahmen. Register Auswahl / Web Design / Grafiken / 3D / Bildwelten / Video filtern echte Arbeiten. Acht kuratierte Arbeiten als Einstieg; asymmetrische Spalten und vertikale Versätze am Desktop, eine Spalte mobil. Website-Vorschauen bleiben im einheitlichen 16:10-Ausschnitt ohne Balken. Grafikarbeiten erhalten ihr Originalformat und eine per Tastatur bedienbare Großansicht. Echte Zeichnung ersetzt das letzte Musterbild im Über-mich-Bereich. Lokale Tool-Icons mit ausgeschriebenen Namen. Quelle und redaktionelle Bildtitel sind dokumentiert.
+
+## Hero – 28.09.2026
+Dunkles Konstruktionsraster mit Kreislinien und einer diagonalen Achse; grüne Kontur entlang des transparenten Portraits. Ein freigestelltes Grafiktablet mit Stift ergänzt den Collage-Einstieg. Mobil stehen Text und Portrait untereinander, das Tablet bleibt unten rechts. Bestehende Typografie und Grün bleiben erhalten.
+Softwareübersicht: Premiere Pro, Cinema 4D und ZBrush als sichtbare Icons ergänzt.

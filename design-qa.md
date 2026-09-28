@@ -23,3 +23,6 @@ Initial responsive homepage implementation for the combined personal-hero and wo
 ## Follow-up
 
 Re-open the local preview in the browser, compare at 1440 px and 390 px, correct any visual issues, then connect the project to the supplied GitHub repository.
+
+## 28.09.2026 – Hero
+Desktop und 390px Mobilansicht visuell geprüft. Dekoration nicht fokussierbar und für Screenreader ausgeblendet. SVG/WebP/TTF-MIME-Typen im lokalen Preview ergänzt. JavaScript-Syntax und git diff --check erfolgreich. Vite-Build nicht ausgeführt: npm und node_modules fehlen in dieser Umgebung; statische Website über server.mjs geprüft.
