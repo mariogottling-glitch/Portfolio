@@ -48,3 +48,8 @@ Felt Tip Roman Regular über Adobe Fonts (Webprojekt `zxa0mqk`, CSS-Familie `fel
 ## Kundeninformationen · 28. September 2026
 
 Nach den Werkzeugen folgt ein kompakter Abschnitt „Deine Idee. Unser Projekt.“ mit drei Leistungen, vier nummerierten Schritten und zwei nativen aufklappbaren Antworten. Desktop: drei Leistungsspalten und vier Prozessspalten; mobil: Leistungen untereinander, Ablauf zweispaltig (unter 361 px einspaltig). Die grüne Handschrift bleibt als persönlicher Akzent. Keine erfundenen Preise, Termine oder Kundenstimmen. DM Sans wird lokal geladen; die Adobe-Handschrift bleibt extern. Das Social-Bild nutzt Marios vorhandenes Logo und Porträt.
+
+
+## Hero-Komposition · 28. September 2026
+
+Die freigegebene Referenz bestimmt die neue Hierarchie: sehr große, graugrüne Hintergrund-Headline in zwei Zeilen (GRAFIK. / WEB. BILD.), darüber Marios echtes freigestelltes Porträt mit grüner Kontur. Der rechte Teil von BILD überlappt bewusst mit dem Porträt. Die Einleitung „Gute Ideen. Klar gestaltet.“ steht links in einer eigenen dunklen Fläche mit kurzer Beschreibung und einem grünen Arbeiten-Button. Mobile: Headline und Porträt über dem vollbreiten Textkasten, leichte Überlagerung; Tablet mit eigenem Schrift-/Bildmaß. Bestehende Handschrift bleibt. Kein neues Bild erzeugt.

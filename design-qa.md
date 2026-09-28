@@ -45,3 +45,35 @@ Header auf Desktop und bei 390 px visuell geprüft; Footer zusätzlich auf schma
 - Fix beim Build: Bildpfade aus Projektdaten, Fallbacklinks und absolute Social-Metadaten explizit übernehmen.
 - Datenschutz bleibt klar markierter Entwurf; STRATO bestätigt, Protokollfristen, Adobe-/Gmail-Grundlagen und eventuelle Steuer-IDs noch offen. Keine Bereitstellung auf dem Server und keine rechtliche Vollständigkeitsprüfung.
 - Screenshots lokal: `tmp/refinement/customer-improvements-final.png`, `tmp/refinement/customer-improvements-mobile.png`.
+
+
+## Hero nach ausgewählter Referenz · 28.09.2026
+
+Source visual truth: `C:/Users/mario/AppData/Local/Temp/codex-clipboard-3fabe9a0-bc1a-48ea-a955-e7f836d2186d.png`.
+Implementation screenshots: `tmp/refinement/hero-editorial-desktop.jpg`, `tmp/refinement/hero-editorial-mobile.jpg`, `tmp/refinement/hero-editorial-tablet.jpg`.
+State: Startseite, #top, Menü geschlossen, Heading-Animation abgeschlossen. Desktop-CSS-Viewport 1440 × 1000, Tablet 1024 × 900, Mobil 390 × 844; zusätzlich 320 × 800 geprüft.
+
+Die Referenz ist ein 577 × 455 px großer Ausschnitt eines Desktop-Motivs, keine vollständige Seite oder mobile Vorgabe. Vergleich auf Ebene der sichtbaren Hero-Komposition; kein pixelgenauer Vollseiten-Abgleich behauptet. Referenz und Desktop-Capture gemeinsam in einem Vergleichs-Toolergebnis geöffnet. Kein generiertes Porträt übernommen: eigenes Foto, grüne Kontur, Hintergrund und Handschrift sind bewusst beibehalten. Die vollständige Referenzansicht mit einer unverändert identischen Person wäre hier kein Ziel.
+
+### Befunde und Korrekturen
+
+- [P2, behoben] Im ersten Desktop-Entwurf verdeckte das Porträt zu viel der zweiten Zeile. Schriftgröße und Porträtbreite reduziert; im finalen Bild ist der rechte Abschluss von BILD bewusst überlagert, wie vom Nutzer gewünscht. Vergleich `hero-editorial-desktop-v1.jpg` → `hero-editorial-desktop.jpg`.
+- [P2, behoben] Auf Tablet lag die Handschrift zunächst am oberen bzw. rechten Rand und wurde angeschnitten. Bildbreite, Randabstand und Position der Beschriftung korrigiert. Neuer Screenshot `hero-editorial-tablet.jpg` bestätigt vollständige Beschriftung und Gesicht.
+- [P2, behoben] Auf Mobil standen Headline und Bild zunächst ohne Überlagerung. Bild etwas vergrößert und höher gesetzt; finaler Screenshot zeigt die gewünschte Überlagerung und einen klar lesbaren Textkasten darunter.
+
+### Fünf Oberflächen
+
+- Typografie: Archivo Black, sehr große zweizeilige H1, reduzierte graugrüne Farbe; kräftige gemischte Schreibweise im Kasten. DM Sans für kurze Beschreibung. Felt Tip Roman beibehalten.
+- Layout: Headline hinter, Porträt davor; dunkle Einleitungsfläche mit eigenem Abstand links. Mobile als gestapelte Komposition. Keine horizontalen Überläufe bei den geprüften Breiten; Button 48 px hoch.
+- Farben: vorhandene Papier-/Anthrazit-/Limettentokens, dunkler Kasten #111310, Headline #777971. Keine neuen Effekte oder Bildgenerierung.
+- Bild: vorhandenes scharfes freigestelltes Porträt, natürliches Seitenverhältnis und grüne Kontur. Kein neues Foto und keine nachgezeichneten Bildassets. Header/Navigation bleiben erhalten.
+- Inhalt: „Gute Ideen. Klar gestaltet.“ aus der Referenz, knappe tatsächliche Leistungsbeschreibung, ein eindeutiger Arbeiten-Button. Keine zusätzliche Marketingbehauptung.
+
+### Funktion und Grenzen
+
+Arbeiten-Button führt zu #arbeiten. Mobile ohne horizontalen Überlauf, Fehlerkonsole ohne neue Fehler. Vite-Build erfolgreich. Fokus-/Reduced-Motion-Regeln bestehen weiter; kein vollständiger Screenreader-Audit. Referenz-Ausschnitt und eigener Fotozuschnitt erlauben keine Aussage zu pixelgenauer Identität. Die große Schrift und Kastenabstände sind im Vollbild ausreichend klar lesbar, daher kein zusätzlicher Detailcrop nötig.
+
+Implementation checklist: Referenz umgesetzt, Desktop/Tablet/Mobil kontrolliert, Tablet-Beschriftung korrigiert, CTA geprüft, Build geprüft. Keine offenen P0/P1/P2-Befunde.
+
+final result: passed
+`nCapture-Maße: Desktop 1425 × 990 px, Tablet 1009 × 887 px, Mobil 375 × 812 px. Browser-Captures weichen durch Scrollbar/Provider-Skalierung vom angefragten CSS-Viewport ab. Originaldateien unverändert verglichen; keine künstliche Verzerrung auf die Maße des Referenz-Ausschnitts.
