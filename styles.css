@@ -111,13 +111,10 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .portrait-frame{overflow:visible}
 .portrait-frame img{filter:grayscale(1) contrast(1.04) drop-shadow(7px 0 0 #b1ef72) drop-shadow(-7px 0 0 #b1ef72) drop-shadow(0 -7px 0 #b1ef72);width:155%;left:-13%;top:-8%}
 .hero-portrait figcaption{right:7%;top:24px;z-index:5}
-.hero-workbench{position:absolute;right:-20px;bottom:22px;width:310px;z-index:3;pointer-events:none;transform:rotate(8deg)}
-.hero-workbench img{display:block;width:100%;height:auto;filter:drop-shadow(0 16px 18px #0007)}
-.workbench-note{display:block;margin-left:100px;color:var(--paper);font-size:18px;font-style:italic;line-height:1.15;transform:rotate(-15deg)}
 .hero-edition{position:absolute;left:0;bottom:24px;font:10px monospace;letter-spacing:.13em;color:var(--muted)}
 .tool-list{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:24px 14px}
 .tool-list .tool-light{background:#f7f7f4;padding:12px}
-@media(min-width:801px) and (max-width:1100px){.hero-workbench{width:230px}.tool-list{grid-template-columns:repeat(5,1fr)}}
+@media(min-width:801px) and (max-width:1100px){.tool-list{grid-template-columns:repeat(5,1fr)}}
 @media(max-width:800px){
  .hero{min-height:0;padding-top:32px}
  .hero-copy{padding-bottom:0}
@@ -127,12 +124,10 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
  .hero-portrait{height:460px;margin-top:20px;max-width:420px}
  .portrait-frame img{width:145%;left:-7%;top:-10%}
  .hero-portrait figcaption{top:28px;right:4%}
- .hero-workbench{width:190px;right:-14px;bottom:22px}
- .workbench-note{font-size:14px;margin-left:54px}
  .hero-edition{bottom:12px;font-size:8px;z-index:4}
  .tool-list{grid-template-columns:repeat(3,1fr);gap:28px 12px}
 }
-@media(max-width:390px){.hero-portrait{height:410px}.hero-workbench{width:165px}}
+@media(max-width:390px){.hero-portrait{height:410px}}
 
 /* Adobe Firefly studio atmosphere: continuous drafting paper with quiet section changes. */
 main{position:relative;isolation:isolate;overflow:clip}
