@@ -212,3 +212,23 @@ main:before{opacity:.07}
   #gallery-webdesign-cta{width:100%;justify-content:space-between}
   .service-cta{margin-top:16px}
 }
+
+/* Mobile reading axis: center copy and its supporting actions, not the header lockup. */
+@media(max-width:800px){
+  main,.mobile-menu,.site-footer,.dialog-body{text-align:center}
+  .hero-intro,.hero-ai-note,.about-copy,.service-list p,.process-list p,
+  .contact-copy p,.case-lead,.legal-details,.legal-draft,.project-questions p{margin-inline:auto}
+  .hero-actions{justify-content:center;align-items:center}
+  .section-rule{justify-content:center;align-items:center;flex-direction:column;gap:6px}
+  .section-heading-row,.collaboration-heading{justify-content:center;align-items:center}
+  .collaboration-heading>p{margin-inline:0}
+  .gallery-heading,.gallery-heading:has(#gallery-webdesign-cta:not([hidden])){justify-content:center;align-items:center}
+  #gallery-webdesign-cta{justify-content:center}
+  .about-name-line,.email-row{justify-content:center}
+  .project-meta{flex-direction:column;justify-content:center;gap:12px}
+  .process-icon{margin-inline:auto}
+  .project-questions summary{padding-inline:36px}
+  .site-footer{justify-content:center}
+  .site-footer .brand-name{text-align:left}
+  .button{text-align:center}
+}

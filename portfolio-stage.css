@@ -49,3 +49,13 @@
 }
 @media(max-width:380px){.spotlight-gallery .project .project-meta{padding:16px 0;gap:8px}.spotlight-gallery .project .project-open{max-width:65px;white-space:normal;line-height:1.5}}
 @media(prefers-reduced-motion:reduce){.project-preview,.project-preview img{transition:none!important}}
+
+@media(max-width:800px){
+ .spotlight-gallery .project .project-meta{flex-direction:column;justify-content:center;gap:12px;height:174px;padding:16px 0}
+ .spotlight-gallery .website .project-meta{height:286px}
+ .spotlight-gallery .project .project-brand{margin-inline:auto;object-position:center}
+ .spotlight-gallery .project .project-open{max-width:none;white-space:nowrap}
+ .project-selector-heading{flex-direction:column;justify-content:center;gap:4px}
+ .project-preview{text-align:center}
+ .project-preview-title{padding-inline:18px}
+}

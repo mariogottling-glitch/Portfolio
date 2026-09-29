@@ -92,3 +92,11 @@
   .webdesign-page .contact-copy .button{font-size:13px}
 }
 
+
+@media(max-width:800px){
+ .webdesign-intro-copy p,.webdesign-costs p:not(.webdesign-price),.webdesign-materials{margin-inline:auto}
+ .webdesign-visual-label{margin-inline:0}
+ .webdesign-benefits li{padding-inline:0}
+ .webdesign-benefits li:before{position:static;display:block;margin-bottom:6px}
+ .webdesign-step-art{justify-content:center}
+}
