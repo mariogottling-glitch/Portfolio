@@ -1,4 +1,12 @@
 # Personal photos
+## About AI portrait · 2026-09-29
+
+Asset: `assets/optimized/mario-about-ai-960.webp`, generated with built-in OpenAI image generation, transparent alpha retained; cwebp quality 88, 960 × 1040. Edit target: `mario-about-cutout.png`; style reference only: existing Hero AI illustration. Original photo unchanged.
+
+Image plan: About section, same long-haired person, neutral sideways glance, tank top, frontal upper-body crop, matching portrait canvas, charcoal/ivory engraving with subtle lime accents, calm editorial mood and existing lighting direction. Transparent negative space; no scenery, text, beanie or changed expression. Generative contours differ slightly; effect is a crossfade, not exact geometric morphing.
+
+Final prompt (built-in tool): Use case: style-transfer. Website About portrait alternate for an aligned crossfade. Image 1 is the EDIT TARGET. Image 2 is STYLE REFERENCE ONLY. Transform image 1 into a bold hand-drawn charcoal/engraving illustration matching image 2, black ink crosshatching, warm ivory highlights and very subtle lime green accents. Keep EXACTLY image 1's long-haired man identity, sideways glance to the right, neutral expression, tank top, head angle, body position, shoulder silhouette, crop and relative face coordinates. Do not copy the beanie, smiling expression, hoodie or pose from image 2. Preserve the 960:1040 portrait composition and full head with existing narrow upper margin. Truly transparent background; no scenery, frame, text, watermark or external glow. High-quality strongly stylized editorial illustration, recognizably the same man, same silhouette for smooth transition.
+
 Provided by Mario Göttling for his portfolio on 2026-09-28.
 - mario-hero-portrait.png: _MG_0453.jpg. Adobe background removal request deb71cee-4873-48cf-8995-46f32fd59b79; Adobe resize 472906dd-63a8-4cd4-8792-09db8b1fa15e, 1200 × 1800. No generative changes.
 - mario-about.jpg: 63223_507031619343626_434026605_n.jpg, original file copied unchanged.

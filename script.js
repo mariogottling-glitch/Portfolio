@@ -1,3 +1,4 @@
+import './about-portrait.js';
 import './hero-portrait.js';
 import { projectDetails } from './project-details.js';
 import './navigation.js';
