@@ -54,3 +54,9 @@
  .story-cta{margin-top:10px;flex-direction:column;align-items:start;gap:16px}.story-cta .button{font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){.design-story *{transition:none!important}}
+
+@media(max-width:800px){
+ .story-heading h3,.story-step p{margin-inline:auto}
+ .story-step button{flex-direction:column;justify-content:center;align-items:center;text-align:center;flex-wrap:nowrap}
+ .story-cta{align-items:center}
+}

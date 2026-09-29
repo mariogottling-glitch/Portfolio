@@ -47,3 +47,9 @@
  .tool-art-note{bottom:10px;right:14px;font-size:8px}.tool-source{font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){.tool-preview *,.tool-choice *{transition:none!important}}
+
+@media(max-width:800px){
+ .skills .tool-preview h3,.tool-preview-description,.tool-source{margin-inline:auto}
+ .tool-preview-selected{justify-content:center}
+ .tool-art-note{left:14px;right:14px;text-align:center}
+}

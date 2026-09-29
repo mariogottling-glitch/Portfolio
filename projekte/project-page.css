@@ -14,3 +14,9 @@
 .case-page-contact p{font-size:16px;color:var(--muted);max-width:62ch}
 .case-related{margin-top:48px;display:flex;flex-wrap:wrap;gap:12px 28px}.case-related h2{width:100%;margin-bottom:4px}.case-related a{font-size:14px;min-height:44px;display:flex;align-items:center;text-decoration:underline;text-underline-offset:4px}
 @media(max-width:800px){.case-page{padding-top:20px}.case-breadcrumb{margin-bottom:30px}.case-page-facts{grid-template-columns:1fr;gap:20px;margin-top:30px}.case-page-facts p{margin-bottom:0}.case-page-links{gap:12px}.case-page-contact{margin-top:36px}.case-page-contact .button{font-size:13px}.case-related{gap:8px}.case-related a{width:100%}.project-page .legal-back{font-size:12px}}
+
+@media(max-width:800px){
+ .case-page h1,.case-page-lead,.case-page-contact p{margin-inline:auto}
+ .case-breadcrumb,.case-page-links,.case-related,.case-related a{justify-content:center}
+ .case-page-figure img{object-position:center}
+}

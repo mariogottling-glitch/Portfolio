@@ -95,6 +95,16 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
  .wordmark .brand-logo{width:40px;height:40px}
  .footer-brand .brand-logo{width:32px;height:32px}
 }
+/* Identical canvases keep both portrait layers registered at every breakpoint. */
+.portrait-frame{--portrait-progress:0;isolation:isolate}
+.portrait-frame img{aspect-ratio:1400/1234;object-fit:fill}
+.portrait-frame .portrait-real{opacity:calc(1 - var(--portrait-progress))}
+.portrait-frame .portrait-ai{opacity:var(--portrait-progress);pointer-events:none;mix-blend-mode:plus-lighter}
+.hero-ai-note{margin:18px 0 0;font-size:12px;line-height:1.5;color:var(--muted);max-width:32ch}
+.hero-ai-hint{display:block;color:var(--accent);visibility:hidden}
+.has-ai-portrait .hero-ai-hint{visibility:visible}
+@media(prefers-reduced-motion:reduce){.portrait-frame .portrait-real{opacity:1}.portrait-frame .portrait-ai{opacity:0}.hero-ai-hint{visibility:hidden!important}}
+
 /* Editorial hero: display type behind the portrait, introduction on its own panel. */
 .hero{display:block;padding-top:28px;min-height:0;padding-bottom:42px;overflow:hidden}
 .hero h1{position:relative;z-index:1;font-size:clamp(96px,11.2vw,166px);line-height:.87;letter-spacing:-.065em;margin:0 0 28px;pointer-events:none}
@@ -230,4 +240,24 @@ main:before{opacity:.07}
   .gallery-heading:has(#gallery-webdesign-cta:not([hidden])){align-items:flex-start;flex-direction:column;gap:14px;margin-bottom:28px}
   #gallery-webdesign-cta{width:100%;justify-content:space-between}
   .service-cta{margin-top:16px}
+}
+
+/* Mobile reading axis: center copy and its supporting actions, not the header lockup. */
+@media(max-width:800px){
+  main,.mobile-menu,.site-footer,.dialog-body{text-align:center}
+  .hero-intro,.hero-ai-note,.about-copy,.service-list p,.process-list p,
+  .contact-copy p,.case-lead,.legal-details,.legal-draft,.project-questions p{margin-inline:auto}
+  .hero-actions{justify-content:center;align-items:center}
+  .section-rule{justify-content:center;align-items:center;flex-direction:column;gap:6px}
+  .section-heading-row,.collaboration-heading{justify-content:center;align-items:center}
+  .collaboration-heading>p{margin-inline:0}
+  .gallery-heading,.gallery-heading:has(#gallery-webdesign-cta:not([hidden])){justify-content:center;align-items:center}
+  #gallery-webdesign-cta{justify-content:center}
+  .about-name-line,.email-row{justify-content:center}
+  .project-meta{flex-direction:column;justify-content:center;gap:12px}
+  .process-icon{margin-inline:auto}
+  .project-questions summary{padding-inline:36px}
+  .site-footer{justify-content:center}
+  .site-footer .brand-name{text-align:left}
+  .button{text-align:center}
 }

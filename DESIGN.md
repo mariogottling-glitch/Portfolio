@@ -129,3 +129,22 @@ Das bisherige Standbild dient weiterhin als leichte Portfolio-Vorschau; ein grü
 ## Beast Buddy als Video · 29. September 2026
 
 Beast Buddy unter Video öffnet jetzt einen YouTube-Player für UzMMJU6ljt4. Projekttext nennt die Diplomabschlussarbeit, selbst gebaute 3D-Assets sowie Szenenaufbau und Rendering in Unreal Engine. Lokales Vorschaubild; kein YouTube-Request vor dem ausdrücklichen Laden. Iframe wird beim Schließen entfernt, sodass die Wiedergabe stoppt. Direkter YouTube-Link bleibt verfügbar. Datenschutzseite beschreibt die Einbindung. Standard-YouTube-Host verwendet, da die nocookie-Variante in der normalen Vorschau „nicht verfügbar“ meldete.
+## KI-Porträt beim Scrollen · 29. September 2026
+
+Das vorhandene Hero-Porträt erhält eine mit Adobe generierte, stark stilisierte zweite Fassung in Kohle-/Gravuroptik mit zurückhaltendem Limettengrün. Beide transparenten Bilder liegen in exakt demselben CSS-Rechteck (1400:1234); intrinsische Rundungsabweichungen responsiver Dateien werden nicht als Größenversatz übernommen. Die Illustration bleibt eine Neuinterpretation: einzelne Gesichtslinien und Konturen sind nicht pixelidentisch mit dem Foto.
+
+Ein kurzer, umkehrbarer Scrollweg blendet das Foto weich in die KI-Fassung über, solange das Gesicht noch sichtbar ist; mobil wird der Weg aus der kleineren Porträthöhe berechnet. Keine feste Scroll-Szene, kein Scroll-Hijacking, keine Layoutverschiebung. Ein isolierter `plus-lighter`-Layer verhindert den dunklen Transparenzeinbruch einer gewöhnlichen doppelten Opazitätsblende. In älteren Browsern ohne diesen Blendmodus bleibt eine normale Opazitätsblende als Fallback.
+
+Die KI-Ebene wird erst nach erfolgreichem Laden und Dekodieren aktiviert. Bei Bildfehlern, ohne JavaScript und mit Reduced Motion bleibt das reale Foto sichtbar. Der statische Zusatz „Echte Persönlichkeit. Neue Perspektiven mit KI.“ kommuniziert den gestalterischen Ansatz; der Scrollhinweis erscheint nur bei aktivem Effekt. Vorhandener Hero-Text aus dem aktuellen GitHub-Stand bleibt erhalten. Kein Figma-Dokument vorhanden: diese Ergänzung folgt den dokumentierten bestehenden Farben, Schriften und Layoutregeln, ohne Redesign.
+
+## About-Porträt: ruhige Verwandlung · 29. September 2026
+
+Die untere Porträtfläche verwandelt sich einmal nach 900 ms bewusster Sichtbarkeit mit einer 1200-ms-Überblendung. Die Zeit steuert den Effekt, nicht die Scrollposition; außerhalb des Sichtbereichs wird der ausstehende Start verworfen. Keine Dauerschleife. Danach lassen sich Foto und KI-Fassung per Klick, Antippen, Enter oder Leertaste wechseln. Eine zurückhaltende, mindestens 44 px hohe Beschriftung „Foto ↔ KI · Bild wechseln“ macht die Interaktion auffindbar. Die Fläche behält die ursprünglichen Proportionen 960:1040, grüne Kontur und bestehende Typografie. Original und passende KI-Neuinterpretation werden in deckungsgleichen Bildrechtecken überblendet; keine geometrische Morphing-Behauptung. Kein Figma-Dokument vorhanden; bestehende Tokens/Layout bleiben maßgeblich.
+
+Bei Reduced Motion kein automatischer Wechsel und keine Transition; manuelles Umschalten bleibt möglich. Ohne JavaScript oder bei defekter KI-Datei bleibt nur das unveränderte Original. Bedienung wird erst nach erfolgreicher Bilddekodierung angeboten. Der vorhandene Hero und sein Scrollwechsel bleiben unverändert.
+
+## Zentrierte mobile Leseachse · 29. September 2026
+
+Auf Marios Wunsch stehen bei maximal 800 px alle redaktionellen Texte mittig: Einstieg, Abschnittstitel, Projekte/Detailansichten, Über mich, Werkzeugvorschau, Leistungen/Ablauf, FAQ, Kontakt sowie Webdesign-, Projekt- und Rechtstextseiten. Begrenzte Textspalten bekommen automatisch ausgeglichene Seitenränder. Buttons, Projektlogos, Prozessicons, Hinweise und Footer folgen derselben Achse; FAQ reservieren auf beiden Seiten gleich viel Platz für das Pluszeichen. Die Projektmetadaten stehen mobil untereinander mit weiterhin festen Höhen je Projekttyp, damit die Vorschauleiste beim Wechsel nicht springt.
+
+Bewusste Ausnahmen: Logo/Namens-Lockup und die vorhandene Header-Anordnung bleiben unverändert, ebenso Schrift innerhalb von Bildern/SVG-Illustrationen und die seitlich angeordneten Schließen-/Navigationskontrollen. Das sind Bildmarken bzw. Bedienelemente, keine Lesetextspalten. Der Hero behält seine Porträtkomposition; beide KI-Bildwechsel bleiben technisch unverändert. Über 800 px keinerlei Layout-/Ausrichtungsänderung. Kein Figma-Dokument vorhanden; inkrementelle Anpassung auf Basis dieses bestehenden Designsystems, keine neuen Bilder.
