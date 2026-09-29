@@ -18,8 +18,9 @@ export function createPortfolioStage(projects) {
 
   const buttons = new Map(projects.map(project => {
     const title = project.querySelector('h3').textContent;
-    project.setAttribute('aria-label', `${title} – Projekt im Detail ansehen`);
-    project.querySelector('.project-open').textContent = 'Projekt ansehen ↗';
+    const isVideo = project.dataset.media === 'video';
+    project.setAttribute('aria-label', `${title} – ${isVideo ? 'Video ansehen' : 'Projekt im Detail ansehen'}`);
+    project.querySelector('.project-open').textContent = isVideo ? 'Video ansehen ↗' : 'Projekt ansehen ↗';
     const source = project.querySelector('.project-image img');
     source.sizes = '(max-width: 800px) calc(100vw - 40px), 65vw';
     const button = document.createElement('button');

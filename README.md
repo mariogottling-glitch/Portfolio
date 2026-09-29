@@ -26,7 +26,7 @@ Dann `http://127.0.0.1:4173/` öffnen.
 - `assets/optimized/`: responsive WebP-Fassungen der Fotos und Website-Screenshots. Originale bleiben erhalten.
 - `PROJECTS.md`: bestätigte Leistungen und Inhalte; `DESIGN.md`: aktuelle Gestaltung; `design-qa.md`: Prüfstand.
 
-Vier Rubriken: Web Design, Grafiken & Bildwelten, 3D und Video. In größeren Rubriken erscheinen zunächst sechs Projekte. Zusammengehörige Motive sind in einer Projektansicht gebündelt. Videoeinträge zeigen bislang Standbilder.
+Vier Rubriken: Web Design, Grafiken & Bildwelten, 3D und Video. Jeweils ein Projekt wird groß hervorgehoben, weitere Projekte lassen sich über die Vorschauleiste auswählen. Bildserien und Arbeitsstände öffnen sich in einer Projektansicht. Die Rubrik 3D enthält einen bedarfsgeladenen Modell-Viewer. Gachó Clothing nutzt einen lokalen MP4-Player, Beast Buddy einen erst nach Klick geladenen YouTube-Player. Beide stoppen beim Schließen.
 
 Kundenanfragen: mariogottling@googlemail.com. Hauptadresse: https://www.mario-goettling.de/. Vor der öffentlichen Veröffentlichung Domain und Hosting verbinden sowie Impressum und Datenschutz abschließen (siehe `LAUNCH.md`). Das aktuelle Social-Bild ist bereits eingebunden.
 

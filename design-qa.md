@@ -154,3 +154,35 @@ Fünf Website-Logos oberhalb der Titel ergänzt, ohne Rahmen. Lokal optimierte O
 ## Deutschlandweite SEO-Grundlagen · 29. September 2026
 
 Startseite und Webdesign-Leistungsseite erhalten präzisere Suchtexte und strukturierte Daten. Fünf generierte Projektseiten mit vorhandenen Projektfakten sind unabhängig von JavaScript erreichbar; interne Links, Social-Bilder, Canonicals und Sitemap sind eingebunden. Acht Sitemap-URLs und alle fünf Projektseiten ohne JavaScript geprüft, plus mobile Breiten 390/320 px und Dialog-zu-Projektseite-Link. JSON-LD lokal geparst, nicht als Google-Rich-Result-Validierung ausgegeben. Produktionsbuild erfolgreich. Öffentliche Domain und robots.txt erreichbar; Veröffentlichung dieses Änderungsstands sowie Search-Console-Einrichtung nicht vorgenommen. Details in SEO.md.
+
+## Timberline · 29. September 2026
+
+Produktionsbuild erfolgreich. Die tatsächliche Adobe-FontFace timberline lädt mit Status loaded auf beiden Seiten. Startseite bei 320, 390, 800 und 1440 px ohne horizontalen Überlauf geprüft, Webdesign-Seite bei 320 und 1440 px. Hero-Beschriftung, Mario-Signatur, Zusammenarbeit und Webdesign-Bildunterschrift als Screenshots geprüft. Lokale Vorschau aktualisiert; noch kein GitHub-Push dieses Schriftwechsels.
+
+## Alpine Script · 29. September 2026
+
+Produktionsbuild erfolgreich. Adobe-FontFace alpine-script lädt auf Startseite und Webdesign-Seite bei 1440, 390 und 320 px; kein horizontaler Seitenüberlauf. Hero, Signatur, Zusammenarbeit und Bildunterschrift visuell geprüft. Lokale Vorschau aktualisiert; Schriftwechsel noch nicht auf GitHub hochgeladen.
+
+Handschrift im Hero und Portfolio-Einstieg anschließend deutlich vergrößert: Desktop bis 48/46 px, Hero mobil 28–38 px. Beschriftungsposition angepasst. Build und Ansichten bei 1440, 1024, 800, 390 und 320 px geprüft; kein horizontaler Überlauf.
+
+Handschrift im Leistungsbereich und unter der Ablaufgrafik ebenfalls auf bis zu 46/48 px vergrößert, mobil 32–38 px. Alle vier wechselnden Bildunterschriften bei 1440, 1024, 800, 390 und 320 px geprüft; kein horizontaler Überlauf. Desktop und schmale Handyansicht visuell geprüft, Build erfolgreich.
+
+## 3D-Viewer · 29. September 2026
+
+Build erfolgreich. Keine Renderer-/GLB-Anfrage beim Erstaufruf oder nur beim Umschalten auf 3D. Alle drei Modelle visuell geprüft; Mother Maggot nach vorne ausgerichtet. Automatisierte Prüfungen: Mausrotation, Tastatur, Zoom/Reset, Touch-Swipe und Zwei-Finger-Zoom per mobilen Chromium-Touch-Events, Modellwechsel, Downloadfehler mit erneutem Versuch, schnelle Modellwechsel, Escape, Fokusrückgabe, Entfernen des Canvas beim Schließen. Keine Zeichenschleife im Leerlauf, keine Seitenfehler. Mobile Layouts bei 800/390/320 px ohne horizontalen Überlauf. Prüfroutine tmp/check-sculpt-viewer.mjs. Kein Test auf einem physischen Smartphone. Renderer ist ein absichtlich verzögert geladener Chunk (~170 kB gzip); Vite weist auf dessen unkomprimierte Größe hin. Keine Veröffentlichung oder GitHub-Push.
+
+## Salted · 29. September 2026
+
+Adobe-FontFace salted erfolgreich auf beiden Seiten geladen. Hero, Portfolio-Hinweis, Signatur, Leistungen, Ablauf und Webdesign-Einstieg visuell auf Desktop und Handy geprüft. Breiten 1440, 1024, 800, 390 und 320 px kontrolliert; alle vier Ablauf-Bildunterschriften ohne horizontalen Seitenüberlauf. Mobile Hero-Beschriftung verschoben, damit sie das Gesicht nicht überlagert. Produktionsbuild erfolgreich. Noch kein GitHub-Push.
+
+## Photoshop-Fotomontage · 29. September 2026
+
+Produktionsbuild erfolgreich. Browserprüfung bei 1440/390/320 px: finales Bild als Einstieg, alle drei Arbeitsstände inklusive erfolgreicher Bilddekodierung, Pfeiltasten, Schließen mit Escape und Fokusrückgabe. Kein horizontaler Dialogüberlauf oder JavaScript-Fehler. Vor Auswahl werden die Zwischenstände nicht angefordert. Bestehende Spießer-Galerie nach Wechsel weiterhin mit normalen Bildminiaturen und Startbild 1/3. Schmale Handyansicht visuell geprüft und Titel/Schrittbeschriftungen angepasst. Webdateien zusammen ca. 688 KiB; finales Hauptbild ca. 387 KiB statt 13,3 MiB. Prüfdatei tmp/check-wow-process.mjs; Screenshots tmp/wow-process-*.png. Lokale Vorschau aktualisiert; kein GitHub-Push.
+
+## Gachó-Videoplayer · 29. September 2026
+
+Produktionsbuild und MP4-Auslieferung erfolgreich. Headless Edge bei 1440/390/320 px: keine MP4-Anfrage bei Seitenaufruf, Kategorieauswahl oder Öffnen vor Play. Full-HD-Dekodierung, Zeitfortschritt, Spulen, Pausieren/Freigabe beim Schließen, Neustart bei erneutem Öffnen sowie Rückwechsel zur Beast-Buddy-Bildansicht geprüft. Absichtlich blockierte Videodatei zeigt Fehlermeldung und direkten Link. Keine JavaScript-Fehler oder horizontalen Dialogüberläufe. Desktop und Handyansicht visuell geprüft; kein physischer Smartphone-/Safari-Test. Prüfroutine tmp/check-gacho-video.mjs, Screenshots tmp/gacho-player-*.png. Original bleibt unverändert, Webkopie ca. 63 % kleiner. Kein GitHub-Push.
+
+## Beast Buddy / YouTube · 29. September 2026
+
+Build erfolgreich. Breiten 1440/390/320 px: keine YouTube-/Thumbnail-Anfragen vor Aktivierung, korrekte Video-ID, mindestens 200 px Playerhöhe, keine horizontalen Überläufe, Entfernung des Iframes beim Schließen, erneute Aktivierung beim Wiederöffnen und Wechsel zurück zum lokalen Gachó-Player geprüft. Schmale Darstellung visuell geprüft; feste 100%-Breite verhindert Verbreiterung durch Mindesthöhe/Seitenverhältnis. Headless-Testbrowser meldet externe Video-Nichtverfügbarkeit; tatsächliche Wiedergabe deshalb zusätzlich im normalen In-App-Browser geprüft: Standardplayer readyState 4, Laufzeit 182,201 Sekunden, Zeitfortschritt von 34,97 auf 89,89 Sekunden, anschließend pausiert. Nocookie-Host spielte dort nicht ab; Standardhost funktioniert. Das ist keine Prüfung auf einem physischen Smartphone oder in Safari. Keine YouTube-Kontoeinstellungen verändert. Prüfdatei tmp/check-beast-youtube.mjs. Kein GitHub-Push.

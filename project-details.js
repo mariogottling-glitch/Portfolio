@@ -62,6 +62,22 @@ export const projectDetails = {
     caption: 'Meine Hero-Gestaltung im Anwendungskontext der Roboterly-Website',
     live: 'https://www.roboterly.com'
   },
+  'wow-fotomontage': {
+    category: 'Grafiken & Bildwelten / Photoshop-Fotomontage',
+    lead: 'Ein Geburtstagsgeschenk im Kundenauftrag. Viele einzelne Elemente, viele Stunden Handarbeit – komplett in Photoshop, ohne KI.',
+    process: true,
+    initialImage: 2,
+    facts: [
+      ['Die Idee', 'Eine persönliche World-of-Warcraft-Fotomontage als Geburtstagsgeschenk. Die drei Arbeitsstände zeigen den Weg vom Ausgangsmotiv zum fertigen Bild.'],
+      ['Der Aufbau', 'Jeden Charakter habe ich einzeln in die Szene eingefügt und die Komposition Schritt für Schritt um weitere Bildelemente ergänzt.'],
+      ['Licht & Schatten', 'Beleuchtung und Schattierung habe ich mit dem Grafiktablet von Hand gemalt. Die gesamte Montage entstand in Adobe Photoshop, ohne KI.']
+    ],
+    images: [
+      ['/assets/artworks/wow-fotomontage/ausgangsmotiv.webp', 'Ausgangsmotiv · Das Portal bildet die Grundlage für die Fotomontage.', 'Ausgangsmotiv'],
+      ['/assets/artworks/wow-fotomontage/aufbau.webp', 'Aufbau · Einzeln eingefügte Charaktere und erste Ausarbeitung der gemeinsamen Szene.', 'Aufbau'],
+      ['/assets/artworks/wow-fotomontage/final.webp', 'Finale Montage · Zusätzliche Bildelemente, von Hand gemalte Beleuchtung und ausgearbeitete Schatten.', 'Finale Montage']
+    ]
+  },
   'spiesser-kampagne': {
     category: 'Grafiken & Bildwelten / Plakatserie',
     lead: 'Spießer 2.0 – eine Idee, mehrere Motive.',
@@ -85,6 +101,18 @@ export const projectDetails = {
     lead: 'Beast Buddy – Kampagnenmotive für ein fiktives VR-Spiel.',
     facts: [['Meine Arbeit', 'Gestaltung der Kampagnenmotive im Rahmen meines Diplomprojekts.'], ['Einordnung', 'Freies Studienprojekt für ein fiktives Spiel.']]
   },
-  'gacho-film': { category: 'Video / Portfolio-Einblick', lead: 'Gachó Clothing – Einblick in eine Videoarbeit.', caption: 'Standbild aus dem Portfolio. Hier ist kein Video hinterlegt.' },
-  'beast-buddy-film': { category: 'Video / Diplomprojekt', lead: 'Beast Buddy – eine Filmansicht zum fiktiven VR-Spiel.', caption: 'Standbild aus dem Diplomprojekt. Hier ist kein Video hinterlegt.' }
+  'gacho-film': {
+    category: 'Video / Imagefilm',
+    lead: 'Gachó Clothing in Bewegung. Selbst gedreht, geschnitten und bearbeitet – von den Aufnahmen bis zum fertigen Film.',
+    video: '/assets/videos/gacho-clothing.mp4',
+    poster: '/assets/artworks/gacho-film.webp',
+    caption: 'Gachó Clothing · Dreh, Schnitt und Bearbeitung: Mario Göttling.'
+  },
+  'beast-buddy-film': {
+    category: 'Video / Diplomabschlussarbeit',
+    lead: 'Beast Buddy – meine Diplomabschlussarbeit für ein fiktives VR-Spiel. Die 3D-Assets habe ich selbst gebaut, in Unreal Engine zu einer Szene zusammengefügt und gerendert.',
+    youtube: 'UzMMJU6ljt4',
+    poster: '/assets/artworks/beast-buddy-film.webp',
+    caption: 'Beast Buddy · Eigene 3D-Assets, Szenenaufbau und Rendering in Unreal Engine: Mario Göttling.'
+  }
 };

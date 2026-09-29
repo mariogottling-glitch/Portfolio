@@ -3,6 +3,8 @@ import './navigation.js';
 import './design-story.js';
 import './tool-preview.js';
 import { createPortfolioStage } from './portfolio-stage.js';
+import { setupSculptViewer } from './sculpt-viewer.js';
+import { setupYouTubePlayer } from './youtube-player.js';
 
 const filters = [...document.querySelectorAll('[data-filter]')];
 const projects = [...document.querySelectorAll('[data-project]')];
@@ -12,8 +14,10 @@ const galleryHint = document.querySelector('#gallery-hint');
 const showMore = document.querySelector('#show-more');
 let activeFilter = filters[0];
 const portfolioStage = createPortfolioStage(projects);
+const sculptViewer = setupSculptViewer();
 function renderGallery() {
   const isWebdesign = activeFilter.dataset.filter === 'web';
+  sculptViewer.showCategory(activeFilter.dataset.filter);
   webdesignCta.hidden = !isWebdesign;
   galleryHint.hidden = isWebdesign;
   filters.forEach(button => button.setAttribute('aria-pressed', String(button === activeFilter)));
@@ -26,6 +30,21 @@ renderGallery();
 
 const dialog = document.querySelector('.project-dialog');
 const dialogImage = dialog.querySelector('.dialog-image');
+const dialogVideo = dialog.querySelector('.dialog-video');
+const videoError = dialog.querySelector('.video-error');
+const youtubePlayer = setupYouTubePlayer(dialog.querySelector('.case-figure'));
+function releaseVideo() {
+  youtubePlayer.clear();
+  dialogVideo.pause();
+  if (dialogVideo.hasAttribute('src')) {
+    dialogVideo.removeAttribute('src');
+    dialogVideo.load();
+  }
+  videoError.hidden = true;
+}
+dialogVideo.addEventListener('error', () => {
+  if (dialogVideo.hasAttribute('src') && !dialogVideo.hidden) videoError.hidden = false;
+});
 const thumbnails = dialog.querySelector('.case-thumbnails');
 const imageNavigation = dialog.querySelector('.image-navigation');
 const imageError = dialog.querySelector('.image-error');
@@ -44,11 +63,18 @@ function showImage(index) {
   dialog.querySelector('#image-position').textContent = `${imageIndex + 1} / ${projectImages.length}`;
   thumbnails.querySelectorAll('button').forEach((button, i) => button.setAttribute('aria-pressed', String(i === imageIndex)));
 }
-dialogImage.addEventListener('error', () => { imageError.hidden = false; });
+dialogImage.addEventListener('error', () => { if (!dialogImage.hidden) imageError.hidden = false; });
 dialogImage.addEventListener('load', () => { imageError.hidden = true; });
 function openProject(link) {
+  releaseVideo();
   lastProject = link;
   const detail = projectDetails[link.dataset.project] || {};
+  dialog.classList.toggle('has-process', Boolean(detail.process));
+  const hasVideo = Boolean(detail.video || detail.youtube);
+  dialog.classList.toggle('has-video', hasVideo);
+  dialogVideo.hidden = !detail.video;
+  dialogImage.hidden = hasVideo;
+  imageError.hidden = true;
   const title = link.querySelector('h3').textContent;
   const description = link.querySelector('.project-meta p').textContent;
   const preview = link.querySelector('img');
@@ -77,17 +103,41 @@ function openProject(link) {
   live.hidden = !detail.live;
   if (detail.live) live.setAttribute('href', detail.live); else live.removeAttribute('href');
   dialog.querySelector('#project-inquiry').href = `mailto:mariogottling@googlemail.com?subject=${encodeURIComponent(`Projektanfrage – inspiriert von ${title}`)}`;
-  projectImages = detail.images || [[preview.getAttribute('src'), detail.caption || preview.alt]];
+  projectImages = hasVideo ? [] : detail.images || [[preview.getAttribute('src'), detail.caption || preview.alt]];
   thumbnails.replaceChildren();
+  thumbnails.classList.toggle('case-process-steps', Boolean(detail.process));
+  thumbnails.setAttribute('aria-label', detail.process ? 'Arbeitsstand auswählen' : 'Motive dieses Projekts');
+  // Put the process controls before the artwork so every stage is easy to find.
+  facts.parentNode.insertBefore(thumbnails, detail.process ? dialog.querySelector('.case-figure') : facts);
   imageNavigation.hidden = thumbnails.hidden = projectImages.length < 2;
-  if (projectImages.length > 1) projectImages.forEach(([src, alt], i) => {
+  if (projectImages.length > 1) projectImages.forEach(([src, alt, label], i) => {
     const button = document.createElement('button');
     button.type = 'button';
     button.setAttribute('aria-label', alt);
-    const image = document.createElement('img'); image.src = src; image.alt = '';
-    button.append(image); button.addEventListener('click', () => showImage(i)); thumbnails.append(button);
+    if (detail.process) {
+      const number = document.createElement('span');
+      number.textContent = String(i + 1).padStart(2, '0');
+      number.setAttribute('aria-hidden', 'true');
+      const title = document.createElement('strong'); title.textContent = label;
+      button.append(number, title);
+    } else {
+      const image = document.createElement('img'); image.src = src; image.alt = '';
+      button.append(image);
+    }
+    button.addEventListener('click', () => showImage(i)); thumbnails.append(button);
   });
-  showImage(0);
+  if (detail.youtube) {
+    youtubePlayer.show(detail, title);
+    dialog.querySelector('#project-caption').textContent = detail.caption || description;
+  } else if (detail.video) {
+    dialogVideo.poster = detail.poster || preview.getAttribute('src');
+    dialogVideo.setAttribute('aria-label', `${title} – Videoplayer`);
+    dialogVideo.src = detail.video;
+    dialog.querySelector('#video-fallback').href = detail.video;
+    dialog.querySelector('#project-caption').textContent = detail.caption || description;
+  } else {
+    showImage(detail.initialImage ?? 0);
+  }
   dialog.showModal(); dialog.scrollTop = 0;
   document.body.classList.add('dialog-open');
 }
@@ -106,7 +156,7 @@ dialog.addEventListener('keydown', event => {
 });
 dialog.querySelector('#previous-image').addEventListener('click', () => showImage(imageIndex - 1));
 dialog.querySelector('#next-image').addEventListener('click', () => showImage(imageIndex + 1));
-dialog.addEventListener('close', () => { document.body.classList.remove('dialog-open'); lastProject?.focus({ preventScroll: true }); });
+dialog.addEventListener('close', () => { releaseVideo(); document.body.classList.remove('dialog-open'); lastProject?.focus({ preventScroll: true }); });
 let touchStart;
 dialogImage.addEventListener('touchstart', event => { touchStart = event.changedTouches[0]; }, { passive: true });
 dialogImage.addEventListener('touchend', event => {

@@ -27,7 +27,7 @@
 [data-stage="3"] .story-sheet{opacity:1;transform:translate(64px,76px) scale(1.04,.88)}
 .story-stroke{stroke-dasharray:600;stroke-dashoffset:600;transition:stroke-dashoffset 1s .2s}
 [data-stage="2"] .story-stroke{stroke-dashoffset:0}
-.story-caption{font-family:var(--handwriting);font-size:clamp(22px,2.3vw,30px);line-height:1.3;text-align:center;color:var(--accent);margin:20px 0 0;transform:rotate(-3deg)}
+.story-caption{font-family:var(--handwriting);font-size:clamp(34px,3.4vw,48px);line-height:1.3;text-align:center;color:var(--accent);margin:20px 0 0;transform:rotate(-3deg)}
 .story-steps{list-style:none;padding:0;margin:0}
 .story-step{min-height:166px;border-top:1px solid var(--line);padding:24px 0;transition:border-color .3s}
 .story-step:last-child{border-bottom:1px solid var(--line)}
@@ -46,7 +46,7 @@
  .story-heading{display:block;margin-bottom:24px}.story-heading h3{font-size:clamp(27px,6.6vw,40px)}
  .story-hint{margin-top:16px}.story-hint-desktop{display:none}.story-hint-mobile{display:inline}
  .story-layout{grid-template-columns:1fr;gap:30px}.story-figure{position:static;width:100%;max-width:520px;justify-self:center}
- .story-canvas svg{max-height:340px}.story-caption{font-size:24px;margin-top:16px}
+ .story-canvas svg{max-height:340px}.story-caption{font-size:clamp(32px,8vw,38px);margin-top:20px}
  .story-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
  .story-step{min-height:0;padding:18px 0 22px}.story-step:last-child{border-bottom:0}
  .story-step button{gap:10px;font-size:16px;flex-wrap:wrap;align-content:start}.story-step svg{width:30px;height:30px}

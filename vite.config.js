@@ -18,6 +18,7 @@ const staticPortfolioFiles = {
       ...Array.from(html.matchAll(/href="\/(assets\/[^"\s]+)"/g), match => match[1].split(/[?#]/)[0]),
       ...Array.from(casePages.join('\n').matchAll(/content="https:\/\/www\.mario-goettling\.de\/(assets\/[^"\s]+)"/g), match => match[1]),
       'assets/brand/social-preview.jpg',
+      'assets/models/zombonaut.glb', 'assets/models/mother-maggot.glb', 'assets/models/big-boi.glb',
       'assets/fonts/dm-sans-OFL.txt',
       'assets/fonts/archivo-black-OFL.txt',
       'robots.txt', 'sitemap.xml',

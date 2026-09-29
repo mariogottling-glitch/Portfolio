@@ -101,3 +101,31 @@ Die bestehenden neun Tool-Icons werden mit JavaScript zu auswählbaren Buttons. 
 ## Kompakte Projektbühne · 29. September 2026
 
 Alle Portfolio-Rubriken zeigen ein hervorgehobenes Projekt mit Bild und Titel sowie eine horizontale Vorschauleiste darunter. Die Auswahl reagiert auf kurzes Maus-Hover, Klick, Tastaturfokus und Antippen. Das große Projekt öffnet weiterhin die bestehende Detailansicht. Alle Projekte sind unmittelbar in der horizontalen Leiste erreichbar; der bisherige Mehr-laden-Button entfällt in der erweiterten Ansicht. Eine Auswahl bleibt pro Rubrik gespeichert. Bei Überlauf erscheinen Navigationstasten; mobil ist die Leiste auch wischbar. Feste Bild- und mobile Metadatenhöhen verhindern Layoutsprünge. Die speziellen Webdesign-Zusatzmotive sind auf der Bühne ausgeblendet; Projekt-Detailinhalte bleiben vorhanden. Ohne JavaScript bleibt die ursprüngliche Projektliste erhalten.
+
+## Timberline · 29. September 2026
+
+Alle handschriftlichen Akzente auf Startseite und Webdesign-Seite verwenden Timberline Regular von Resistenza über die gemeinsame Variable --handwriting. Das Adobe-Webprojekt „Mario Goettling Portfolio – Timberline“ (jwl3omk) wurde im verbundenen Adobe-Konto erstellt und veröffentlicht. Es ersetzt in beiden Seiten das bisherige Felt-Tip-Roman-Webprojekt. Einbindung per Adobe-CSS; keine lokal kopierten Fontdateien.
+
+## Alpine Script · 29. September 2026
+
+Auf Nutzerwunsch ersetzt Alpine Script Regular die zuvor getestete Timberline für sämtliche handschriftlichen Texte. Adobe-Webprojekt: „Mario Goettling Portfolio – Alpine Script“, Kit rsz1gvi, CSS-Familie alpine-script. Startseite und Webdesign-Seite nutzen das neue Kit über die gemeinsame Variable --handwriting.
+
+## Interaktive ZBrush-Skulpturen · 29. September 2026
+
+In der Rubrik 3D öffnet „3D-Modelle erkunden“ ein separates, schlichtes Dialogfenster mit Zombonaut, Mother Maggot und Big Boi. Dunkler Hintergrund, neutrales Tonmaterial, zurückhaltendes grünes Kantenlicht. Maus-/Touch-Drehen, Pinch-/Mausrad-Zoom, Tastatursteuerung und Reset. Viewer und ausgewähltes Modell werden erst nach dem Öffnen geladen. Keine automatische Rotation; ereignisgesteuertes Zeichnen und vollständige WebGL-Freigabe beim Schließen. Webkopien in assets/models, Originaldateien bleiben unverändert.
+
+## Salted · 29. September 2026
+
+Salted Regular ersetzt Alpine Script auf Nutzerwunsch für alle Handschrift-Akzente einschließlich Signatur und Webdesign-Unterseite. Adobe-Webprojekt miv0rzs im verbundenen Konto veröffentlicht, CSS-Familie salted. Große Schriftgrößen bleiben erhalten; Hero-Position und mobile Umbrüche sind an die breitere Schrift angepasst. Die Bildunterschrift der Webdesign-Seite wächst auf 30–42 px.
+
+## Photoshop-Fotomontage · 29. September 2026
+
+Neues Projekt „WoW-Fotomontage“ am Anfang von Grafiken & Bildwelten. Final3 dient als Vorschau und initiale Detailansicht. Drei direkt wählbare Arbeitsstände (Ausgangsmotiv, Aufbau, Finale Montage) stehen über dem Bild. Bestehende Pfeiltasten-/Wischbedienung bleibt nutzbar. Texte nennen Kundenauftrag zum Geburtstag, einzeln eingefügte Charaktere, von Hand gemaltes Licht und Schatten und Photoshop ohne KI. WebP-Kopien in assets/artworks/wow-fotomontage, Originale unverändert. Zwischenstände laden erst bei Auswahl, keine neue Bibliothek.
+
+## Gachó-Videoplayer · 29. September 2026
+
+Das bisherige Standbild dient weiterhin als leichte Portfolio-Vorschau; ein grünes Play-Zeichen und „Video ansehen“ führen zum nativen MP4-Player. Projekttext und Bildunterschrift nennen Mario als Urheber von Dreh, Schnitt und Bearbeitung. Optimierte Full-HD-Webkopie unter assets/videos/gacho-clothing.mp4. Keine automatische Wiedergabe, preload none, Inline-Wiedergabe auf Mobilgeräten. Beim Schließen pausieren und Quelle freigeben; bei Ladefehler Link zur Datei. Keine neue Website-Abhängigkeit.
+
+## Beast Buddy als Video · 29. September 2026
+
+Beast Buddy unter Video öffnet jetzt einen YouTube-Player für UzMMJU6ljt4. Projekttext nennt die Diplomabschlussarbeit, selbst gebaute 3D-Assets sowie Szenenaufbau und Rendering in Unreal Engine. Lokales Vorschaubild; kein YouTube-Request vor dem ausdrücklichen Laden. Iframe wird beim Schließen entfernt, sodass die Wiedergabe stoppt. Direkter YouTube-Link bleibt verfügbar. Datenschutzseite beschreibt die Einbindung. Standard-YouTube-Host verwendet, da die nocookie-Variante in der normalen Vorschau „nicht verfügbar“ meldete.
