@@ -67,3 +67,19 @@ Das About-Porträt wird per CSS neutral schwarzweiß mit abgestimmten Tonwerten 
 ## Offene Projektpräsentationen · 29. September 2026
 
 Die flächigen Farbkästen der beiden Leitprojekte sind entfernt. Website, transparentes Logo und Chicos-Motiv stehen als einzelne Elemente direkt auf dem Seitenhintergrund. Desktop: großzügiger Abstand zwischen Website und Markendetails, Fortis weiterhin gespiegelt. Mobil: Website oben, zwei frei stehende Detailgruppen darunter. Die Fortis-Palette besteht aus vier kleinen Farbpunkten. Projektüberschriften etwas zurückgenommen; Detailansichten und Hover-Verhalten bleiben erhalten.
+
+## Leistungsseite Webdesign · 29. September 2026
+
+Unter `/webdesign` ergänzt „Website erstellen lassen“ das Portfolio. Dieselben Schriften, Farben, Hintergrundstruktur, Logo und Kontaktfläche verbinden beide Seiten. Ein typografischer Einstieg mit kurzer handschriftlicher Notiz führt zu einer offenen Leistungsliste, vier nummerierten Schritten, getrennten Informationen zu Erstellung und Hosting sowie drei nativen aufklappbaren Fragen. Keine zusätzlichen Projektbilder oder Karten. Mobil stehen Leistungen und Kosten untereinander; der Ablauf nutzt zwei Spalten, unter 381 px eine. Der Link steht im vorhandenen Leistungsbereich „Web Design“. Beide Anfragebuttons verwenden die bestätigte E-Mail-Adresse. Die gemeinsame Navigation liegt in `navigation.js`; die Seitenergänzungen sind in `webdesign/webdesign.css` gekapselt.
+
+## Visuell gestraffte Webdesign-Seite · 29. September 2026
+
+Auf Nutzerwunsch ersetzt ein zweispaltiger Einstieg die große reine Textfläche: links kurze Headline und Einleitung, rechts eine eigens mit Adobe Firefly erzeugte Monitor-Illustration mit Website-Entwurf. Die Farben bleiben Anthrazit, gebrochenes Weiß und Grün. Sechs kompakte Leistungspunkte stehen in einem offenen Zweispaltenraster. Vier eigene SVG-Linienicons illustrieren Kennenlernen, Entwurf, Vorschau und Veröffentlichung. Nummern und echte Überschriften bleiben erhalten. Erstellung und Hosting sind als zwei klare Kostenblöcke erfassbar; längere Vertrags- und Betreuungsdetails liegen in einem nativen aufklappbaren Abschnitt. Die drei FAQ bleiben erhalten. Rund 260 Wörter sind sofort sichtbar, rund 350 einschließlich aller aufgeklappten Antworten. Mobil stehen Bild und Texte untereinander; sehr schmale Ansichten erhalten einspaltige Leistungen und Schritte. Bildherkunft und Prompt: `assets/webdesign/SOURCES.md`.
+
+## Sichtbare Webdesign-Aufrufe · 29. September 2026
+
+Der bisherige Textlink im Leistungsbereich ist jetzt ein limettengrüner Button mit Abstand zum Beschreibungstext. Ein zweiter gleich gestalteter Button steht oberhalb der Projekte direkt unter den Portfolio-Rubriken. Er erscheint bei Web Design; andere Rubriken zeigen weiterhin den bisherigen Hinweis. Mobil steht der obere Button vollbreit unter der Projektanzahl. Beide Links führen zu `/webdesign`.
+
+## Ablauf-Icons auf der Startseite · 29. September 2026
+
+Die sichtbaren Zahlen unter „So arbeiten wir zusammen“ sind durch grüne Linien-Icons ersetzt: Gespräch, Angebotsdokument mit Haken, Entwurf mit Stift und Rakete für Umsetzung. Die bestehende SVG-Symbolsammlung wird gemeinsam verwendet und um das Angebotsicon ergänzt. Überschriften und Texte bleiben bestehen. Desktop 52 px, auf sehr kleinen Displays 40 px neben dem Text.

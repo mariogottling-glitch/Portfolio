@@ -97,3 +97,27 @@ Vite-Produktionsbuild erfolgreich; das neue transparente Porträt ist im Build e
 ## Offene Showcases · 29. September 2026
 
 Desktop und 390-px-Mobilansicht visuell geprüft. Beide Projektkompositionen haben transparenten Hintergrund, keine umfassenden Flächen oder Schatten. Mobil 335 px Inhaltsbreite ohne horizontalen Überlauf; Logos, Motiv und Farbpalette sind vollständig sichtbar. Screenshots: tmp/open-showcases/fortis-desktop.jpg, chicos-desktop.jpg und mobile.jpg. Reine CSS-Änderung; vorhandene Dialoge und Filter unverändert.
+
+## Leistungsseite Webdesign · 29. September 2026
+
+- `/webdesign` und `/webdesign/` im lokalen Server und in der Vite-Build-Vorschau geprüft. Vite leitet die Adresse ohne Schrägstrich vor dem Startseiten-Fallback auf das Seitenverzeichnis weiter; statische Hosts verwenden ihren üblichen Verzeichnisindex.
+- 464 Wörter im Hauptinhalt einschließlich der drei FAQ-Antworten; alle sechs geforderten Abschnitte enthalten. Bestehende E-Mail-Adresse für beide Anfragebuttons. Hosting-Richtwert anhand der Anbieterübersicht https://all-inkl.com/webhosting/ geprüft (regulär 7,95 / 9,95 Euro für Privat+ / Premium zum Prüfzeitpunkt); auf der Seite als ungefähres Budget ohne Tarifzusage formuliert.
+- Darstellung bei 1440, 1024, 800, 768, 390, 375 und 320 px geprüft: kein seitlicher Überlauf. Desktop- und Mobil-Screenshots visuell kontrolliert. Bestehende Farben, Schriften, Logo und Kontaktfläche übernommen.
+- Interne Links und Abschnittsziele, Rückkehr zum Portfolio, mobile Navigation, Escape mit Fokusrückgabe und FAQ-Bedienung per Tastatur erfolgreich geprüft. Inhalte, Kontaktlinks und native FAQ funktionieren ohne JavaScript.
+- Nach Auslagerung der gemeinsamen Navigation auch Filter und Projektansicht auf der Startseite geprüft. Keine JavaScript-Fehler oder fehlgeschlagenen lokalen Ressourcen.
+- Vite-Produktionsbuild erfolgreich. Funktionsprüfungen auch gegen die Build-Ausgabe bestanden. Lokale Screenshots und Prüfbericht: `tmp/webdesign-qa/`. Kein Hosting-Deployment vorgenommen.
+
+## Webdesign mit Firefly-Illustration · 29. September 2026
+
+- Auf Wunsch weniger Text: 263 Wörter direkt sichtbar, 354 mit allen aufgeklappten Antworten. Wesentliche Leistungs- und Kostenvereinbarungen erhalten; längere Hostingdetails in nativer Aufklappsektion.
+- Neue Adobe-Firefly-Monitorillustration visuell geprüft und als 38,652-Byte-WebP eingebunden. Vier eigene SVG-Icons für die nummerierten Projektschritte; dekorativ und ohne zusätzliche Screenreader-Wiederholungen.
+- Breiten 1440, 1024, 800, 768, 390, 375 und 320 px ohne seitlichen Überlauf geprüft. Desktop- und 390-px-Gesamtansicht visuell kontrolliert. Grafik und alle vier SVG-Symbole erfolgreich geladen.
+- Navigation, Kontaktlinks, native Details per Tastatur, Escape-Fokus und Startseiten-Projektansicht weiterhin geprüft. Screenshots und Bericht: `tmp/webdesign-visual-qa/`.
+
+## Webdesign-CTA auf der Startseite · 29. September 2026
+
+Zwei grüne Buttons eingebunden, im Leistungsbereich sowie vor den Webdesign-Projekten. Build erfolgreich; beide Links zur Unterseite, Umschalten der Rubriken und Darstellung bei 1440, 1024, 801, 390 und 320 px geprüft. Beide Buttons bleiben innerhalb der Bildschirmbreite. Keine JavaScript-Fehler. Screenshots: `tmp/webdesign-cta-qa/`.
+
+## Startseiten-Ablauf mit Icons · 29. September 2026
+
+Vier SVG-Symbole statt sichtbarer Zahlen; Desktop 1440 px und Mobil 390/320 px geprüft. Symbole laden aus dem Build, kein Überlauf der Icons. Visuelle Prüfung von Desktop und schmaler Mobilansicht. Build erfolgreich; statisches Kopieren berücksichtigt nun SVG-Fragmentkennungen korrekt. Screenshots: `tmp/process-icons-qa/`.

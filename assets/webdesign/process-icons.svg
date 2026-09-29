@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="conversation" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 12h31a5 5 0 0 1 5 5v18a5 5 0 0 1-5 5H25l-12 9v-9h-2a5 5 0 0 1-5-5V17a5 5 0 0 1 5-5Z"/>
+      <path d="M48 25h5a5 5 0 0 1 5 5v17a5 5 0 0 1-5 5v7l-10-7H31a5 5 0 0 1-5-5" opacity=".5"/>
+      <path d="M17 23h20M17 30h13"/>
+    </g>
+  </symbol>
+  <symbol id="offer" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M30 56H13a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4h24l12 12v12M37 6v12h12M18 25h21M18 33h13M18 41h9"/>
+      <circle cx="45" cy="46" r="13"/>
+      <path d="m39 46 4 4 8-8"/>
+    </g>
+  </symbol>
+  <symbol id="design" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="10" width="43" height="44" rx="3"/>
+      <path d="M6 20h43M14 15h1m5 0h1M14 29h13v15H14zM34 29h7M34 36h7"/>
+      <path d="m34 54 3-10L53 28l7 7-16 16-10 3Zm4-10 7 7m4-19 7 7" fill="#242423"/>
+    </g>
+  </symbol>
+  <symbol id="preview" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M56 30v11a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4h23M6 36h36M24 45v10m14-10v10M18 55h26"/>
+      <path d="M44 6h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-8l-8 6v-6a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4Z" fill="#242423"/>
+      <path d="m42 16 4 4 8-8"/>
+    </g>
+  </symbol>
+  <symbol id="launch" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24 43 21 30C32 14 44 7 57 7c0 13-7 25-23 36l-10-3M22 28l-10 2-6 13 16-3m13 2-1 10-13 6 3-16"/>
+      <circle cx="43" cy="21" r="5"/>
+      <path d="m16 47-7 7m5-2-2 7m-7-7 7-2" opacity=".5"/>
+    </g>
+  </symbol>
+</svg>

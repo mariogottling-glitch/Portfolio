@@ -1,0 +1,76 @@
+/* Service-page additions; the portfolio's shared design stays in styles.css. */
+.webdesign-intro{display:grid;grid-template-columns:1fr 1.12fr;column-gap:24px;padding-block:48px 64px;align-items:center}
+.webdesign-intro>.eyebrow{grid-column:1/-1;margin-bottom:34px}
+.webdesign-intro h1{grid-column:1;grid-row:2;font-size:clamp(46px,5.25vw,74px);line-height:1.04;letter-spacing:-.055em;align-self:end}
+.webdesign-intro-copy{grid-column:1;grid-row:3;align-self:start}
+.webdesign-intro-copy p{color:var(--muted);margin:24px 0;max-width:42ch;font-size:17px;line-height:1.6}
+.webdesign-visual{grid-column:2;grid-row:2/4;min-width:0;position:relative}
+.webdesign-visual img{width:100%;height:auto;display:block}
+.webdesign-note{font-family:var(--handwriting);color:var(--accent);font-size:clamp(23px,2.2vw,31px);line-height:1.15;transform:rotate(-5deg);text-align:center;margin:6px 0 0}
+.webdesign-section{border-top:2px solid var(--line);padding-block:48px 54px}
+.webdesign-section h2{font-size:clamp(32px,3.6vw,49px);line-height:1.06}
+.webdesign-section .eyebrow{margin-bottom:20px}
+.webdesign-split{display:grid;grid-template-columns:1fr 1.55fr;gap:64px}
+.webdesign-benefits{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 30px;margin:0;padding:0}
+.webdesign-benefits li{position:relative;padding:0 0 17px 23px;border-bottom:1px solid var(--line);font-size:16px;line-height:1.5}
+.webdesign-benefits li:before{content:'↗';position:absolute;left:0;color:var(--accent)}
+.webdesign-benefits strong{display:block;font-weight:600}
+.webdesign-benefits li>span{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+.webdesign-secondary{color:var(--muted);font-size:14px;line-height:1.6;margin:22px 0 0}
+.webdesign-process{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.webdesign-step-art{display:flex;align-items:center;justify-content:flex-start;min-height:94px;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:20px;color:var(--accent)}
+.webdesign-step-art svg{width:72px;height:72px;flex:none}
+.webdesign-process h3,.webdesign-costs h3{font-family:inherit;font-size:18px;font-weight:700;text-transform:none;letter-spacing:0;line-height:1.4}
+.webdesign-process p,.webdesign-costs p{color:var(--muted);font-size:15px;margin:10px 0 0;line-height:1.65}
+.webdesign-materials{max-width:78ch;margin-top:28px}
+.webdesign-costs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;margin-top:32px}
+.webdesign-costs h3{font-size:14px;color:var(--muted);font-weight:500}
+.webdesign-costs .webdesign-price{font-family:'Archivo Black',sans-serif;font-size:clamp(28px,3vw,40px);line-height:1.3;letter-spacing:-.04em;color:var(--paper);margin-block:10px 14px}
+.webdesign-price span{font-family:'DM Sans',sans-serif;display:inline-block;font-size:15px;letter-spacing:0;color:var(--muted)}
+.webdesign-costs p:not(.webdesign-price){max-width:48ch}
+.webdesign-costs a{text-decoration:underline;text-underline-offset:4px;color:var(--paper)}
+.webdesign-hosting-details{margin-top:28px}
+.webdesign-hosting-details summary{font-size:14px;font-weight:500;color:var(--muted);padding-block:16px}
+.webdesign-hosting-details summary:after{top:11px}
+.webdesign-hosting-details p{font-size:14px;max-width:88ch}
+.webdesign-questions{margin:0}
+.webdesign-questions summary{line-height:1.5}
+.webdesign-page .contact h2{font-size:clamp(34px,4.3vw,60px)}
+.webdesign-page .button{text-align:center}
+@media(max-width:1100px){
+  .webdesign-split,.webdesign-costs{gap:36px}
+  .webdesign-process{gap:24px}
+  .webdesign-process h3{font-size:16px}
+}
+@media(max-width:800px){
+  .webdesign-intro{grid-template-columns:1fr;gap:0;padding-block:30px 40px}
+  .webdesign-intro>.eyebrow{margin-bottom:22px;font-size:10px}
+  .webdesign-intro h1{grid-column:1;grid-row:2;font-size:clamp(40px,8.6vw,58px)}
+  .webdesign-intro h1 span br{display:none}
+  .webdesign-visual{grid-column:1;grid-row:3;width:min(100%,420px);justify-self:center;margin-top:10px}
+  .webdesign-visual img{max-height:280px;object-fit:contain}
+  .webdesign-note{font-size:24px;margin:0 0 12px}
+  .webdesign-intro-copy{grid-column:1;grid-row:4}
+  .webdesign-intro-copy p{font-size:16px;margin:18px 0 20px;max-width:48ch}
+  .webdesign-section{padding-block:34px 38px}
+  .webdesign-split{grid-template-columns:1fr;gap:28px}
+  .webdesign-benefits{gap:20px 20px}
+  .webdesign-benefits li{font-size:15px;padding-left:18px}
+  .webdesign-benefits li>span{font-size:14px}
+  .webdesign-process{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px;margin-top:24px}
+  .webdesign-step-art{min-height:74px;margin-bottom:16px;padding-bottom:14px}
+  .webdesign-step-art svg{width:56px;height:56px}
+  .webdesign-process p{font-size:14px}
+  .webdesign-costs{grid-template-columns:1fr;gap:26px;margin-top:28px}
+  .webdesign-costs>div+div{border-top:1px solid var(--line);padding-top:22px}
+  .webdesign-page .contact-copy .button{max-width:100%;gap:12px;padding-inline:16px}
+}
+@media(max-width:380px){
+  .webdesign-intro h1{font-size:35px}
+  .webdesign-benefits{grid-template-columns:1fr;gap:14px}
+  .webdesign-process{grid-template-columns:1fr;gap:24px}
+  .webdesign-step-art{justify-content:start;gap:24px}
+  .webdesign-step-art svg{width:52px;height:52px}
+  .webdesign-page .contact-copy .button{font-size:13px}
+}
+

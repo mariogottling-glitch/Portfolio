@@ -38,7 +38,7 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
 .service-list p,.process-list p{font-size:15px;color:var(--muted);margin:14px 0 0;max-width:34ch}
 .process-title{font-family:inherit;font-size:14px;font-weight:700;text-transform:none;letter-spacing:0;margin:32px 0 24px}
 .process-list{list-style:none;padding:0;margin:0 0 36px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
-.process-list li>span{font-family:'Archivo Black',sans-serif;font-size:32px;line-height:1;color:var(--accent)}
+.process-icon{display:block;width:52px;height:52px;color:var(--accent)}
 .process-list h4{font-size:18px;margin:14px 0 0;line-height:1.3}
 .process-list p{margin-top:8px;font-size:14px}
 .project-questions{border-top:1px solid var(--line)}
@@ -61,7 +61,7 @@ main{position:relative;isolation:isolate;overflow:clip}main:before{content:'';po
  .process-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}.process-list h4{font-size:16px}
  .project-questions summary{font-size:15px}.hero-actions .quiet-link{font-size:13px}
 }
-@media(max-width:360px){.process-list{grid-template-columns:1fr}.process-list li{display:grid;grid-template-columns:42px 1fr;column-gap:14px}.process-list li>span{grid-row:1/3}.process-list h4{margin:0}.process-list p{grid-column:2}}
+@media(max-width:360px){.process-list{grid-template-columns:1fr}.process-list li{display:grid;grid-template-columns:42px 1fr;column-gap:14px}.process-list .process-icon{grid-row:1/3;width:40px;height:40px}.process-list h4{margin:0}.process-list p{grid-column:2}}
 
 /* Compact provider information, readable without scripts or external fonts. */
 .legal-back{font-size:14px;min-height:44px;display:inline-flex;align-items:center;gap:12px}
@@ -192,3 +192,13 @@ main:before{opacity:.07}
  .tool-list{gap:24px 10px}
 }
 @media(max-width:360px){.hero-portrait{margin-top:58px}.hero .scribble{font-size:19px}.project-feature .project-meta h3{font-size:23px}}
+
+/* Prominent paths from the web projects and services to the webdesign page. */
+.gallery-heading{flex-wrap:wrap}
+.service-cta{margin-top:20px;max-width:100%;text-align:center}
+#gallery-webdesign-cta{max-width:100%;text-align:center}
+@media(max-width:800px){
+  .gallery-heading:has(#gallery-webdesign-cta:not([hidden])){align-items:flex-start;flex-direction:column;gap:14px;margin-bottom:28px}
+  #gallery-webdesign-cta{width:100%;justify-content:space-between}
+  .service-cta{margin-top:16px}
+}

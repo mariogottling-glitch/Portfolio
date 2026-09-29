@@ -14,7 +14,7 @@ const staticPortfolioFiles = {
     ]);
     const paths = new Set([
       ...Array.from(projects.matchAll(/['"]\/?(assets\/[^'"\s]+)['"]/g), match => match[1]),
-      ...Array.from(html.matchAll(/href="\/(assets\/[^"\s]+)"/g), match => match[1]),
+      ...Array.from(html.matchAll(/href="\/(assets\/[^"\s]+)"/g), match => match[1].split(/[?#]/)[0]),
       'assets/brand/social-preview.jpg',
       'assets/fonts/dm-sans-OFL.txt',
       'assets/fonts/archivo-black-OFL.txt',
@@ -28,12 +28,27 @@ const staticPortfolioFiles = {
   },
 };
 
+// Match the directory redirect used by static hosts before Vite's SPA fallback.
+function redirectWebdesign(server) {
+  server.middlewares.use((req, res, next) => {
+    const match = req.url?.match(/^\/webdesign(\?.*)?$/);
+    if (!match) return next();
+    res.writeHead(301, { Location: `/webdesign/${match[1] || ''}` });
+    res.end();
+  });
+}
+
 export default {
-  plugins: [staticPortfolioFiles],
+  plugins: [staticPortfolioFiles, {
+    name: 'webdesign-directory-route',
+    configureServer: redirectWebdesign,
+    configurePreviewServer: redirectWebdesign,
+  }],
   build: {
     rollupOptions: {
       input: {
         portfolio: fileURLToPath(new URL('./index.html', import.meta.url)),
+        webdesign: fileURLToPath(new URL('./webdesign/index.html', import.meta.url)),
         impressum: fileURLToPath(new URL('./impressum.html', import.meta.url)),
         datenschutz: fileURLToPath(new URL('./datenschutz.html', import.meta.url)),
       },

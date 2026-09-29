@@ -15,10 +15,12 @@ Dann `http://127.0.0.1:4173/` öffnen.
 ## Inhalte pflegen
 
 - `index.html`: Einstieg, Projektkarten, Über mich, Werkzeuge und Kontakt.
-- `impressum.html`: bestätigter Name, Anschrift, Telefonnummer und E-Mail. Noch offen: Klärung, ob eine USt-IdNr. oder Wirtschafts-ID vorliegt. Nicht als rechtlich vollständig geprüft behandeln. Über den Footer erreichbar; `vite.config.js` nimmt alle drei HTML-Seiten in den Build auf.
+- `webdesign/index.html`: Leistungsseite „Website erstellen lassen“, erreichbar unter `/webdesign` und `/webdesign/`; verlinkt im Leistungsbereich „Web Design“. `webdesign/webdesign.css` ergänzt das bestehende Design. Beim Hochladen den Ordner `webdesign` mit seiner `index.html` beibehalten.
+- `impressum.html`: bestätigter Name, Anschrift, Telefonnummer und E-Mail. Noch offen: Klärung, ob eine USt-IdNr. oder Wirtschafts-ID vorliegt. Nicht als rechtlich vollständig geprüft behandeln. Über den Footer erreichbar; `vite.config.js` nimmt alle vier HTML-Seiten in den Build auf.
 - `datenschutz.html`: verlinkter Entwurf mit STRATO, E-Mail und Adobe Fonts. Vor Veröffentlichung vervollständigen; offene Punkte stehen in `LAUNCH.md`.
 - `project-details.js`: kurze Projektbeschreibungen, Leistungsabgrenzung, Live-Links und Bildserien. Weitere Karten erhalten automatisch eine einfache Bildansicht.
 - `styles.css` und `script.js`: Gestaltung, Filter, Projektansichten, Navigation und Bewegung.
+- `navigation.js`: gemeinsame mobile Navigation und Header-Verhalten der Startseite und Webdesign-Unterseite.
 - `assets/optimized/`: responsive WebP-Fassungen der Fotos und Website-Screenshots. Originale bleiben erhalten.
 - `PROJECTS.md`: bestätigte Leistungen und Inhalte; `DESIGN.md`: aktuelle Gestaltung; `design-qa.md`: Prüfstand.
 
