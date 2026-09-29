@@ -125,3 +125,32 @@ Vier SVG-Symbole statt sichtbarer Zahlen; Desktop 1440 px und Mobil 390/320 px g
 ## Technisches Webdesign-Herodesign · 29. September 2026
 
 Build erfolgreich; Vorschau bei 1440, 1024, 800, 390 und 320 px geprüft. Kein horizontales Scrollen, Monitor geladen und Anfragebutton innerhalb der Bildschirmbreite. Desktop- und Smartphone-Screenshots visuell kontrolliert; Texte gut lesbar, Dekorationen hinter dem Inhalt. Screenshots: `tmp/webdesign-header-qa/`.
+
+## Design-Geschichte · 29. September 2026
+
+- Produktionsbuild erfolgreich; Vorschau unter /#von-der-idee.
+- Browserprüfung bei 1440, 1024, 800, 390 und 320 px: kein horizontaler Überlauf, alle vier Szenen auswählbar.
+- Desktop-Scroll aktiviert alle vier Schritte; bewusste Auswahl bleibt bei automatischem Fokus-Scrolling erhalten.
+- Enter/Leertaste, Touch, reduzierte Bewegung und Fallback ohne JavaScript geprüft.
+- Kontakt-CTA führt zu #kontakt; keine JavaScript-Seitenfehler.
+- Desktop-, Mobil- und Gestaltungsansicht anhand von Screenshots geprüft. Lokale Prüfroutine: tmp/check-design-story.mjs; Bilder: tmp/story-qa/.
+
+## Werkzeugvorschau · 29. September 2026
+
+Produktionsbuild erfolgreich. Neun Auswahlzustände bei 1440, 1024, 800, 390 und 320 px geprüft: korrekte Texte und Auswahlmarkierung, kein horizontaler Überlauf. Maus-Hover, Tastaturwechsel, simulierte Touch-Bedienung und reduzierte Bewegung geprüft. Ohne JavaScript bleiben neun Werkzeuge mit ursprünglichem Attributionslink sichtbar. Keine JavaScript-Seitenfehler. Screenshots der Desktop- und Mobilansicht visuell geprüft: tmp/tools-1440.png und tmp/tools-390.png. Kein Test auf physischem Mobilgerät.
+
+## Kompakte Projektbühne · 29. September 2026
+
+Produktionsbuild erfolgreich. Alle Projekte in Web Design, Grafiken & Bildwelten, 3D und Video bei 1440, 1024, 800, 390 und 320 px ausgewählt. Jeweils genau ein großes Projekt, korrekte Kategorie und eine aktive Vorschau; keine Höhenänderung innerhalb einer Rubrik und kein horizontaler Seitenüberlauf. Zusätzlich Hover, Tastatur, simuliertes Touch, Dialogöffnung, Escape, Fokusrückgabe und gespeicherte Auswahl geprüft. Texte auf 320 px bleiben innerhalb ihrer Metadatenfläche. Desktop- und Mobil-Screenshots geprüft. Prüfroutine: tmp/check-portfolio-stage.mjs; Vorschau: tmp/portfolio-stage-final.png. Keine JavaScript-Seitenfehler.
+
+## Offene Portfolioansicht · 29. September 2026
+
+Website-Screenshots füllen ihre Bildfläche jetzt mit object-fit: cover und oberer Ausrichtung. Dadurch entfallen seitliche Leerflächen; bei abweichendem Seitenverhältnis wird der untere Bildbereich angeschnitten. Außenrahmen, Panelhintergrund und Trennlinie zwischen Bild und Text sind entfernt. Die Vorschauen stehen ohne Kachelrahmen; eine feine grüne Unterlinie kennzeichnet Auswahl und Hover. Desktop und mobile Ansichten bei 390/320 px visuell geprüft, alle vier Website-Bilder auf randfüllende Darstellung und Seitenüberlauf kontrolliert. Build erfolgreich.
+
+## Projektlogos · 29. September 2026
+
+Fünf Website-Logos oberhalb der Titel ergänzt, ohne Rahmen. Lokal optimierte Originaldateien, Herkunft unter assets/projects/details/SOURCES.md. Roboterly mit heller Wortmarke für den dunklen Hintergrund. Desktop und Mobilansicht (1440, 1024, 800, 390, 320 px) geprüft: alle Logos geladen, keine Überläufe oder Höhensprünge. Screenshots aller fünf Projekte visuell geprüft. Produktionsbuild erfolgreich; Prüfroutine tmp/check-project-logos.mjs.
+
+## Deutschlandweite SEO-Grundlagen · 29. September 2026
+
+Startseite und Webdesign-Leistungsseite erhalten präzisere Suchtexte und strukturierte Daten. Fünf generierte Projektseiten mit vorhandenen Projektfakten sind unabhängig von JavaScript erreichbar; interne Links, Social-Bilder, Canonicals und Sitemap sind eingebunden. Acht Sitemap-URLs und alle fünf Projektseiten ohne JavaScript geprüft, plus mobile Breiten 390/320 px und Dialog-zu-Projektseite-Link. JSON-LD lokal geparst, nicht als Google-Rich-Result-Validierung ausgegeben. Produktionsbuild erfolgreich. Öffentliche Domain und robots.txt erreichbar; Veröffentlichung dieses Änderungsstands sowie Search-Console-Einrichtung nicht vorgenommen. Details in SEO.md.

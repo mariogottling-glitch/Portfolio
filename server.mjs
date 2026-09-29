@@ -7,7 +7,8 @@ const root = fileURLToPath(new URL('.', import.meta.url));
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.ttf': 'font/ttf', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg' };
 const server = createServer(async (req, res) => {
   const requestPath = decodeURIComponent((req.url || '/').split('?')[0]);
-  const pagePath = requestPath === '/' ? '/index.html' : /^\/webdesign\/?$/.test(requestPath) ? '/webdesign/index.html' : requestPath;
+  const directoryPage = requestPath.match(/^\/(webdesign|projekte\/(?:chicos-hermanos|fortis-anima|salon-samo|mine-hotel|roboterly))\/?$/);
+  const pagePath = requestPath === '/' ? '/index.html' : directoryPage ? `/${directoryPage[1]}/index.html` : requestPath;
   const safePath = normalize(pagePath).replace(/^\.\.[\\/]/, '');
   const filePath = join(root, safePath);
   try { const body = await readFile(filePath); res.writeHead(200, { 'Content-Type': types[extname(filePath)] || 'application/octet-stream' }); res.end(body); }

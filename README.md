@@ -14,6 +14,8 @@ Dann `http://127.0.0.1:4173/` öffnen.
 
 ## Inhalte pflegen
 
+- `SEO.md`: deutschlandweite Suchausrichtung, umgesetzte Grundlagen und Schritte für die Veröffentlichung/Search Console. Projektseiten unter `projekte/` werden beim Build aus `project-details.js` und den Projektkarten generiert; Generator: `scripts/generate-project-pages.mjs`.
+
 - `index.html`: Einstieg, Projektkarten, Über mich, Werkzeuge und Kontakt.
 - `webdesign/index.html`: Leistungsseite „Website erstellen lassen“, erreichbar unter `/webdesign` und `/webdesign/`; verlinkt im Leistungsbereich „Web Design“. `webdesign/webdesign.css` ergänzt das bestehende Design. Beim Hochladen den Ordner `webdesign` mit seiner `index.html` beibehalten.
 - `impressum.html`: bestätigter Name, Anschrift, Telefonnummer und E-Mail. Noch offen: Klärung, ob eine USt-IdNr. oder Wirtschafts-ID vorliegt. Nicht als rechtlich vollständig geprüft behandeln. Über den Footer erreichbar; `vite.config.js` nimmt alle vier HTML-Seiten in den Build auf.

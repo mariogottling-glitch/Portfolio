@@ -1,58 +1,41 @@
-# SEO- und SEA-Grundlage
+# SEO · deutschlandweite Ausrichtung
 
-Stand: 28. September 2026. Name und Kontaktadresse sind bestätigt (Mario Göttling, mariogottling@googlemail.com); die Hauptadresse ist https://www.mario-goettling.de/. Die Registrierung ist laut Nutzerscreenshot noch in Bearbeitung. Hosting und DNS sind noch nicht verbunden; die eingetragenen URLs bestätigen keine Live-Verfügbarkeit.
+Stand: 29. September 2026. Zielgruppe: Selbstständige und kleine Unternehmen in Deutschland. Keine lokalen Landingpages oder Stadt-Keyword-Listen.
 
-## Bereits umgesetzt
+## Umgesetzt
 
-- Deutsches `lang`-Attribut und eindeutiger Seitentitel.
-- Meta-Description mit den Kernleistungen Webdesign, Grafikdesign und KI-Bildwelten.
-- Autor-, Robots- und Social-Preview-Metadaten.
-- Open-Graph- und Twitter-Card-Grundlage mit einem aktuellen Vorschaubild (1200 × 630).
-- JSON-LD vom Typ `Person` mit bestätigtem Tätigkeitsfeld und ohne erfundene Kunden, Orte oder Kennzahlen.
-- Semantische Bereiche mit einer klaren H1, H2-Abschnitten, Navigation, Projektlinks und Kontaktbereich.
-- Canonical-Link, Open-Graph-URL, absolute Social-Bildadressen und Person-URL verwenden die bestätigte Hauptadresse.
-- `robots.txt` verweist auf `https://www.mario-goettling.de/sitemap.xml`. Die Sitemap enthält die Startseite; Abschnittsanker und Projektdialoge sind keine separaten Seiten.
-- Projektkarten öffnen interne Dialoge. Kundenseiten sind darin verlinkt; Website-Karten behalten direkte Links als Fallback. Die Dialoge haben noch keine eigenständigen indexierbaren URLs.
+- Startseite: eindeutiger Leistungstitel, passende Meta-/Social-Beschreibungen und ein kurzer sichtbarer Einstieg mit deutschlandweiter Ausrichtung.
+- Webdesign-Seite: Suchintention „Website erstellen lassen“, Zielgruppe und deutschlandweite Zusammenarbeit klar benannt.
+- Fünf eigenständige Projektseiten unter `/projekte/`: vorhandene, bestätigte Projektbeschreibungen als direkt erreichbares HTML. Die kompakte Startseiten-Vorschau und die Dialoge bleiben erhalten; im Dialog führt ein zusätzlicher Link zur Projektseite. Die Projektlinks im HTML zeigen direkt auf diese Seiten.
+- Eigene Titel, Beschreibungen, Canonical-Adressen, Vorschaubilder und interne Querverweise pro Projektseite.
+- Strukturierte Daten für Person, Website, Seiten, Webdesign-Leistung und Projekte. Roboterly bleibt ausdrücklich auf die Hero-Gestaltung begrenzt. Keine erfundenen Bewertungen, Preise, Referenzen oder Erfolgszahlen.
+- Sitemap um alle fünf Projektseiten ergänzt. `robots.txt` erlaubt das Crawling. Der vorhandene Datenschutz-Entwurf bleibt `noindex` und außerhalb der Sitemap.
 
-## Keyword-Fokus
+## Geprüft
 
-Primär: `Webdesign Freelancer`, `Webdesigner [Region]`, `Website Design Freelancer`, `Grafikdesigner Website`.
+- Die öffentliche Homepage war unter HTTPS erreichbar (HTTP 200), die Adresse ohne www leitete auf www um; öffentliche robots.txt erlaubt das Crawling. Das ist keine Bestätigung einer Google-Indexierung oder guter Platzierungen.
+- Lokaler Produktionsbuild: acht Sitemap-Adressen erreichbar, eindeutige Titel und Canonical-Adressen, jeweils eine H1, vorhandene Beschreibungen und parsebare JSON-LD-Daten.
+- Projekttexte ohne JavaScript vollständig lesbar, alle internen Projektlinks und lokalen Social-Bilder vorhanden.
+- Ansichten bei 1440, 390 und 320 px ohne seitlichen Überlauf; bestehender Projektdialog und neuer Projektseiten-Link funktionieren.
+- Keine Search-Console-Leistungsdaten, Live-Rankingmessung oder Google-Validierung der strukturierten Daten durchgeführt. Die lokale Prüfung bestätigt Struktur und Erreichbarkeit, keine Berechtigung für spezielle Suchergebnis-Darstellungen.
 
-Sekundär: `KI Bildwelten`, `KI Bilder für Website`, `Hero Bilder Website`, `Bildsprache Website`, `Landingpage Design`, `Website Relaunch`.
+## Für die öffentliche Wirkung noch erforderlich
 
-Die Region erst ergänzen, wenn sie feststeht. Keine Keyword-Kette in sichtbaren Text schreiben. Jede spätere Projektseite soll ein eigenes, konkretes Thema und einen eigenen Seitentitel erhalten.
+1. Die Änderungen auf GitHub und anschließend den vollständigen Inhalt von `dist/` auf dem produktiven Hosting veröffentlichen. Bisher sind diese Änderungen nur lokal vorbereitet.
+2. Auf dem echten Server die fünf Projektadressen, Canonical-Adressen, Bilder und Sitemap prüfen; unbekannte Adressen müssen HTTP 404 liefern. Die Vorschau ist kein Nachweis der Serverkonfiguration.
+3. Die Domain in der Google Search Console bestätigen bzw. eine bestehende Property nutzen. Dafür werden der passende Google-Account und gegebenenfalls DNS-Zugriff benötigt. Hier wurden keine Zugangsdaten oder Verifikationseinträge eingerichtet.
+4. `https://www.mario-goettling.de/sitemap.xml` einreichen und die veröffentlichten Seiten per URL-Prüfung kontrollieren. Nicht die localhost-Vorschau einreichen.
+5. Danach die tatsächlichen Suchanfragen, Impressionen, Klicks und Indexierung beobachten. Weitere Inhalte anhand dieser Daten ausbauen, nicht anhand erfundener Suchvolumen. Gute Platzierungen für allgemeine Begriffe wie „Webdesign“ sind nicht garantiert.
 
-## Geplante Seitentitel
+## Inhalte pflegen
 
-- Startseite: `Mario Göttling | Webdesign, Grafikdesign & KI-Bildwelten`
-- Projektseite: `[Projektname] | Webdesign von Mario Göttling`
-- Leistung: `Website-Bilder und KI-Bildwelten | Mario Göttling`
-- Über mich: `Über Mario Göttling | Freelance Grafikdesigner`
+Projekttexte stammen aus `project-details.js`, Projektbilder aus den Karten in `index.html`. `node scripts/generate-project-pages.mjs` erzeugt die fünf HTML-Seiten neu; der reguläre Build führt diesen Schritt automatisch aus. Änderungen an generierten Seiten im Generator bzw. in den Quelldaten vornehmen. Neue Projektseiten zusätzlich in Generator, Vite-Einstiegen, internen Links und Sitemap ergänzen.
 
-## SEA-Vorbereitung
+## Grundlagen
 
-Noch keine Kampagne aktivieren. Vor dem Start festlegen:
+- [Google SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Google: Inhalte nicht ausschließlich von Nutzerinteraktionen abhängig machen](https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading)
 
-1. Domain aufschalten und Zielregion festlegen;
-2. primäres Angebot, zum Beispiel Website-Design oder KI-Bildwelten;
-3. Kontaktziel: E-Mail, Formular oder Kennenlerngespräch;
-4. monatliches Budget und gewünschte Anfragekosten;
-5. Analytics- und Consent-Lösung.
+## Vorhandene SEA-Planung bleibt separat
 
-Sinnvolle erste Suchkampagnen wären getrennte Anzeigengruppen für `Webdesign Freelancer`, `Website Relaunch` und `KI Bildwelten Website`. Jede Gruppe sollte auf eine passende Landingpage mit eigenem Text und einem klaren Kontaktziel führen. Keine bezahlte Kampagne auf die allgemeine Startseite schicken, wenn eine spezifischere Seite verfügbar ist.
-
-Für spätere Links UTM-Schema verwenden:
-
-`?utm_source=google&utm_medium=cpc&utm_campaign=webdesign&utm_content=anzeige-1`
-
-Die Website liest solche Parameter derzeit nicht dauerhaft aus und sendet keine Daten an Dritte. Das wird erst nach Auswahl einer Analytics-/Consent-Lösung ergänzt.
-
-## Vor Veröffentlichung
-
-- Domain mit dem Hosting verbinden, HTTPS aktivieren und die Variante ohne www dauerhaft auf https://www.mario-goettling.de/ weiterleiten. Gewünschte Social-Profile ergänzen. E-Mail bleibt mariogottling@googlemail.com.
-- Aktuelle Social-Vorschau ist eingebunden: `assets/brand/social-preview.jpg`. Nach Veröffentlichung den öffentlichen Abruf prüfen.
-- Nach Aufschaltung Canonical-Link, Sitemap und robots.txt öffentlich prüfen; Domain in der Search Console verifizieren und Sitemap einreichen. Noch nicht erledigt.
-- Jede Live-Projektseite mit individuellem Title, Description, Open-Graph-Bild und sinnvollen Alt-Texten ausstatten.
-- Impressum ist eingebunden; Datenschutz ist als Entwurf mit STRATO vorbereitet. Server-Protokollierung, Adobe-/Gmail-Einbindung und gegebenenfalls vorhandene USt-/Wirtschafts-ID abschließend prüfen (siehe `LAUNCH.md`).
-- Ladezeiten, Bildgrößen, Kontrast, Mobile Layout und 404-Seite prüfen.
-- Conversion-Ziel und Consent-Dialog festlegen, bevor Analytics oder Werbe-Pixel eingebaut werden.
+Es wurden keine Anzeigen, Tracking-Pixel oder Analytics eingebaut und keine Kampagnen aktiviert. Die bisherige Planung für mögliche Anzeigengruppen (Webdesign Freelancer, Website Relaunch, KI-Bildwelten für Websites) bleibt eine spätere Option. Vorher sind Angebot, Kontaktziel, Monatsbudget, gewünschte Anfragekosten und eine passende Analytics-/Consent-Lösung festzulegen. Als späteres UTM-Schema war `?utm_source=google&utm_medium=cpc&utm_campaign=webdesign&utm_content=anzeige-1` vorgesehen; die Website speichert diese Parameter derzeit nicht dauerhaft.

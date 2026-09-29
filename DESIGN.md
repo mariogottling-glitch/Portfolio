@@ -87,3 +87,17 @@ Die sichtbaren Zahlen unter „So arbeiten wir zusammen“ sind durch grüne Lin
 ## Technisches Raster im Webdesign-Einstieg · 29. September 2026
 
 Der Einstieg greift die Konstruktionsgrafik der Startseite auf: 40-px-Raster, feine konzentrische Kreislinien, diagonale Achse und kleine Passmarken. Die vorhandene Monitorillustration erhält weich ausgeblendete Bildränder und zwei dezente Eckmarkierungen. Alle Dekorationen sind nicht interaktiv und vor Hilfstechnologien verborgen. Mobil: zurückgenommenes 28-px-Raster und an die Bildposition angepasster Kreis. Die Gestaltung bleibt statisch und benötigt keine zusätzliche Bilddatei oder Animation.
+
+## Interaktive Design-Geschichte · 29. September 2026
+
+Unter den drei Leistungen ersetzt eine interaktive Geschichte die bisherige Viererspalte. Vier eigens gezeichnete SVG-Szenen zeigen Gespräch, Plan, Gestaltung und fertigen Auftritt. Raster, Konstruktionskreise, Linienicons und handschriftliche Bildunterschriften greifen das vorhandene Erscheinungsbild auf. Eine gemeinsame Zeichenfläche verändert sich zwischen Angebotsdokument, Layout und Monitor. Umsetzung mit lokalem SVG/CSS/JavaScript, ohne Rive-Datei oder zusätzliche externe Laufzeit.
+
+Desktop: links eine haftende Illustration, rechts vier kurze Schritte; normales Scrollen aktiviert den nächstliegenden Schritt. Anklicken wählt eine Szene bis zur nächsten bewussten Scrollbewegung. Mobil stehen eine kompakte Grafik und vier antippbare Schritte untereinander. Bei reduzierter Bewegung bleiben die Zustandswechsel statisch und manuell. Ohne JavaScript bleiben die erste Illustration, alle Ablauftexte und der Kontaktlink verfügbar. Der abschließende grüne CTA führt zum bestehenden Kontaktbereich.
+
+## Interaktiver Werkzeugentwurf · 29. September 2026
+
+Die bestehenden neun Tool-Icons werden mit JavaScript zu auswählbaren Buttons. Hover mit Maus, Tastaturfokus und Antippen wechseln eine gemeinsame SVG-Vorschau. Vier Szenen (Layout, Film, Bildidee, räumliche Form) erhalten je Werkzeug eigene Akzente und kurze Nutzenbeschreibungen. Bewegungen enden nach dem Zustandswechsel; keine Dauerschleife oder externe Laufzeit. Desktop: Text neben Grafik; mobil: Grafik vor Text unter dem dreispaltigen Iconraster. Reduced Motion deaktiviert Übergänge. Ohne JavaScript bleibt die ursprüngliche Werkzeugliste erhalten. Die ZBrush-Icon-Attribution ist unter die Vorschau verschoben. Der Entwurf liegt getrennt in tool-preview.js und tool-preview.css und kann durch Entfernen des Imports wieder ausgeblendet werden.
+
+## Kompakte Projektbühne · 29. September 2026
+
+Alle Portfolio-Rubriken zeigen ein hervorgehobenes Projekt mit Bild und Titel sowie eine horizontale Vorschauleiste darunter. Die Auswahl reagiert auf kurzes Maus-Hover, Klick, Tastaturfokus und Antippen. Das große Projekt öffnet weiterhin die bestehende Detailansicht. Alle Projekte sind unmittelbar in der horizontalen Leiste erreichbar; der bisherige Mehr-laden-Button entfällt in der erweiterten Ansicht. Eine Auswahl bleibt pro Rubrik gespeichert. Bei Überlauf erscheinen Navigationstasten; mobil ist die Leiste auch wischbar. Feste Bild- und mobile Metadatenhöhen verhindern Layoutsprünge. Die speziellen Webdesign-Zusatzmotive sind auf der Bühne ausgeblendet; Projekt-Detailinhalte bleiben vorhanden. Ohne JavaScript bleibt die ursprüngliche Projektliste erhalten.

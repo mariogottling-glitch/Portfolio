@@ -1,5 +1,8 @@
 import { projectDetails } from './project-details.js';
 import './navigation.js';
+import './design-story.js';
+import './tool-preview.js';
+import { createPortfolioStage } from './portfolio-stage.js';
 
 const filters = [...document.querySelectorAll('[data-filter]')];
 const projects = [...document.querySelectorAll('[data-project]')];
@@ -8,30 +11,17 @@ const webdesignCta = document.querySelector('#gallery-webdesign-cta');
 const galleryHint = document.querySelector('#gallery-hint');
 const showMore = document.querySelector('#show-more');
 let activeFilter = filters[0];
-let visibleLimit = 6;
+const portfolioStage = createPortfolioStage(projects);
 function renderGallery() {
   const isWebdesign = activeFilter.dataset.filter === 'web';
   webdesignCta.hidden = !isWebdesign;
   galleryHint.hidden = isWebdesign;
-  const matching = projects.filter(project => project.dataset.category === activeFilter.dataset.filter);
   filters.forEach(button => button.setAttribute('aria-pressed', String(button === activeFilter)));
-  projects.forEach(project => {
-    const index = matching.indexOf(project);
-    project.hidden = index < 0 || index >= visibleLimit;
-    if (!project.hidden) project.dataset.layout = String(index % 4);
-  });
-  const shown = Math.min(visibleLimit, matching.length);
-  galleryStatus.textContent = `${String(shown).padStart(2, '0')} ${shown === matching.length ? 'Projekte' : `von ${matching.length} Projekten`} / ${activeFilter.textContent}`;
-  showMore.hidden = shown >= matching.length;
-  showMore.textContent = `Weitere Projekte ansehen (${matching.length - shown}) +`;
+  const count = portfolioStage.show(activeFilter.dataset.filter);
+  galleryStatus.textContent = `${String(count).padStart(2, '0')} Projekte / ${activeFilter.textContent}`;
+  showMore.hidden = true;
 }
-filters.forEach(button => button.addEventListener('click', () => { activeFilter = button; visibleLimit = 6; renderGallery(); }));
-showMore.addEventListener('click', () => {
-  const firstNew = projects.filter(project => project.dataset.category === activeFilter.dataset.filter)[visibleLimit];
-  visibleLimit += 6;
-  renderGallery();
-  firstNew?.focus({ preventScroll: true });
-});
+filters.forEach(button => button.addEventListener('click', () => { activeFilter = button; renderGallery(); }));
 renderGallery();
 
 const dialog = document.querySelector('.project-dialog');
@@ -79,6 +69,11 @@ function openProject(link) {
   });
   facts.hidden = !detail.facts?.length;
   const live = dialog.querySelector('#project-live');
+  const projectPage = dialog.querySelector('#project-page');
+  const hasProjectPage = link.getAttribute('href').startsWith('/projekte/');
+  projectPage.hidden = !hasProjectPage;
+  if (hasProjectPage) projectPage.setAttribute('href', link.getAttribute('href'));
+  else projectPage.removeAttribute('href');
   live.hidden = !detail.live;
   if (detail.live) live.setAttribute('href', detail.live); else live.removeAttribute('href');
   dialog.querySelector('#project-inquiry').href = `mailto:mariogottling@googlemail.com?subject=${encodeURIComponent(`Projektanfrage – inspiriert von ${title}`)}`;

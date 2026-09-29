@@ -52,14 +52,14 @@ export const projectDetails = {
     live: 'https://www.mine-hotel.de'
   },
   'roboterly': {
-    category: 'Grafiken & Bildwelten / KI-Visualisierung',
-    lead: 'Service-Roboter in einer gemeinsamen Bildwelt.',
+    category: 'Web Design / Hero-Gestaltung',
+    lead: 'Hero-Gestaltung für Roboterly: Service-Roboter in einer gemeinsamen Bildwelt.',
     facts: [
       ['Das Projekt', 'Ein Hero-Motiv in 3D-Rendering-Optik für den Einsatz auf der Roboterly-Website.'],
-      ['Mein Anteil', 'Erstellung des Service-Roboter-Bildes mit KI und anschließende Nachbearbeitung. Logo und Webdesign stammen nicht von mir.'],
+      ['Mein Anteil', 'Gestaltung des Hero-Motivs mit KI und anschließender Nachbearbeitung. Logo und übriges Webdesign stammen nicht von mir.'],
       ['Die Gestaltung', 'Eine helle räumliche Inszenierung mit Podesten und dezenter Lichtführung fasst die unterschiedlichen Roboter zu einem Motiv zusammen.']
     ],
-    caption: 'Meine Bildgestaltung im Anwendungskontext der Roboterly-Website',
+    caption: 'Meine Hero-Gestaltung im Anwendungskontext der Roboterly-Website',
     live: 'https://www.roboterly.com'
   },
   'spiesser-kampagne': {
