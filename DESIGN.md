@@ -83,3 +83,7 @@ Der bisherige Textlink im Leistungsbereich ist jetzt ein limettengrüner Button 
 ## Ablauf-Icons auf der Startseite · 29. September 2026
 
 Die sichtbaren Zahlen unter „So arbeiten wir zusammen“ sind durch grüne Linien-Icons ersetzt: Gespräch, Angebotsdokument mit Haken, Entwurf mit Stift und Rakete für Umsetzung. Die bestehende SVG-Symbolsammlung wird gemeinsam verwendet und um das Angebotsicon ergänzt. Überschriften und Texte bleiben bestehen. Desktop 52 px, auf sehr kleinen Displays 40 px neben dem Text.
+
+## Technisches Raster im Webdesign-Einstieg · 29. September 2026
+
+Der Einstieg greift die Konstruktionsgrafik der Startseite auf: 40-px-Raster, feine konzentrische Kreislinien, diagonale Achse und kleine Passmarken. Die vorhandene Monitorillustration erhält weich ausgeblendete Bildränder und zwei dezente Eckmarkierungen. Alle Dekorationen sind nicht interaktiv und vor Hilfstechnologien verborgen. Mobil: zurückgenommenes 28-px-Raster und an die Bildposition angepasster Kreis. Die Gestaltung bleibt statisch und benötigt keine zusätzliche Bilddatei oder Animation.

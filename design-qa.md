@@ -121,3 +121,7 @@ Zwei grüne Buttons eingebunden, im Leistungsbereich sowie vor den Webdesign-Pro
 ## Startseiten-Ablauf mit Icons · 29. September 2026
 
 Vier SVG-Symbole statt sichtbarer Zahlen; Desktop 1440 px und Mobil 390/320 px geprüft. Symbole laden aus dem Build, kein Überlauf der Icons. Visuelle Prüfung von Desktop und schmaler Mobilansicht. Build erfolgreich; statisches Kopieren berücksichtigt nun SVG-Fragmentkennungen korrekt. Screenshots: `tmp/process-icons-qa/`.
+
+## Technisches Webdesign-Herodesign · 29. September 2026
+
+Build erfolgreich; Vorschau bei 1440, 1024, 800, 390 und 320 px geprüft. Kein horizontales Scrollen, Monitor geladen und Anfragebutton innerhalb der Bildschirmbreite. Desktop- und Smartphone-Screenshots visuell kontrolliert; Texte gut lesbar, Dekorationen hinter dem Inhalt. Screenshots: `tmp/webdesign-header-qa/`.

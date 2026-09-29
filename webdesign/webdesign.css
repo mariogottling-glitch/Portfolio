@@ -1,11 +1,22 @@
 /* Service-page additions; the portfolio's shared design stays in styles.css. */
-.webdesign-intro{display:grid;grid-template-columns:1fr 1.12fr;column-gap:24px;padding-block:48px 64px;align-items:center}
+.webdesign-intro{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1.12fr;column-gap:24px;padding-block:48px 64px;align-items:center}
+.webdesign-drafting{inset:12px -24px 18px;overflow:hidden;background-image:linear-gradient(#f1f0e911 1px,transparent 1px),linear-gradient(90deg,#f1f0e911 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(180deg,transparent,#000 10%,#000 84%,transparent);opacity:1}
+.webdesign-drafting .draft-circle{width:580px;height:580px;right:0;top:54px;bottom:auto;border-color:#b1ef723b}
+.webdesign-drafting .draft-circle:after{inset:38px;border-color:#f1f0e926}
+.webdesign-drafting .draft-axis{width:80%;right:-8%;top:51%;background:#b1ef7245;transform:rotate(-24deg)}
+.webdesign-cross{position:absolute;color:#b1ef7299;font:22px/1 'DM Sans',sans-serif}
+.webdesign-cross-top{right:42%;top:90px}
+.webdesign-cross-bottom{right:22px;bottom:92px}
 .webdesign-intro>.eyebrow{grid-column:1/-1;margin-bottom:34px}
 .webdesign-intro h1{grid-column:1;grid-row:2;font-size:clamp(46px,5.25vw,74px);line-height:1.04;letter-spacing:-.055em;align-self:end}
 .webdesign-intro-copy{grid-column:1;grid-row:3;align-self:start}
 .webdesign-intro-copy p{color:var(--muted);margin:24px 0;max-width:42ch;font-size:17px;line-height:1.6}
 .webdesign-visual{grid-column:2;grid-row:2/4;min-width:0;position:relative}
-.webdesign-visual img{width:100%;height:auto;display:block}
+.webdesign-visual img{width:100%;height:auto;display:block;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 86%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 86%,transparent);mask-composite:intersect}
+.webdesign-visual:before,.webdesign-visual:after{content:'';position:absolute;width:26px;height:26px;border-color:var(--accent);border-style:solid;opacity:.65;pointer-events:none}
+.webdesign-visual:before{left:7%;top:10%;border-width:1px 0 0 1px}
+.webdesign-visual:after{right:7%;bottom:13%;border-width:0 1px 1px 0}
+.webdesign-visual-label{display:block;margin:0 0 8px 14%;font-size:10px;line-height:1.5;letter-spacing:.18em;color:var(--muted)}
 .webdesign-note{font-family:var(--handwriting);color:var(--accent);font-size:clamp(23px,2.2vw,31px);line-height:1.15;transform:rotate(-5deg);text-align:center;margin:6px 0 0}
 .webdesign-section{border-top:2px solid var(--line);padding-block:48px 54px}
 .webdesign-section h2{font-size:clamp(32px,3.6vw,49px);line-height:1.06}
@@ -38,11 +49,18 @@
 .webdesign-page .contact h2{font-size:clamp(34px,4.3vw,60px)}
 .webdesign-page .button{text-align:center}
 @media(max-width:1100px){
+  .webdesign-drafting .draft-circle{width:480px;height:480px;right:-36px;top:65px}
   .webdesign-split,.webdesign-costs{gap:36px}
   .webdesign-process{gap:24px}
   .webdesign-process h3{font-size:16px}
 }
 @media(max-width:800px){
+  .webdesign-drafting{inset:4px -10px 20px;background-size:28px 28px;background-image:linear-gradient(#f1f0e90c 1px,transparent 1px),linear-gradient(90deg,#f1f0e90c 1px,transparent 1px)}
+  .webdesign-drafting .draft-circle{width:350px;height:350px;right:-70px;top:180px}
+  .webdesign-drafting .draft-axis{width:135%;top:45%;right:-22%}
+  .webdesign-cross-top{right:12px;top:145px}
+  .webdesign-cross-bottom{right:auto;left:6px;bottom:180px}
+  .webdesign-visual-label{font-size:9px;margin-bottom:0}
   .webdesign-intro{grid-template-columns:1fr;gap:0;padding-block:30px 40px}
   .webdesign-intro>.eyebrow{margin-bottom:22px;font-size:10px}
   .webdesign-intro h1{grid-column:1;grid-row:2;font-size:clamp(40px,8.6vw,58px)}
