@@ -54,8 +54,8 @@ for (const [slug, heading, description] of projects) {
   <meta name="twitter:image" content="${origin}${image}" />
   <link rel="icon" href="/assets/brand/favicon-32.png" type="image/png" />
   <meta name="theme-color" content="#242423" />
-  <link rel="preload" href="/assets/fonts/dm-sans.ttf" as="font" type="font/ttf" crossorigin />
-  <link rel="preload" href="/assets/fonts/archivo-black.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="/assets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/archivo-black.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/projekte/project-page.css" />
 </head>
