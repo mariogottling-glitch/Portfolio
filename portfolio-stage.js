@@ -16,6 +16,10 @@ export function createPortfolioStage(projects) {
   let selectionAnimation;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 
+  // Hide inactive cards before changing responsive image hints. Otherwise the
+  // browser can fetch every full-size artwork during synchronous setup.
+  projects.forEach(project => { project.hidden = true; });
+
   const buttons = new Map(projects.map(project => {
     const title = project.querySelector('h3').textContent;
     const isVideo = project.dataset.media === 'video';
